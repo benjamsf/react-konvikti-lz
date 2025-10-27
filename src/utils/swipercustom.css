@@ -1,0 +1,35 @@
+/* swiper-custom.css */
+.swiper-pagination {
+  bottom: 100px; /* Adjust this value to position the bullets below the card */
+}
+
+.swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  background-color: #42687d;
+  color: white; /* Ensures the number is white */
+  font-size: 12px; /* Adjust font size as needed */
+  opacity: 0.5;
+  transition: opacity 0.3s;
+  border-radius: 70%; /* Makes the bullet circular */
+}
+
+.swiper-pagination-bullet-active {
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #42687d;
+  width: 30px; /* Increased size for better visibility */
+  height: 30px; /* Increased size for better visibility */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 30px;
+}

@@ -1,0 +1,3 @@
+[submodule "src/slides"]
+    path = src/slides
+    url = https://github.com/opendefence/markdown-lz-marpslides.git
