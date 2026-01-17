@@ -34,7 +34,7 @@ export function PunchLine({
       </div>
 
       {/* Content */}
-      <div className="text-center text-white md:text-left flex-1">
+      <div className="text-center md:text-left flex-1">
         <h3 className="text-lg md:text-xl font-bold mb-2">{title}</h3>
         <p className="text-sm md:text-base">{text}</p>
 

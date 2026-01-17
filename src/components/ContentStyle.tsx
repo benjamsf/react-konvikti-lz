@@ -16,7 +16,7 @@ const ContentStyle: React.FC<ContentStyleProps> = ({
       className={`flex justify-center items-center p-4 ${className || ""}`}
       style={style}
     >
-      <div className="bg-black bg-opacity-50 max-w-md w-full rounded-lg p-4 text-white">
+      <div className="bg-black bg-opacity-50 max-w-md w-full rounded-lg p-4">
         {children}
       </div>
     </div>

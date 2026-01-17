@@ -19,7 +19,7 @@ export function Navbar({
   const navigate = useNavigate();
 
   return (
-    <div className="fixed top-0 left-0 right-0 h-14 bg-backgroundBlue z-50 border-b border-backgroundLight flex items-center px-4">
+    <div className="fixed top-0 left-0 right-0 h-14 bg-background z-50 border-b border-backgroundLight flex items-center px-4">
       {/* Left Section */}
       <div className="flex items-center">
         <img

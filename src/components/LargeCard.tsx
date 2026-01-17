@@ -43,18 +43,18 @@ export function LargeCard({
       <div className="relative z-5 h-full flex flex-col justify-center items-center text-center p-6">
         <div className="flex flex-col justify-center items-center">
           {title && (
-            <h2 className="prose prose-white mb-2 text-lg md:text-2xl lg:text-3xl">
+            <h2 className="prose mb-2 text-lg md:text-2xl lg:text-3xl">
               {title}
             </h2>
           )}
           {details && (
-            <span className="prose prose-white mb-4 text-sm md:text-lg">
+            <span className="prose mb-4 text-sm md:text-lg">
               {details}
             </span>
           )}
           {steps?.map((step, index) => <Step key={index} {...step} />)}
           {content && (
-            <p className="mt-2 prose prose-white text-white text-sm md:text-base">
+            <p className="mt-2 prose prose-white text-sm md:text-base">
               {content}
             </p>
           )}

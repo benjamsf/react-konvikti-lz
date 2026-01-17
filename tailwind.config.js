@@ -16,19 +16,20 @@ module.exports = {
         },
       },
       colors: {
-        background: "#0e0d0dff",
-        backgroundLight: "#FFFFF",
-        backgroundBlue: "#000000ff",
+        background: "#4b463b",
+        backgroundLight: "#cbcbcbff",
+        backgroundBlue: "#645e4e",
         outline: "",
         outlineLight: "#47484a",
-        textLight: "#E4E4E4",
+        text: "#d2c7c7ff",
+        textLight: "#756e6eff",
         primary: {
           DEFAULT: "#42687D",
           200: "#A2BBCB",
           300: "#809FB3",
           400: "#688AA0",
           500: "#42687D",
-          600: "#42687D",
+          600: "#22323bff",
           700: "#335467",
           800: "#264252",
           900: "#152D3A",
@@ -61,7 +62,7 @@ module.exports = {
             a: {
               color: theme("colors.primary.DEFAULT"),
               "&:hover": {
-                color: theme("colors.primary.500"),
+                color: theme("colors.primary.300"),
               },
             },
             h2: {

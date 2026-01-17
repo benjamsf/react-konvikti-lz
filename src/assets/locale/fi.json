@@ -20,7 +20,7 @@
   "notYetThere.title": "Ei vielä täällä!",
   "notYetThere.message": "Tämä sisältö ei ole vielä täällä. Rakennamme tätä konseptia sekä siitä kertovaa sisältöä parhaillaan. Kiitos kiinnostuksestasi - pysy kuulolla!",
   "slideViewer": "Katso diaesitys",
-  "sidebarInfo1": "Koti & Hub",
+  "sidebarInfo1": "Koti & info",
   "sidebarInfo5": "Konvikti LZ",
   "sidebarInfo6": "Yhteys: apotti@konvikti.fi",
   "logoutLabel": "Kirjaudu ulos",
@@ -53,26 +53,26 @@
   "homeBrief2.Button1": "",
   "homeBrief2.Button2": "",
 
-  "HUBVIEW": "HUBVIEW",
-  "hubViewTitle": "Tietoa",
-  "hubHero.Title": "Tietoa",
-  "hubHero.subTitle": "Käytä & osallistu teknologiamme luontiin",
+  "infoView": "infoView",
+  "InfoViewTitle": "Tietoa",
+  "infoHero.Title": "Tietoa",
+  "infoHero.subTitle": "Käytä & osallistu teknologiamme luontiin",
 
-  "hubHead1.Title": "Ylioppilaskotimme",
-  "hubSmallText.Description": "Huomio: myöhemmin Hub-sivun sisältö muuttuu käyttäjäryhmän mukaan. 'Jäsenille' näkyy kaikki yhteistyöhön tarvittavat tiedot - kuten nyt, ja vielä räätälöidymmin. Julkisesti, tai 'perusjäsenille' jaetaan alta yleistiedot ja esim. rekrylomake.",
-  "hubHead1.Sub": "Haluaisitko opiskella teologiaa kauniissa historiallisessa ympäristössä, kivenheiton päässä yliopistolta? Tutustu Konviktin asukaspaikkoihin!",
+  "infoHead1.Title": "Ylioppilaskotimme",
+  "infoSmallText.Description": "Huomio: myöhemmin info-sivun sisältö muuttuu käyttäjäryhmän mukaan. 'Jäsenille' näkyy kaikki yhteistyöhön tarvittavat tiedot - kuten nyt, ja vielä räätälöidymmin. Julkisesti, tai 'perusjäsenille' jaetaan alta yleistiedot ja esim. rekrylomake.",
+  "infoHead1.Sub": "Haluaisitko opiskella teologiaa kauniissa historiallisessa ympäristössä, kivenheiton päässä yliopistolta? Tutustu Konviktin asukaspaikkoihin!",
 
-  "hubHead2.Title": "Asukashaut",
-  "hubHead2.Sub": "Uusia asukkaita haetaan vuosittain yleisessä asukashaussa kesä-elokuussa. Lisäksi järjestämme ajoin täydentäviä hakuja.",
+  "infoHead2.Title": "Asukashaut",
+  "infoHead2.Sub": "Uusia asukkaita haetaan vuosittain yleisessä asukashaussa kesä-elokuussa. Lisäksi järjestämme ajoin täydentäviä hakuja.",
 
   "bigConvictusCard.title": "Iso-Konvikti",
   "bigConvictusCard.details": "11 asukaspaikkaa Meritullinkatu 22:ssa.",
   "bigConvictusCard.Button1": "Ison-Konviktin esittely",
   "bigConvictusCard.Button2": "Paikat ja haku",
 
-  "githubModal": {
+  "gitinfoModal": {
     "title": "Huomio!",
-    "message": "Olet avaamassa GitHub-organisaatiomme uuteen välilehteen. Toistaiseksi, johtuen viestintäsyistä, se on kovin obskuuri.Paina 'Jatka' avataksesi Github-sivun.",
+    "message": "Olet avaamassa Gitinfo-organisaatiomme uuteen välilehteen. Toistaiseksi, johtuen viestintäsyistä, se on kovin obskuuri.Paina 'Jatka' avataksesi Gitinfo-sivun.",
     "cancel": "Sulje",
     "proceed": "Jatka"
   },
