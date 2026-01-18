@@ -1,4 +1,4 @@
-name: Deploy to Benjam's place
+name: Deploy to production
 
 on:
   push:
@@ -35,8 +35,10 @@ jobs:
 
       - name: Build
         env:
-          VITE_KINDE_CLIENT_ID: ${{ secrets.VITE_KINDE_CLIENT_ID }}
-          VITE_KINDE_DOMAIN: ${{ secrets.VITE_KINDE_DOMAIN }}
+          VITE_SANITY_PROJECT_ID: ${{ secrets.VITE_SANITY_PROJECT_ID }}
+          VITE_SANITY_DATASET: ${{ secrets.VITE_SANITY_DATASET }}
+          VITE_GOOGLE_APPLICATION_FORM: ${{ secrets.VITE_GOOGLE_APPLICATION_FORM}}
+
         run: npm run build
 
       - name: List build output
