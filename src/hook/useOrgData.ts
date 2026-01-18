@@ -1,5 +1,6 @@
 import { useQuery } from "react-query";
 import { sanityClient, urlFor } from "../lib/sanityClient";
+import type { PortableTextBlock } from "@portabletext/types";
 
 // Supported languages
 export type SupportedLanguage = "fi" | "en";
@@ -31,6 +32,16 @@ export interface SanityBoardMember {
   year?: string;
 }
 
+export interface SanityOrganizationRules {
+  _id: string;
+  title_fi: string;
+  title_en?: string;
+  content_fi?: PortableTextBlock[];
+  content_en?: PortableTextBlock[];
+  lastUpdated?: string;
+  isPublished: boolean;
+}
+
 // Transformed types for components
 export interface StaffMember {
   _id: string;
@@ -44,6 +55,13 @@ export interface BoardMember {
   _id: string;
   name: string;
   role: string;
+}
+
+export interface OrganizationRules {
+  _id: string;
+  title: string;
+  content?: PortableTextBlock[];
+  lastUpdated?: string;
 }
 
 // Queries
@@ -69,6 +87,16 @@ const BOARD_QUERY = `*[_type == "boardMember" && isActive == true] | order(order
   year
 }`;
 
+const RULES_QUERY = `*[_type == "organizationRules" && isPublished == true][0] {
+  _id,
+  title_fi,
+  title_en,
+  content_fi,
+  content_en,
+  lastUpdated,
+  isPublished
+}`;
+
 // Fetch functions
 async function fetchStaffMembers(language: SupportedLanguage): Promise<StaffMember[]> {
   const data = await sanityClient.fetch<SanityStaffMember[]>(STAFF_QUERY);
@@ -92,6 +120,19 @@ async function fetchBoardMembers(language: SupportedLanguage): Promise<BoardMemb
   }));
 }
 
+async function fetchOrganizationRules(language: SupportedLanguage): Promise<OrganizationRules | null> {
+  const data = await sanityClient.fetch<SanityOrganizationRules | null>(RULES_QUERY);
+  
+  if (!data) return null;
+  
+  return {
+    _id: data._id,
+    title: language === "en" && data.title_en ? data.title_en : data.title_fi,
+    content: language === "en" && data.content_en ? data.content_en : data.content_fi,
+    lastUpdated: data.lastUpdated,
+  };
+}
+
 // Hooks
 export function useStaffMembers(language: SupportedLanguage = "fi") {
   return useQuery<StaffMember[], Error>({
@@ -106,5 +147,13 @@ export function useBoardMembers(language: SupportedLanguage = "fi") {
     queryKey: ["boardMembers", language],
     queryFn: () => fetchBoardMembers(language),
     staleTime: 1000 * 60 * 5, // 5 minutes
+  });
+}
+
+export function useOrganizationRules(language: SupportedLanguage = "fi") {
+  return useQuery<OrganizationRules | null, Error>({
+    queryKey: ["organizationRules", language],
+    queryFn: () => fetchOrganizationRules(language),
+    staleTime: 1000 * 60 * 10, // 10 minutes - rules don't change often
   });
 }

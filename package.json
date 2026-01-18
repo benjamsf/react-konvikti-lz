@@ -16,6 +16,7 @@
     "@auth0/auth0-react": "^2.2.4",
     "@kinde-oss/kinde-auth-react": "^4.0.4",
     "@portabletext/react": "^6.0.2",
+    "@portabletext/types": "^4.0.1",
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-alert-dialog": "^1.0.5",
     "@radix-ui/react-checkbox": "^1.0.4",

@@ -47,6 +47,14 @@
     "hint": "See our latest photos and stories on our profile"
   },
 
+    "rulesSection": {
+    "title": "Official documents",
+    "subtitle": "Association's Rules and other documents"
+  },
+  "rules": {
+    "title": "Association's Rules"
+  },
+
 
   "HOMEVIEW": "HOMEVIEW",
   "homeViewTitle": "Home",

@@ -4,7 +4,8 @@ import { StaffList } from "../../components/StaffList";
 import { VisionSection, type ValueItem, type GoalItem } from "../../components/VisionSection";
 import { Timeline, type TimelineEvent } from "../../components/Timeline";
 import { JoinOrgSection } from "../../components/JoinOrgSection";
-import { useStaffMembers, useBoardMembers, type SupportedLanguage } from "../../hook/useOrgData";
+import { CollapsibleRulesCard } from "../../components/CollapsibleRulesCard";
+import { useStaffMembers, useBoardMembers, useOrganizationRules, type SupportedLanguage } from "../../hook/useOrgData";
 import { useTranslation } from "react-i18next";
 
 // Import hero image
@@ -19,6 +20,7 @@ export function OrgView() {
   // Fetch staff and board from Sanity with current language
   const { data: staffMembers, isLoading: isLoadingStaff } = useStaffMembers(currentLanguage);
   const { data: boardMembers, isLoading: isLoadingBoard } = useBoardMembers(currentLanguage);
+  const { data: rules, isLoading: isLoadingRules } = useOrganizationRules(currentLanguage);
 
   // Core values
   const values: ValueItem[] = [
@@ -156,6 +158,26 @@ export function OrgView() {
         events={timelineEvents}
         backgroundColor="bg-background"
       />
+
+      {/* Organization Rules - Collapsible */}
+      <section className="py-16 px-4 md:px-8 bg-backgroundBlue">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-title font-bold text-white-200 mb-4">
+              {t("org.rulesSection.title", "Viralliset asiakirjat")}
+            </h2>
+            <p className="text-white-500 text-lg max-w-2xl mx-auto">
+              {t("org.rulesSection.subtitle", "Yhdistyksen säännöt ja muut viralliset dokumentit")}
+            </p>
+          </div>
+          <CollapsibleRulesCard
+            title={rules?.title || t("org.rules.title", "Yhdistyksen säännöt")}
+            content={rules?.content}
+            lastUpdated={rules?.lastUpdated}
+            isLoading={isLoadingRules}
+          />
+        </div>
+      </section>
 
       {/* Join Organization - Final CTA */}
       <JoinOrgSection
