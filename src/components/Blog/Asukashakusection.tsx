@@ -48,7 +48,7 @@ export function AsukashakuSection({ showTitle = true }: AsukashakuSectionProps) 
 
   if (isLoading) {
     return (
-      <section className="py-12 px-4 md:px-8 bg-backgroundBlue">
+      <section className="py-12 px-4 md:px-8 bg-background">
         <div className="max-w-6xl mx-auto">
           <div className="flex justify-center items-center py-12">
             <div className="w-10 h-10 rounded-full border-2 border-brown-600 border-t-primary animate-spin" />
@@ -66,10 +66,10 @@ export function AsukashakuSection({ showTitle = true }: AsukashakuSectionProps) 
   const showNavigation = postCount > 1;
 
   return (
-    <section className="py-12 px-4 md:px-8 bg-backgroundBlue">
+    <section className="py-6 px-2 md:px-6 bg-backgroundBlue">
       <div className="max-w-6xl mx-auto">
         {showTitle && (
-          <div className="mb-10 text-center">
+          <div className="mb-6 text-center">
             <p className="text-white-500 max-w-2xl mx-auto">
               {t("asukashaku.subtitle", "Avoimet ja aiemmat asukashaut")}
             </p>
@@ -84,7 +84,7 @@ export function AsukashakuSection({ showTitle = true }: AsukashakuSectionProps) 
               onClick={goToPrev}
               disabled={activeIndex === 0}
               className={`
-                p-5 md:p-8 rounded-2xl transition-all duration-200 flex-shrink-0
+                p-6 md:p-8 rounded-2xl transition-all duration-200 flex-shrink-0
                 ${activeIndex === 0
                   ? "opacity-20 cursor-not-allowed"
                   : "bg-brown-700/70 hover:bg-primary/80 text-white-300 hover:text-white-100 active:scale-95"

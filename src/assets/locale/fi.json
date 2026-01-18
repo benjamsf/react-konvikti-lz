@@ -89,6 +89,26 @@
   "smallConvictusCard.Button2": "Paikat ja haku",
   "infoButtonRow.Application": "Avaa hakulomake!",
 
+  "infoBrief.HeadTitle": "Näin valitsemme asukkaat",
+  "infoBrief2.Subtitle": "Hakijat Konviktille pisteytetään. Eniten pisteitä saaneet valitaan asukkaiksi siten, kuin asukaspaikkoja riittää. Teologian opiskelijat ovat haussa etusijalla tietyn minimipistemäärän jälkeen.",
+  "infoBrief.Subtitle": "Konvikti lyhyesti",
+  "infoPunch1.Title": "Opintomenestys",
+  "infoPunch1.Text": "Konviktin tavoite on olla akateemisesti kehittävä ympäristö. Opintomenestys pisteytetään hakemuksessa.",
+  "infoPunch2.Title": "Yhteisöllisyys",
+  "infoPunch2.Text": "Yhteisöllisenä asumismuotona arvostamme tahtoa osallistua yhteisiin tapahtumiin.",
+  "infoPunch3.Title": "Kiinnostus teologiaan ja kristinuskoon",
+  "infoPunch3.Text": "Konvikti on kristillinen ylioppilaskoti, jonka asukkaat tulevat monista taustoista mutta joita yhdistää kiinnostus teologiaan ja/tai kristinuskoon ja seurakuntiin.",
+  "infoPunch4.Title": "Asumisen helppoutta",
+  "infounch4.Text": "Ylioppilaskoti tarjoaa puitteet kuten siivousvälineet ja -aineet, varustellut keittiöt sekä pyykinpesukoneen. Et siis tarvitse kuin oman huoneesi kalusteet - näitäkin on saatavilla. Siisteyttä ylläpidetään viikottaisilla keittiö- ja huoneistosiivousvuoroilla.",
+  "infoPunch5.Title": "100 vuotta opiskelijaelämää and counting",
+  "infoPunch5.Text": "Sadassa vuodessa Konvikti on niin kasvanut Ullanlinnan Pikku-Konviktin huoneistolla, selvinnyt osumista Helsingin pommituksissa, tarjonnut kodin tuleville arkkipiispoille ja arvostetuille akateemikoille sekä fasilitoinut epälukuisia sitsejä sekä iltaisia oppineita keskusteluita. Historia jatkuu jokaisen konviktilaisen kautta",
+
+  "infoHead3.Title": "Asukashakuilmoitukset",
+
+  "infoLastInfo.title": "Tulitko valituksi?",
+  "infoLastInfo.sub": "Isäntä ilmoittaa valinnoista hakuilmoitukseen merkittynä päivänä. Paikka myönnetään teologian opiskelijalle kuudeksi vuodeksi ja muiden aineiden opiskelijalle kolmeksi vuodeksi. Tämän jälkeen paikasta voidaan sopia vuodeksi kerrallaan.",
+
+
   "blogHero.Title":"Blogi ja uutiset",
   "blogNewsViewTitle": "Blogi ja uutiset",
   "blogNews": {
@@ -108,4 +128,5 @@
     "title": "Haku käynnissä!",
     "cta": "Klikkaa lukeaksesi lisää →",
     "dismiss": "Sulje"
+}
 }

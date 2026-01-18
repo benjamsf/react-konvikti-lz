@@ -1,6 +1,6 @@
 import { Layout } from "../../components/Layout";
-import { ButtonRow } from "../../components/ButtonRow";
 import { HeadlineContainer } from "../../components/HeadlineContainer";
+import { BriefContainer } from "../../components/BriefContainer";
 import { CardsContainer } from "../../components/CardsContainer";
 import { HeroSection } from "../../components/HeroSection";
 import { AsukashakuSection } from "../../components/Blog";
@@ -8,6 +8,10 @@ import { useTranslation } from "react-i18next";
 import { BigConvictusCard } from "./InfoView/BigConvictusCard";
 import { SmallConvictusCard } from "./InfoView/SmallConvictusCard";
 import heroimage from "../../assets/heroimages/hero9.jpeg";
+import Icon1 from "../../assets/littleimgs/img1.png";
+import Icon2 from "../../assets/littleimgs/img2.png";
+import Icon3 from "../../assets/littleimgs/img3.png";
+import Icon4 from "../../assets/littleimgs/img4.png";
 
 export function InfoView() {
   const { t } = useTranslation();
@@ -28,6 +32,41 @@ export function InfoView() {
       title: t("infoHead2.Title"),
       titleStyling: "text-3xl md:text-5xl font-title mb-4",
       subtitle: t("infoHead2.Sub"),
+    },
+  ];
+
+  const headlines3 = [
+    {
+      title: t("infoLastInfo.title"),
+      titleStyling: "text-3xl md:text-5xl font-title mb-4",
+      text: t("infoLastInfo.sub"),
+    },
+  ];
+
+  const punchLines = [
+    {
+      title: t("infoPunch1.Title"),
+      text: t("infoPunch1.Text"),
+      icon: Icon1,
+    },
+    {
+      title: t("infoPunch2.Title"),
+      text: t("infoPunch2.Text"),
+      icon: Icon2,
+    },
+    {
+      title: t("infoPunch3.Title"),
+      text: t("infoPunch3.Text"),
+      icon: Icon3,
+    },
+    {
+      title: t("infoPunch4.Title"),
+      text: t("infoPunch4.Text"),
+      icon: Icon4,
+    },
+    {
+      title: t("infoPunch5.Title"),
+      text: t("infoPunch5.Text"),
     },
   ];
 
@@ -54,16 +93,18 @@ export function InfoView() {
 
         <AsukashakuSection maxPosts={6} showTitle={true} />
 
-        <ButtonRow
-          buttons={[
-            {
-              children: t("infoButtonRow.Application"),
-              onClick: () =>
-                window.open(GOOGLE_FORM_URL, "_blank", "noopener,noreferrer"),
-              variant: { color: "error", width: "auto" },
-            },
-          ]}
+        <BriefContainer
+          headTitle={t("infoBrief.HeadTitle")}
+          subtitle={t("infoBrief2.Subtitle")}
+          items={punchLines}
+          backgroundColor="bg-background"
         />
+
+        <HeadlineContainer
+          items={headlines3}
+          backgroundColor="bg-background"
+        />
+
       </div>
     </Layout>
   );

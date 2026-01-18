@@ -1,51 +1,52 @@
 import { useState } from "react";
 import { LargeCard } from "../../../components/LargeCard";
 import { Button } from "../../../components/Button";
-import { SlideModal } from "../../../components/SlideModal";
+import { ImageSlideModal, type GallerySlide } from "../../../components/ImageSlideModal";
 import trooper from "../../../assets/heroimages/hero3.jpeg";
 import { useTranslation, Trans } from "react-i18next";
-import enSlide6 from "../../../assets/decks/en/investors/index.html?raw";
+
+import slide1 from "../../../assets/heroimages/hero5.jpeg";
+import slide2 from "../../../assets/heroimages/hero6.jpeg";
+
+// Define the slides for the gallery
+const GALLERY_SLIDES: GallerySlide[] = [
+  {
+    image: slide1,
+    title: "Ensimmäinen kuva",
+    description: "Kuvaus ensimmäisestä kuvasta.",
+  },
+  {
+    image: slide2,
+    title: "Toinen kuva",
+  },
+];
 
 export function SmallConvictusCard() {
   const { t } = useTranslation();
-
-  // State to manage modals
-  const [activeModal, setActiveModal] = useState<number | null>(null);
-  const slideData = {
-    1: { en: enSlide6 },
-  };
-
-  // Handlers for modals
-
-  const handleInternetClick = () => setActiveModal(1);
+  const [isGalleryOpen, setIsGalleryOpen] = useState(false);
 
   return (
-    <div>
+    <>
       <LargeCard
         image={trooper}
         title={<>{t("smallConvictusCard.title")}</>}
         details={<Trans i18nKey="smallConvictusCard.details" />}
       >
-        {/* Button 1 */}
         <Button
           type="button"
           styling="min-h-[60px]"
           variant={{ color: "blackGrey", width: "auto" }}
-          onClick={handleInternetClick}
+          onClick={() => setIsGalleryOpen(true)}
         >
           {t("smallConvictusCard.Button1")}
         </Button>
       </LargeCard>
 
-      {/* Render SlideModals */}
-      {Object.entries(slideData).map(([id, { en }]) => (
-        <SlideModal
-          key={id}
-          enSlide={en}
-          open={activeModal === parseInt(id)}
-          onClose={() => setActiveModal(null)}
-        />
-      ))}
-    </div>
+      <ImageSlideModal
+        isOpen={isGalleryOpen}
+        onClose={() => setIsGalleryOpen(false)}
+        slides={GALLERY_SLIDES}
+      />
+    </>
   );
 }

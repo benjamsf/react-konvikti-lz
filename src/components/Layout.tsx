@@ -1,13 +1,14 @@
 import React, { useEffect } from "react";
 import { Footer } from "./Footer";
 import { PublicFooter } from "./PublicFooter";
+import { HakuBanner } from "./HakuBanner";
 
 interface LayoutProps {
   showFooter?: boolean;
   showPublicFooter?: boolean;
   heroImage?: string;
-  heroTitle?: string; // Title displayed in the hero section
-  heroText?: string; // Text displayed below the title in the hero section
+  heroTitle?: string;
+  heroText?: string;
   children?: React.ReactNode;
 }
 
@@ -59,6 +60,9 @@ export function Layout({
       {/* Footer */}
       {showFooter && <Footer />}
       {showPublicFooter && <PublicFooter />}
+
+      {/* Active Haku Banner */}
+      <HakuBanner />
     </div>
   );
 }
