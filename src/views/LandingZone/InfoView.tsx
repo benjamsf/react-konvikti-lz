@@ -16,9 +16,6 @@ import Icon4 from "../../assets/littleimgs/img4.png";
 export function InfoView() {
   const { t } = useTranslation();
 
-  const GOOGLE_FORM_URL =
-    "https://docs.google.com/forms/d/1BvkiLpCad0wS3lSWYPZ2OOKcCMe_ZiC3fiD59KtYc5Q/viewform";
-
   const headlines = [
     {
       title: t("infoHead1.Title"),

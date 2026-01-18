@@ -1,20 +1,23 @@
 import { useState } from "react";
 import { BriefContainer } from "../../components/BriefContainer";
-import { SlideModal } from "../../components/SlideModal";
 import { HeadlineContainer } from "../../components/HeadlineContainer";
 import { Layout } from "../../components/Layout";
+import { ImageSlideModal, type GallerySlide } from "../../components/ImageSlideModal";
 import trooper from "../../assets/heroimages/hero1.jpeg";
 import Icon1 from "../../assets/littleimgs/img1.png";
 import Icon2 from "../../assets/littleimgs/img2.png";
 import Icon3 from "../../assets/littleimgs/img3.png";
 import Icon4 from "../../assets/littleimgs/img4.png";
+import slide1 from "../../assets/heroimages/hero2.jpeg";
+import slide2 from "../../assets/heroimages/hero3.jpeg";
+import slide3 from "../../assets/heroimages/hero4.jpeg";
+import slide4 from "../../assets/heroimages/hero5.jpeg";
+import slide5 from "../../assets/heroimages/hero6.jpeg";
 import logo from "../../assets/logo_green.png";
 import { useTranslation } from "react-i18next";
-import enSlide1 from "../../assets/decks/en/index/index.html?raw";
 
 export function HomeView() {
   const { t } = useTranslation();
-  const [activeModal, setActiveModal] = useState<number | null>(null);
   const headlines = [
     {
       title: t("homeHead1.Title"),
@@ -49,9 +52,34 @@ export function HomeView() {
       icon: logo,
     },
   ];
-  const slideData = {
-    1: { en: enSlide1 },
-  };
+
+  const GALLERY_SLIDES: GallerySlide[] = [
+  {
+    image: slide1,
+    title: "Olohuone",
+    description: "Tilava yhteinen olohuone, jossa voi viettää aikaa yhdessä.",
+  },
+  {
+    image: slide2,
+    title: "Keittiö",
+    description: "Täysin varusteltu yhteiskeittiö.",
+  },
+  {
+    image: slide3,
+    title: "Makuuhuone",
+  },
+  {
+    image: slide4,
+    title: "Piha-alue",
+    description: "Vihreä piha grillailua ja ulkoilua varten.",
+  },
+  {
+    image: slide5,
+  },
+  // Add more slides as needed
+];
+
+const [isGalleryOpen, setIsGalleryOpen] = useState(false);
 
   return (
     <Layout
@@ -65,23 +93,19 @@ export function HomeView() {
           items={headlines}
           backgroundColor="bg-background"
           buttonText={t("hubBrief.Button")}
-          onButtonClick={() => setActiveModal(1)}
+          onButtonClick={() => setIsGalleryOpen(true)}
         />
         <BriefContainer
           headTitle={t("homeBrief.HeadTitle")}
           items={punchLines}
           backgroundColor="bg-backgroundBlue"
         />
+        <ImageSlideModal
+          isOpen={isGalleryOpen}
+          onClose={() => setIsGalleryOpen(false)}
+          slides={GALLERY_SLIDES}
+        />        
       </div>
-      {/* Render SlideModals */}
-      {Object.entries(slideData).map(([id, { en }]) => (
-        <SlideModal
-          key={id}
-          enSlide={en}
-          open={activeModal === parseInt(id)}
-          onClose={() => setActiveModal(null)}
-        />
-      ))}
     </Layout>
   );
 }
