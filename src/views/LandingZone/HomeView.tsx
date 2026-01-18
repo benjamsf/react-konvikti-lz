@@ -18,6 +18,8 @@ import { useTranslation } from "react-i18next";
 
 export function HomeView() {
   const { t } = useTranslation();
+  const [isGalleryOpen, setIsGalleryOpen] = useState(false);
+
   const headlines = [
     {
       title: t("homeHead1.Title"),
@@ -25,6 +27,7 @@ export function HomeView() {
       text: t("homeHead1.Text"),
     },
   ];
+
   const punchLines = [
     {
       title: t("homePunch1.Title"),
@@ -54,32 +57,29 @@ export function HomeView() {
   ];
 
   const GALLERY_SLIDES: GallerySlide[] = [
-  {
-    image: slide1,
-    title: "Olohuone",
-    description: "Tilava yhteinen olohuone, jossa voi viettää aikaa yhdessä.",
-  },
-  {
-    image: slide2,
-    title: "Keittiö",
-    description: "Täysin varusteltu yhteiskeittiö.",
-  },
-  {
-    image: slide3,
-    title: "Makuuhuone",
-  },
-  {
-    image: slide4,
-    title: "Piha-alue",
-    description: "Vihreä piha grillailua ja ulkoilua varten.",
-  },
-  {
-    image: slide5,
-  },
-  // Add more slides as needed
-];
-
-const [isGalleryOpen, setIsGalleryOpen] = useState(false);
+    {
+      image: slide1,
+      title: "Olohuone",
+      description: "Tilava yhteinen olohuone, jossa voi viettää aikaa yhdessä.",
+    },
+    {
+      image: slide2,
+      title: "Keittiö",
+      description: "Täysin varusteltu yhteiskeittiö.",
+    },
+    {
+      image: slide3,
+      title: "Makuuhuone",
+    },
+    {
+      image: slide4,
+      title: "Piha-alue",
+      description: "Vihreä piha grillailua ja ulkoilua varten.",
+    },
+    {
+      image: slide5,
+    },
+  ];
 
   return (
     <Layout
@@ -104,7 +104,7 @@ const [isGalleryOpen, setIsGalleryOpen] = useState(false);
           isOpen={isGalleryOpen}
           onClose={() => setIsGalleryOpen(false)}
           slides={GALLERY_SLIDES}
-        />        
+        />
       </div>
     </Layout>
   );

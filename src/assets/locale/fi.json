@@ -60,7 +60,7 @@
 
   "infoHead1.Title": "Ylioppilaskotimme",
   "infoSmallText.Description": "Huomio: myöhemmin info-sivun sisältö muuttuu käyttäjäryhmän mukaan. 'Jäsenille' näkyy kaikki yhteistyöhön tarvittavat tiedot - kuten nyt, ja vielä räätälöidymmin. Julkisesti, tai 'perusjäsenille' jaetaan alta yleistiedot ja esim. rekrylomake.",
-  "infoHead1.Sub": "Haluaisitko opiskella teologiaa kauniissa historiallisessa ympäristössä, kivenheiton päässä yliopistolta? Tutustu Konviktin asukaspaikkoihin!",
+  "infoHead1.Sub": "Haluaisitko opiskella kauniissa historiallisessa ympäristössä, kivenheiton päässä yliopistolta? Tutustu Konviktin asukaspaikkoihin!",
 
   "infoHead2.Title": "Asukashaut",
   "infoHead2.Sub": "Uusia asukkaita haetaan vuosittain yleisessä asukashaussa kesä-elokuussa. Lisäksi järjestämme ajoin täydentäviä hakuja.",
@@ -93,15 +93,15 @@
   "infoBrief2.Subtitle": "Hakijat Konviktille pisteytetään. Eniten pisteitä saaneet valitaan asukkaiksi siten, kuin asukaspaikkoja riittää. Teologian opiskelijat ovat haussa etusijalla tietyn minimipistemäärän jälkeen.",
   "infoBrief.Subtitle": "Konvikti lyhyesti",
   "infoPunch1.Title": "Opintomenestys",
-  "infoPunch1.Text": "Konviktin tavoite on olla akateemisesti kehittävä ympäristö. Opintomenestys pisteytetään hakemuksessa.",
+  "infoPunch1.Text": "Konviktin tavoite on olla akateemisesti kehittävä ympäristö. Opintomenestys pisteytetään hakemuksestasi.",
   "infoPunch2.Title": "Yhteisöllisyys",
-  "infoPunch2.Text": "Yhteisöllisenä asumismuotona arvostamme tahtoa osallistua yhteisiin tapahtumiin.",
+  "infoPunch2.Text": "Yhteisöllisenä asumismuotona arvostamme tahtoa osallistua yhteisiin tapahtumiin. Kiinnostus yhteisöllisyyteen arvioidaan motivaatiokirjeestä.",
   "infoPunch3.Title": "Kiinnostus teologiaan ja kristinuskoon",
-  "infoPunch3.Text": "Konvikti on kristillinen ylioppilaskoti, jonka asukkaat tulevat monista taustoista mutta joita yhdistää kiinnostus teologiaan ja/tai kristinuskoon ja seurakuntiin.",
-  "infoPunch4.Title": "Asumisen helppoutta",
-  "infounch4.Text": "Ylioppilaskoti tarjoaa puitteet kuten siivousvälineet ja -aineet, varustellut keittiöt sekä pyykinpesukoneen. Et siis tarvitse kuin oman huoneesi kalusteet - näitäkin on saatavilla. Siisteyttä ylläpidetään viikottaisilla keittiö- ja huoneistosiivousvuoroilla.",
-  "infoPunch5.Title": "100 vuotta opiskelijaelämää and counting",
-  "infoPunch5.Text": "Sadassa vuodessa Konvikti on niin kasvanut Ullanlinnan Pikku-Konviktin huoneistolla, selvinnyt osumista Helsingin pommituksissa, tarjonnut kodin tuleville arkkipiispoille ja arvostetuille akateemikoille sekä fasilitoinut epälukuisia sitsejä sekä iltaisia oppineita keskusteluita. Historia jatkuu jokaisen konviktilaisen kautta",
+  "infoPunch3.Text": "Konvikti on kristillinen ylioppilaskoti. Asukkaamme tulevat monista taustoista, mutta meitä yhdistää kiinnostus teologiaan ja/tai kristinuskoon ja seurakuntiin. Ilmaisemasi akateeminen, ammatillinen tai hengellinen kiinnostus teologiaan tai kristinuskoon pisteytetään motivaatiokirjeen perusteella.",
+  "infoPunch4.Title": "Olenko minä sopiva hakija?",
+  "infoPunch4.Text": "Oletko aloittamassa tai pian aloittamassa korkeakouluopintojasi, tai oletko jo perustutkinto-opiskelija? Kiinnostaako sinua Konviktissa sijainnin lisäksi yhteisö ja akateeminen tai ammatillinen kehitys? Olet kohderyhmää - älä pelkää jättää hakemusta!",
+  "infoPunch5.Title": "Vahvuutena yhteisö ja moninaiset taustat",
+  "infoPunch5.Text": "Moni on sanonut, että parasta Konviktissa on ollut erilaisten tulevien teologien ja muiden aiheesta kiinnostuneiden tapaaminen. Toisin kuin useimmat kristilliset ylioppilaskodit Helsingissä, Konvikti on historiallisestikin yleiskirkollinen - Konviktille ei valita ihmisiä erityisesti jostakin kirkollisesta tai aatteellisesta taustasta. Meitä yhdistää yhteisö ja jaettu kiinnostus.",
 
   "infoHead3.Title": "Asukashakuilmoitukset",
 
@@ -128,5 +128,149 @@
     "title": "Haku käynnissä!",
     "cta": "Klikkaa lukeaksesi lisää →",
     "dismiss": "Sulje"
-}
+},
+
+"org": {
+    "hero": {
+      "title": "Claustrum Theologicum - Ylioppilaskoti Konviktin kannatusyhdistys r.y.",
+      "subtitle": "Teologian opiskelijoiden koti vuodesta 1917"
+    },
+    "staffSection": {
+      "title": "Henkilökunta",
+      "subtitle": "Tutustu henkilöstöömme, joka pitää Konviktin toiminnassa"
+    },
+    "boardSection": {
+      "title": "Johtokunta",
+      "subtitle": "Yhdistyksen johtokunta ohjaa toimintaamme"
+    },
+    "visionSection": {
+      "title": "Visio ja arvot",
+      "subtitle": "Mihin uskomme ja mihin pyrimme",
+      "valuesTitle": "Arvomme",
+      "goalsTitle": "Tavoitteemme 2036"
+    },
+    "historySection": {
+      "title": "Historiamme",
+      "subtitle": "Konviktin tarina vuosien varrelta"
+    },
+    "join": {
+      "subtitle": "Tule mukaan",
+      "title": "Haluatko olla osa Konviktin missiota?",
+      "description": "Etsimme tehtävästämme kiinnostuneita ihmisiä mukaan toimintaamme. Hallituspaikat, vapaaehtoistyö ja muut mahdollisuudet odottavat sinua.",
+      "button": "Täytä rekrytointilomake"
+    },
+    "joinFinal": {
+      "subtitle": "Liity joukkoon",
+      "title": "Kirjoita oma lukusi Konviktin tarinaan",
+      "description": "Yhdistyksen tukijäsenenä voit tukea Konviktin arvojen ja tavoitteiden toteutumista pienellä vuosimaksulla ja haluamallasi tavalla. Olit sitten Konviktin alumni tai vain kiinnostunut toiminnastamme – ovet ovat auki.",
+      "button": "Ota yhteyttä"
+    },
+    "staff1": {
+      "name": "Samu-Ville Toivonen",
+      "title": "Apotti - Konviktin isäntä",
+      "description": "Samu-Ville on teologian kandidaatti ja Konviktin isäntä vuodesta 2026. Isäntä vastaa yhdistyksen hallinnosta sekä Konviktin käytännön toiminnasta."
+    },
+    "staff2": {
+      "name": "Benjam Bröijer",
+      "title": "Johtokunnan puheenjohtaja",
+      "description": "Benjam on teologian maisteri ja Ylioppilaskoti Konviktin tukiyhdistys r.y.:n johtokunnan puheenjohtaja vuodesta 2026. Johtokunnan puheenjohtajana hän vastaa yhdistyksen johtamisesta ja pitkän aikavälin tavoitteiden saavuttamisesta."
+    },
+
+    "board1": {
+      "name": "Benjam Bröijer",
+      "role": "Johtokunnan puheenjohtaja"
+    },
+    "board2": {
+      "name": "Iida Glumoff",
+      "role": "Johtokunnan jäsen"
+    },
+    "board3": {
+      "name": "Markku Vasara",
+      "role": "Johtokunnan jäsen"
+    },
+    "board4": {
+      "name": "Tarja Pyy",
+      "role": "Johtokunnan jäsen"
+    },
+    "board5": {
+      "name": "Juha Valkama",
+      "role": "Johtokunnan jäsen"
+    },
+    "board6": {
+      "name": "Tuomo Törmänen",
+      "role": "Johtokunnan jäsen"
+    },
+    "board7": {
+      "name": "Laura Laitinen",
+      "role": "Johtokunnan varajäsen"
+    },
+    "board8": {
+      "name": "Viljami Kuusisto",
+      "role": "Johtokunnan asukasjäsen"
+    },
+    "value1": {
+      "title": "Toteamme Konviktin arvot vuonna 2026.",
+      "description": "Pian!"
+    },
+    "value2": {
+      "title": "Arvo 2",
+      "description": "Pian!"
+    },
+    "value3": {
+      "title": "Arvo 3",
+      "description": "Pian!"
+    },
+    "value4": {
+      "title": "Arvo 4",
+      "description": "Pian!"
+    },
+    "goal1": {
+      "title": "Laajentaa asukasmäärää",
+      "description": "Laadimme Konviktin tavoitteet 2026 aikana."
+    },
+    "goal2": {
+      "title": "Tavoite 2",
+      "description": "Pian!"
+    },
+    "goal3": {
+      "title": "Tavoite 3",
+      "description": "Pian!"
+    },
+    "goal4": {
+      "title": "Tavoite 4",
+      "description": "Pian!"
+    },
+    "goal5": {
+      "title": "Tavoite 5",
+      "description": "Pian!"
+    },
+    "history1": {
+      "title": "Perustaminen",
+      "description": "Ylioppilaskoti Konviktin kannatusyhdistys ry perustettiin vuonna 1917. Perustamisen takana olivat evankelis-luterilaisen kirkon piispat, jotka halusivat, että teologeilla olisi koti ja turva Helsingissä."
+    },
+    "history2": {
+      "title": "Ensimmäinen Konvikti",
+      "description": "Vuonna 1920 perustettiin ylioppilaskoti, konvikti. Sana juontuu latinan sanasta convictus, seurallinen yhdyselämä. Koti toimi aluksi useassa osoitteessa."
+    },
+    "history3": {
+      "title": "Muutto Meritullinkadulle",
+      "description": "Nykyiseen Isoon-Konviktiin koti siirtyi 30-luvulla. Huoneistot olivat Manala, Kiirastuli, Mirkkula ja Taivas."
+    },
+    "history4": {
+      "title": "Juurisen ylioppilaskoti eli Pikku-Konvikti",
+      "description": "Emil ja Mimmi Juurinen testamenttilahjoitti kaksi huoneistoa Pieneltä Roobertinkadulta - näin sai alkunsa Pikku-Konvikti."
+    },
+    "history5": {
+      "title": "Jukola 1999-2024",
+      "description": "Meritullinkatu 22:n rapussa sijainnut Raittiuskoti siirtyi Konviktin käyttöön. Se sai nimen Jukola seitsemän, myöhemmin kahdeksan asukaspaikkansa mukaan."
+    },
+    "history6": {
+      "title": "Jukolasta ja Mirkkulasta luopuminen",
+      "description": "Kasvaneista kustannuksista johtuen yhdistys joutui luopumaan sekä Jukolan vuokrahuoneistosta, että Mirkkulan osakkeista. Taloudellinen uudelleenjärjestely on vakiinnuttanut toiminnan vuosikymmeniksi eteenpäin."
+    },
+    "history7": {
+      "title": "Uusi aika",
+      "description": "109-vuotias Konvikti tähyää tulevaisuuteen - miten palvella perustajien tarkoitusta, kotimaata ja Suomen kristillistä kirkkoa parhaiten?"
+    }
+  }
 }

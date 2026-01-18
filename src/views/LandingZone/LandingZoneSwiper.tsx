@@ -8,6 +8,7 @@ import SwiperCore from "swiper";
 import "swiper/css";
 import { HomeView } from "./HomeView";
 import { InfoView } from "./InfoView";
+import { OrgView } from "./OrgView";
 import { BlogNewsView } from "./BlogNewsView";
 import { Navbar } from "../../components/Navbar";
 import { Sidebar } from "../../components/Sidebar";
@@ -51,7 +52,8 @@ export function LandingZoneSwiper() {
   const views = [
     t("homeViewTitle"),
     t("InfoViewTitle"),
-    t("blogNewsViewTitle", "Blogi ja Uutiset"),
+    t("blogNewsViewTitle", "Blogi ja uutiset"),
+    t("orgViewTitle", "Yhdistys"),
   ];
 
   const totalSlides = views.length;
@@ -83,6 +85,11 @@ export function LandingZoneSwiper() {
           <SwiperSlide>
             <div className="min-h-[calc(100vh-56px)] flex flex-col">
               <BlogNewsView />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="min-h-[calc(100vh-56px)] flex flex-col">
+              <OrgView />
             </div>
           </SwiperSlide>
         </SwiperInstance>

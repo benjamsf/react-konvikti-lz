@@ -77,14 +77,14 @@ export function AsukashakuSection({ showTitle = true }: AsukashakuSectionProps) 
         )}
 
         {/* Card Stack Container */}
-        <div className="flex items-center justify-center gap-2 md:gap-6">
+        <div className="flex items-center justify-center gap-0 md:gap-6">
           {/* Left Arrow */}
           {showNavigation && (
             <button
               onClick={goToPrev}
               disabled={activeIndex === 0}
               className={`
-                p-6 md:p-8 rounded-2xl transition-all duration-200 flex-shrink-0
+                p-2 md:p-8 rounded-2xl transition-all duration-200 flex-shrink-0
                 ${activeIndex === 0
                   ? "opacity-20 cursor-not-allowed"
                   : "bg-brown-700/70 hover:bg-primary/80 text-white-300 hover:text-white-100 active:scale-95"
@@ -134,7 +134,7 @@ export function AsukashakuSection({ showTitle = true }: AsukashakuSectionProps) 
               onClick={goToNext}
               disabled={activeIndex === postCount - 1}
               className={`
-                p-5 md:p-8 rounded-2xl transition-all duration-200 flex-shrink-0
+                p-2 md:p-8 rounded-2xl transition-all duration-200 flex-shrink-0
                 ${activeIndex === postCount - 1
                   ? "opacity-20 cursor-not-allowed"
                   : "bg-brown-700/70 hover:bg-primary/80 text-white-300 hover:text-white-100 active:scale-95"

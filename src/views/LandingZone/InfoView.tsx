@@ -1,6 +1,6 @@
 import { Layout } from "../../components/Layout";
 import { HeadlineContainer } from "../../components/HeadlineContainer";
-import { BriefContainer } from "../../components/BriefContainer";
+import { RecruitmentCriteria } from "../../components/RecruitmentCriteria";
 import { CardsContainer } from "../../components/CardsContainer";
 import { HeroSection } from "../../components/HeroSection";
 import { AsukashakuSection } from "../../components/Blog";
@@ -90,13 +90,11 @@ export function InfoView() {
 
         <AsukashakuSection maxPosts={6} showTitle={true} />
 
-        <BriefContainer
-          headTitle={t("infoBrief.HeadTitle")}
-          subtitle={t("infoBrief2.Subtitle")}
-          items={punchLines}
-          backgroundColor="bg-background"
-        />
-
+      <RecruitmentCriteria
+        title={t("infoRecruitment.title", "Mitä hakijalta odotetaan?")}
+        subtitle={t("infoRecruitment.subtitle", "Nämä asiat vaikuttavat hakemuksesi arviointiin")}
+        backgroundColor="bg-backgroundBlue"
+      />
         <HeadlineContainer
           items={headlines3}
           backgroundColor="bg-background"
