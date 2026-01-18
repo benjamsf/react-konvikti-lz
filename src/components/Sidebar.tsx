@@ -1,6 +1,6 @@
 import { Cross2Icon } from "@radix-ui/react-icons";
 import { useAuth0 } from "@auth0/auth0-react";
-import jellona from "../assets/logo.png";
+import jellona from "../assets/logo_green.png";
 import { useTranslation } from "react-i18next";
 import LogoutButton from "../hook/auth/Logoutbutton";
 import packageJson from "../../package.json";
@@ -34,11 +34,11 @@ export function Sidebar({ onClose }: { onClose: () => void }) {
       ></div>
 
       {/* Sidebar */}
-      <div className="fixed top-0 left-0 h-full w-4/5 max-w-md bg-zinc-900 z-50 p-4 text-white shadow-lg">
+      <div className="fixed top-0 left-0 h-full w-4/5 max-w-md bg-backgroundDark z-50 p-4 text-white shadow-lg">
         {/* Header */}
         <div className="flex justify-between items-center mb-4">
           <div className="flex items-center">
-            <img src={jellona} alt="Jellona Logo" className="w-11 h-10 mr-4" />
+            <img src={jellona} alt="Konvikti Logo" className="w-20 h-30 mr-4" />
             <h1 className="text-xl font-bold">{t("mobileGuide")}</h1>
           </div>
           <button

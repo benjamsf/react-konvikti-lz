@@ -18,7 +18,7 @@ export const DropdownMenu: React.FC<DropdownMenuProps> = ({
   triggerLabel,
   items,
   onSelect,
-  contentStyle = "flex flex-col text-xl text-white bg-backgroundLight shadow-lg rounded",
+  contentStyle = "flex flex-col text-xl text-white bg-backgroundDark shadow-lg rounded",
   triggerStyle = "underline cursor-pointer",
 }) => {
   return (
@@ -31,7 +31,7 @@ export const DropdownMenu: React.FC<DropdownMenuProps> = ({
           {items.map((item, index) => (
             <DropdownMenuPrimitive.Item
               key={index}
-              className="p-2 hover:bg-primary-800 cursor-pointer"
+              className="p-2 hover:bg-primary-900 cursor-pointer"
               onSelect={() => onSelect(item.value)}
             >
               {item.label}

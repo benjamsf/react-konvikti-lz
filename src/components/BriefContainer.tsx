@@ -35,14 +35,14 @@ export function BriefContainer({
       <div className="max-w-3xl mx-auto px-4 md:px-12 py-8 space-y-16">
         {/* HeadTitle */}
         {headTitle && (
-          <h2 className="text-2xl md:text-4xl text-center font-bold mb-4">
+          <h2 className="text-2xl md:text-4xl text-center mb-4">
             <Trans i18nKey={headTitle} />
           </h2>
         )}
 
         {/* Subtitle */}
         {subtitle && (
-          <p className="text-base md:text-lg text-center text-gray-800 mb-6">
+          <p className="md:text-lg text-center text-white-500 mb-6">
             <Trans i18nKey={subtitle} />
           </p>
         )}
@@ -81,7 +81,7 @@ export function BriefContainer({
 
         {/* AfterWord */}
         {afterWord && (
-          <p className="text-base md:text-lg text-center text-gray-800 p-5">
+          <p className="text-base md:text-lg text-center text-gray-100 p-5">
             <Trans
               i18nKey={afterWord}
               components={{ br: <br />, bold: <strong /> }}

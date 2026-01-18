@@ -19,17 +19,17 @@ export function Navbar({
   const navigate = useNavigate();
 
   return (
-    <div className="fixed top-0 left-0 right-0 h-14 bg-background z-50 border-b border-backgroundLight flex items-center px-4">
+    <div className="fixed top-0 left-0 right-0 h-14 bg-backgroundBlue z-50 border-b border-backgroundDark flex items-center px-4">
       {/* Left Section */}
       <div className="flex items-center">
         <img
           src={logo}
           alt="Logo"
-          className="w-10 h-9 object-cover cursor-pointer"
+          className="w-13 h-11 object-cover cursor-pointer"
           onClick={() => navigate("/")}
         />
         <div className="ml-2 h-10 w-[1px] bg-textLight"></div>
-        <span className="text-white text-xl font-semibold ml-2 hidden md:block">
+        <span className="text-white text-xl font-sans ml-2 hidden md:block">
           {title}
         </span>
       </div>
@@ -42,7 +42,7 @@ export function Navbar({
             key={index}
             onClick={() => onNavigate(index)} // Navigate to the selected view
             className={`text-white text-base ${
-              index === activeViewIndex ? "font-bold" : "opacity-70"
+              index === activeViewIndex ? "font-sans" : "opacity-70"
             }`}
           >
             {view}

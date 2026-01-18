@@ -29,7 +29,7 @@ export function PunchLine({
         <img
           src={icon}
           alt=""
-          className="w-12 h-12 md:w-16 md:h-16 object-contain"
+          className="w-64 h-58 md:w-52 md:h-46 object-contain rounded-2xl"
         />
       </div>
 

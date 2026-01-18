@@ -14,14 +14,14 @@ export function Footer() {
   }));
 
   return (
-    <div className="font-heading text-uppercase text-center text-sm text-gray-500 pt-5 mt-10 mx-auto max-w-screen-xl">
+    <div className="font-title text-uppercase text-center text-sm text-gray-200 pt-5 mt-10 mx-auto max-w-screen-xl">
       <hr className="mx-auto" />
 
       <div className="pt-4 py-3">
-        Kasvua Turvallisuudesta v{appVersion}
+        Konvikti v{appVersion}
         <br />
         <DropdownMenu
-          triggerLabel="Language"
+          triggerLabel="Language / Kieli"
           items={languageItems}
           onSelect={(value) => changeLanguage(value)}
         />

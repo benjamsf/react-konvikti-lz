@@ -54,8 +54,8 @@
   "homeBrief2.Button2": "",
 
   "infoView": "infoView",
-  "InfoViewTitle": "Tietoa",
-  "infoHero.Title": "Tietoa",
+  "InfoViewTitle": "Hae asukkaaksi",
+  "infoHero.Title": "Hae Konviktille",
   "infoHero.subTitle": "Käytä & osallistu teknologiamme luontiin",
 
   "infoHead1.Title": "Ylioppilaskotimme",
@@ -86,5 +86,6 @@
   "smallConvictusCard.title": "Pikku-Konvikti",
   "smallConvictusCard.details": "6 asukaspaikkaa Iso-Roobertinkadulla.",
   "smallConvictusCard.Button1": "Pikku-Konviktin esittely",
-  "smallConvictusCard.Button2": "Paikat ja haku"
+  "smallConvictusCard.Button2": "Paikat ja haku",
+  "infoButtonRow.Application": "Avaa hakulomake!"
 }

@@ -20,7 +20,7 @@ export const IframeModal: React.FC<IframeModalProps> = ({
       <Dialog.Portal>
         <Dialog.Overlay className="fixed inset-0 bg-black opacity-70 z-40" />
         <Dialog.Content className="fixed inset-0 z-50 flex items-center justify-center p-4">
-          <div className="bg-backgroundLight rounded-lg relative max-w-full w-full max-h-full h-auto md:max-w-[90%] md:max-h-[90%]">
+          <div className="bg-background rounded-lg relative max-w-full w-full max-h-full h-auto md:max-w-[90%] md:max-h-[90%]">
             <button
               onClick={(e) => {
                 e.stopPropagation();

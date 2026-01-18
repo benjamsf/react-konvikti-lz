@@ -4,10 +4,11 @@ import { SlideModal } from "../../components/SlideModal";
 import { HeadlineContainer } from "../../components/HeadlineContainer";
 import { Layout } from "../../components/Layout";
 import trooper from "../../assets/heroimages/hero1.jpeg";
-import Icon1 from "../../assets/icons/jager.svg";
-import Icon2 from "../../assets/icons/byod2.png";
-import Icon4 from "../../assets/icons/drone.png";
-import Icon5 from "../../assets/icons/hacker.png";
+import Icon1 from "../../assets/littleimgs/img1.png";
+import Icon2 from "../../assets/littleimgs/img2.png";
+import Icon3 from "../../assets/littleimgs/img3.png";
+import Icon4 from "../../assets/littleimgs/img4.png";
+import logo from "../../assets/logo_green.png";
 import { useTranslation } from "react-i18next";
 import enSlide1 from "../../assets/decks/en/index/index.html?raw";
 
@@ -30,22 +31,22 @@ export function HomeView() {
     {
       title: t("homePunch2.Title"),
       text: t("homePunch2.Text"),
-      icon: Icon4,
+      icon: Icon2,
     },
     {
       title: t("homePunch3.Title"),
       text: t("homePunch3.Text"),
-      icon: Icon5,
+      icon: Icon3,
     },
     {
       title: t("homePunch4.Title"),
       text: t("homePunch4.Text"),
-      icon: Icon2,
+      icon: Icon4,
     },
     {
       title: t("homePunch5.Title"),
       text: t("homePunch5.Text"),
-      icon: Icon1,
+      icon: logo,
     },
   ];
   const slideData = {

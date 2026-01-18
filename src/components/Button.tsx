@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import { tv, type VariantProps } from "tailwind-variants";
 
 const button = tv({
-  base: "rounded-lg px-4 py-2 font-bold transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:cursor-not-allowed",
+  base: "rounded-lg px-4 py-2 transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:cursor-not-allowed",
   variants: {
     color: {
       primary:
@@ -15,7 +15,7 @@ const button = tv({
       error:
         "text-red-500 bg-black border border-red-500 hover:bg-red-600 hover:text-white focus:ring-red-500 disabled:bg-gray-800 disabled:text-gray-500",
       blackGrey:
-        "text-white bg-black border border-gray-500 hover:bg-gray-800 focus:ring-gray-300 disabled:bg-gray-900",
+        "text-white bg-black border border-gray-500 hover:bg-backgroundDark focus:ring-gray-300 disabled:bg-gray-900",
     },
     width: {
       full: "w-full",

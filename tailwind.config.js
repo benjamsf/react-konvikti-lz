@@ -1,14 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
+  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}",  "!./src/sanity/**",],
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Verdana", "sans-serif"],
+        sans: ["Poppins", "system-ui", "-apple-system", "sans-serif"],
         mono: ["JetBrains Mono", "Consolas", "monospace"],
-        title: ["Times New Roman", "sans-serif"], // Add a specific font stack for titles
-        subtitle: ["Verdana", "sans-serif"], // Add a specific font stack for subtitles
+        title: ["Playfair Display", "Georgia", "serif"],
+        subtitle: ["Georgia", "system-ui", "sans-serif"],
       },
       utilities: {
         ".strong2": {
@@ -18,11 +18,63 @@ module.exports = {
       colors: {
         background: "#4b463b",
         backgroundLight: "#cbcbcbff",
+        backgroundDark: "#1f1d16ff",
         backgroundBlue: "#645e4e",
         outline: "",
         outlineLight: "#47484a",
-        text: "#d2c7c7ff",
-        textLight: "#756e6eff",
+        white: {
+          DEFAULT: "#d2c7c7",
+          50: "#faf9f9",
+          100: "#f5f3f3",
+          200: "#ebe8e8",
+          300: "#e0dcdc",
+          400: "#d2c7c7",
+          500: "#b8a9a9",
+          600: "#9e8b8b",
+          700: "#847272",
+          800: "#6a5959",
+          900: "#504444",
+          950: "#3a3232",
+        },
+        gray: {
+          50: "#f9fafb",
+          100: "#f3f4f6",
+          200: "#e5e7eb",
+          300: "#d1d5db",
+          400: "#9ca3af",
+          500: "#6b7280",
+          600: "#4b5563",
+          700: "#374151",
+          800: "#1f2937",
+          900: "#111827",
+          950: "#030712",
+        },
+        brown: {
+          50: "#faf9f7",
+          100: "#f5f3ef",
+          200: "#e8e4dc",
+          300: "#d4cbbf",
+          400: "#b5a594",
+          500: "#8f7d6b",
+          600: "#756e6e",
+          700: "#5e5449",
+          800: "#4b463b",
+          900: "#3a3630",
+          950: "#2a2621",
+        },
+        text: {
+          DEFAULT: "#d2c7c7ff",
+          50: "#f5f3f3",
+          100: "#ebe8e8",
+          200: "#d2c7c7",
+          300: "#b8a9a9",
+          400: "#9e8b8b",
+          500: "#756e6e",
+          600: "#5c5656",
+          700: "#4a4343",
+          800: "#3a3434",
+          900: "#2d2828",
+        },
         primary: {
           DEFAULT: "#42687D",
           200: "#A2BBCB",
@@ -58,24 +110,39 @@ module.exports = {
       typography: /** @type {any} */ (theme) => ({
         DEFAULT: {
           css: {
-            color: theme("colors.textLight"),
+            color: theme("colors.white.400"),
+            fontFamily: theme("fontFamily.sans"),
             a: {
               color: theme("colors.primary.DEFAULT"),
               "&:hover": {
                 color: theme("colors.primary.300"),
               },
             },
+            h1: {
+              color: theme("colors.white.200"),
+              fontFamily: theme("fontFamily.title"),
+            },
             h2: {
-              color: theme("colors.textLight"),
+              color: theme("colors.white.300"),
+              fontFamily: theme("fontFamily.title"),
             },
             h3: {
-              color: theme("colors.textLight"),
+              color: theme("colors.white.400"),
+              fontFamily: theme("fontFamily.title"),
+            },
+            h4: {
+              color: theme("colors.white.400"),
             },
             strong: {
               color: theme("colors.success.DEFAULT"),
             },
-            strong2: {
-              fontWeight: "bold",
+            code: {
+              color: theme("colors.white.300"),
+              fontFamily: theme("fontFamily.mono"),
+            },
+            blockquote: {
+              color: theme("colors.white.500"),
+              borderLeftColor: theme("colors.primary.DEFAULT"),
             },
           },
         },
@@ -101,5 +168,22 @@ module.exports = {
       },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    function ({ addBase, theme }) {
+      addBase({
+        'html': {
+          color: theme('colors.white.400'),
+          backgroundColor: theme('colors.background'),
+          fontFamily: theme('fontFamily.sans'),
+        },
+        'body': {
+          color: theme('colors.white.400'),
+        },
+        'h1, h2, h3': {
+          fontFamily: theme('fontFamily.title'),
+        },
+      });
+    },
+  ],
 };

@@ -11,13 +11,6 @@ export function SmallConvictusCard() {
 
   // State to manage modals
   const [activeModal, setActiveModal] = useState<number | null>(null);
-  const proceedToForm = () => {
-    window.open(
-      "https://docs.google.com/forms/d/1nZvXljd76vq-I7lQOfjTI5KhSQl_vtGFa0TKN8IbZs0/viewform",
-    );
-  };
-  const handleOtherClick = (): void => proceedToForm();
-
   const slideData = {
     1: { en: enSlide6 },
   };
@@ -41,16 +34,6 @@ export function SmallConvictusCard() {
           onClick={handleInternetClick}
         >
           {t("smallConvictusCard.Button1")}
-        </Button>
-
-        {/* Button 2 */}
-        <Button
-          type="button"
-          styling="min-h-[60px]"
-          variant={{ color: "blackGrey", width: "auto" }}
-          onClick={handleOtherClick}
-        >
-          {t("smallConvictusCard.Button2")}
         </Button>
       </LargeCard>
 

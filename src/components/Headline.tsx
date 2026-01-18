@@ -9,7 +9,7 @@ interface HeadlineProps {
 
 export function Headline({
   title,
-  titleStyling = "text-3xl md:text-5xl mb-4",
+  titleStyling = "text-4xl md:text-6xl mb-4",
   subtitle,
   text,
 }: HeadlineProps) {
@@ -20,7 +20,7 @@ export function Headline({
 
       {/* Subtitle */}
       {subtitle && (
-        <div className="text-xl md:text-2xl text-gray-400 mb-4">
+        <div className="text-xl font-subtitle md:text-2xl text-gray-300 mb-4">
           <Trans
             i18nKey={subtitle}
             components={{

@@ -18,12 +18,6 @@ export function BigConvictusCard() {
   // Handlers for modals
 
   const handleInternetClick = () => setActiveModal(1);
-  const proceedToForm = () => {
-    window.open(
-      "https://docs.google.com/forms/d/1nZvXljd76vq-I7lQOfjTI5KhSQl_vtGFa0TKN8IbZs0/vievform",
-    );
-  };
-  const handleOtherClick = (): void => proceedToForm();
 
   return (
     <div>
@@ -40,16 +34,6 @@ export function BigConvictusCard() {
           onClick={handleInternetClick}
         >
           {t("bigConvictusCard.Button1")}
-        </Button>
-
-        {/* Button 2 */}
-        <Button
-          type="button"
-          styling="min-h-[60px]"
-          variant={{ color: "blackGrey", width: "auto" }}
-          onClick={handleOtherClick}
-        >
-          {t("bigConvictusCard.Button2")}
         </Button>
       </LargeCard>
 
