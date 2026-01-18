@@ -45,6 +45,7 @@ export function Footer() {
               {t("footer.linksAndContactTitle", "Linkit ja yhteystiedot")}
             </h3>
             <ul className="space-y-3">
+              <li>
                 <a 
                   // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
                   href={import.meta.env.VITE_GOOGLE_RECRUITMENT_FORM || "#"} 
@@ -54,7 +55,7 @@ export function Footer() {
                 >
                   {t("footer.joinOrg", "Hae jäseneksi")}
                 </a>
-  
+              </li>
               <li>
                 <PrivacyPolicyModal 
                   triggerClassName="text-white-400 hover:text-primary transition-colors text-base md:text-sm cursor-pointer"
@@ -94,7 +95,7 @@ export function Footer() {
             </div>
 
             {/* Language selector */}
-            <div className="flex justify-center md:justify-start">
+            <div className="flex justify-center md:justify-start relative z-50">
               <DropdownMenu
                 triggerLabel="Language / Kieli"
                 items={languageItems}

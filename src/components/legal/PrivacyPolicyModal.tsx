@@ -20,8 +20,8 @@ export function PrivacyPolicyModal({ triggerClassName }: InfoModalProps) {
         </button>
       </Dialog.Trigger>
       <Dialog.Portal>
-        <Dialog.Overlay className="fixed inset-0 bg-black opacity-50" />
-        <Dialog.Content className="fixed inset-0 flex items-center justify-center p-4">
+        <Dialog.Overlay className="fixed inset-0 bg-black opacity-50 z-[60]" />
+        <Dialog.Content className="fixed inset-0 flex items-center justify-center p-4 z-[60]">
           <div className="bg-background rounded-md max-w-md mx-auto p-8">
             <Dialog.Title className="text-lg text-white font-bold mb-4">
               Tietosuojaseloste
