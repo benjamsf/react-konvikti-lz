@@ -24,5 +24,10 @@
     "postcss.config.js",
     "next-env.d.ts"
   ],
+  "exclude": [
+    "node_modules",
+    "src/sanity",
+    "src/sanity/**/*"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
