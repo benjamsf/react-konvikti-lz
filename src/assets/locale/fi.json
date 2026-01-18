@@ -89,5 +89,23 @@
   "smallConvictusCard.Button2": "Paikat ja haku",
   "infoButtonRow.Application": "Avaa hakulomake!",
 
-  "blogHero.Title":"Blogi ja uutiset"
+  "blogHero.Title":"Blogi ja uutiset",
+  "blogNewsViewTitle": "Blogi ja uutiset",
+  "blogNews": {
+    "title": "Blogi ja uutiset",
+    "subtitle": "Lue uusimmat uutiset ja blogikirjoitukset",
+    "allYears": "Kaikki vuodet"
+  },
+  "asukashaku": {
+    "title": "Asukashaut",
+    "subtitle": "Avoimet ja aiemmat asukashaut yhteisöömme",
+    "swipeHint": "Pyyhkäise nähdäksesi lisää",
+    "applyTitle": "Kiinnostuitko? Hae mukaan!",
+    "applyDescription": "Haku on auki – täytä hakulomake ja liity yhteisöömme.",
+    "applyButton": "Täytä hakemus"
+  },
+  "hakuBanner": {
+    "title": "Haku käynnissä!",
+    "cta": "Klikkaa lukeaksesi lisää →",
+    "dismiss": "Sulje"
 }

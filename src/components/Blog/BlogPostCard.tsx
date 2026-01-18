@@ -42,7 +42,9 @@ export function BlogPostCard({ post, onReadMore, compact = false }: BlogPostCard
   const isHakuOpen = post.hakuStatus === "open";
 
   return (
-    <article 
+    <button
+      type="button"
+      onClick={() => onReadMore?.(post)}
       className={`
         group relative bg-backgroundDark rounded-2xl overflow-hidden 
         border border-brown-800/50 
@@ -50,16 +52,20 @@ export function BlogPostCard({ post, onReadMore, compact = false }: BlogPostCard
         hover:border-primary/50 hover:shadow-xl hover:shadow-primary/5
         hover:-translate-y-1
         flex flex-col
+        text-left
+        w-full h-full
+        ${onReadMore ? "cursor-pointer" : ""}
         ${compact ? "max-w-sm" : ""}
       `}
     >
       {/* Image Section */}
-      <div className={`relative overflow-hidden ${compact ? "h-40" : "h-52"}`}>
+      <div className={`relative overflow-hidden ${compact ? "h-40" : "h-52"} flex-shrink-0`}>
         {imageUrl ? (
           <img
             src={imageUrl}
             alt={post.title}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            draggable={false}
           />
         ) : (
           <div className="w-full h-full bg-gradient-to-br from-brown-800 to-brown-900" />
@@ -131,7 +137,7 @@ export function BlogPostCard({ post, onReadMore, compact = false }: BlogPostCard
             {post.tags.slice(0, 3).map((tag) => (
               <span
                 key={tag}
-                className="px-2.5 py-1 text-xs bg-brown-800/50 rounded-full text-white-500 hover:bg-brown-700/50 transition-colors"
+                className="px-2.5 py-1 text-xs bg-brown-800/50 rounded-full text-white-500"
               >
                 #{tag}
               </span>
@@ -143,18 +149,7 @@ export function BlogPostCard({ post, onReadMore, compact = false }: BlogPostCard
             )}
           </div>
         )}
-
-        {/* Read More Link */}
-        {onReadMore && (
-          <button
-            onClick={() => onReadMore(post)}
-            className="mt-4 inline-flex items-center gap-2 text-primary-300 hover:text-primary-200 text-sm font-medium transition-colors group/btn"
-          >
-            Lue lisää 
-            <span className="transition-transform group-hover/btn:translate-x-1">→</span>
-          </button>
-        )}
       </div>
-    </article>
+    </button>
   );
 }

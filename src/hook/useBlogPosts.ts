@@ -66,6 +66,22 @@ const ASUKASHAKU_POSTS_QUERY = `*[_type == "blogPost" && category == "asukashaku
   publishedAt
 }`;
 
+const ACTIVE_HAKU_QUERY = `*[_type == "blogPost" && category == "asukashaku" && hakuStatus == "open"] | order(publishedAt desc)[0] {
+  _id,
+  _createdAt,
+  _updatedAt,
+  title,
+  slug,
+  author,
+  category,
+  hakuStatus,
+  coverImage,
+  excerpt,
+  content,
+  tags,
+  publishedAt
+}`;
+
 async function fetchPosts(): Promise<BlogPost[]> {
   return sanityClient.fetch(POSTS_QUERY);
 }
@@ -80,6 +96,10 @@ async function fetchPostsByCategory(category: BlogCategory): Promise<BlogPost[]>
 
 async function fetchAsukashakuPosts(): Promise<BlogPost[]> {
   return sanityClient.fetch(ASUKASHAKU_POSTS_QUERY);
+}
+
+async function fetchActiveHaku(): Promise<BlogPost | null> {
+  return sanityClient.fetch(ACTIVE_HAKU_QUERY);
 }
 
 export function useBlogPosts() {
@@ -111,6 +131,14 @@ export function useAsukashakuPosts() {
   return useQuery<BlogPost[], Error>({
     queryKey: ["blogPosts", "asukashaku"],
     queryFn: fetchAsukashakuPosts,
+    staleTime: 1000 * 60 * 5,
+  });
+}
+
+export function useActiveHaku() {
+  return useQuery<BlogPost | null, Error>({
+    queryKey: ["activeHaku"],
+    queryFn: fetchActiveHaku,
     staleTime: 1000 * 60 * 5,
   });
 }
