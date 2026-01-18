@@ -23,12 +23,11 @@ jobs:
           git submodule sync
           git submodule update --init --recursive
           git submodule status
-          ls -la src/slides/html/en
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18.x
+          node-version: 24.x
 
       - name: Install dependencies
         run: npm ci
