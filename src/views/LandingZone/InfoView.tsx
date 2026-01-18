@@ -8,10 +8,6 @@ import { useTranslation } from "react-i18next";
 import { BigConvictusCard } from "./InfoView/BigConvictusCard";
 import { SmallConvictusCard } from "./InfoView/SmallConvictusCard";
 import heroimage from "../../assets/heroimages/hero9.jpeg";
-import Icon1 from "../../assets/littleimgs/img1.png";
-import Icon2 from "../../assets/littleimgs/img2.png";
-import Icon3 from "../../assets/littleimgs/img3.png";
-import Icon4 from "../../assets/littleimgs/img4.png";
 
 export function InfoView() {
   const { t } = useTranslation();
@@ -40,32 +36,6 @@ export function InfoView() {
     },
   ];
 
-  const punchLines = [
-    {
-      title: t("infoPunch1.Title"),
-      text: t("infoPunch1.Text"),
-      icon: Icon1,
-    },
-    {
-      title: t("infoPunch2.Title"),
-      text: t("infoPunch2.Text"),
-      icon: Icon2,
-    },
-    {
-      title: t("infoPunch3.Title"),
-      text: t("infoPunch3.Text"),
-      icon: Icon3,
-    },
-    {
-      title: t("infoPunch4.Title"),
-      text: t("infoPunch4.Text"),
-      icon: Icon4,
-    },
-    {
-      title: t("infoPunch5.Title"),
-      text: t("infoPunch5.Text"),
-    },
-  ];
 
   return (
     <Layout showFooter={true}>

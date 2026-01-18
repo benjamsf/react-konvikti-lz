@@ -1,0 +1,293 @@
+{
+  "COMMON-VERBS": "COMMON-VERBS",
+  "mobileGuide": "Konvikti",
+  "logInto": "Go to the service:",
+  "logInto.register": "Request access...",
+  "logInto.login": "Sign in",
+  "awaiting-response": "Awaiting response...",
+  "go-back": "Cancel",
+  "close": "Close",
+  "common.loadingText": "Loading...",
+  "navigateButtons.goBack": "Back",
+  "navigateButtons.continue": "Continue",
+  "usageCard.checkUpdates": "Is your device OK?",
+  "errors.unexpected_error": "An unexpected error occurred.",
+  "language": "Language",
+  "footer.allRightsReservedMain": "The Konvikti Student Residence Support Association (registered association)",
+  "footer.feedbackFormText": "Send feedback by clicking this link!",
+  "attentionSwipe.rightText": "Swipe left!",
+  "attentionSwipe.leftText": "Swipe right!",
+  "notYetThere.title": "Not here yet!",
+  "notYetThere.message": "This content isn’t available yet. We’re currently building both the concept and the content that explains it. Thanks for your interest—stay tuned!",
+  "slideViewer": "View slideshow",
+  "sidebarInfo1": "Home & info",
+  "sidebarInfo5": "Konvikti LZ",
+  "sidebarInfo6": "Contact: apotti@konvikti.fi",
+  "logoutLabel": "Sign out",
+  "footer": {
+    "description": "Claustrum Theologicum — Supporting theology students since 1917.",
+    "linksAndContactTitle": "Links and contact information",
+    "linksTitle": "Links",
+    "home": "Home",
+    "apply": "Apply for residency",
+    "blog": "Blog and news",
+    "org": "Organization",
+    "joinOrg": "Apply for membership",
+    "contactTitle": "Contact information",
+    "followUs": "Follow us",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy policy",
+    "accessibility": "Accessibility",
+    "apottiTitle": "Warden (Host)"
+  },
+  "instagram": {
+    "title": "Follow us on Instagram",
+    "description": "Take a peek into our everyday life and see what’s happening at Konvikti!",
+    "button": "Open Instagram",
+    "hint": "See our latest photos and stories on our profile"
+  },
+
+
+  "HOMEVIEW": "HOMEVIEW",
+  "homeViewTitle": "Home",
+  "homeHero.Title": "Konvikti",
+  "homeHero.subTitle": "A home for theology students and other students in Kruununhaka and Ullanlinna",
+
+  "homeHead1.Title": "A student residence in the heart of Helsinki.",
+  "homeHead1.Text": "Konvikti has provided a home for theology students since 1917. Our mission is to offer a pleasant, affordable, and academically enriching place to live for the next hundred years of theology students—as well as for students interested in theology and Christianity.",
+  "homeHead1.Sub": "Would you like to live in a historic setting right next to the university?",
+
+  "homeBrief.HeadTitle": "Konvikti in brief",
+  "homeBrief2.Subtitle": "In 1917, Herman Råbergh founded a support association for a home for poor and talented theology students, with the aim of supporting the studies of future generations of theologians. Our mission remains the same—we prioritize theology students and academic achievement in resident selections.",
+  "homeBrief.Subtitle": "Konvikti in brief",
+  "homePunch1.Title": "Founded in 1917",
+  "homePunch1.Text": "In 1917, Herman Råbergh founded a support association for a home for poor and talented theology students, with the aim of supporting the studies of future generations of theologians. Our mission remains the same—we prioritize theology students and academic achievement in resident selections.",
+  "homePunch2.Title": "A homelike environment...",
+  "homePunch2.Text": "Konvikti is easy to arrive at and comfortable to live in. Compared to typical student dormitories, Konvikti offers both pleasant facilities and a warm, welcoming community.",
+  "homePunch3.Title": "...for theologians",
+  "homePunch3.Text": "We prioritize theology students in resident selections. Beyond that, Konvikti residents don’t share any single background—people are interested in different areas of theology and come from different towns and congregations. Many have said that one of the great strengths of studying at Konvikti is this diversity.",
+  "homePunch4.Title": "Easy living",
+  "homePunch4.Text": "The student residence provides essentials such as cleaning supplies, well-equipped kitchens, and a washing machine. You only need furnishings for your own room—and even those can be available. Tidiness is maintained through weekly kitchen and apartment cleaning shifts.",
+  "homePunch5.Title": "Over 100 years of student life—and counting",
+  "homePunch5.Text": "Over the last hundred years, Konvikti has expanded to include the Pikku-Konvikti apartment in Ullanlinna, survived hits during the bombings of Helsinki, housed future archbishops and respected academics, and hosted countless sitsits and late-night scholarly conversations. The story continues through every Konvikti resident.",
+
+  "hubBrief.button": "Watch the intro video!",
+
+  "infoView": "infoView",
+  "InfoViewTitle": "Apply for residency",
+  "infoHero.Title": "Apply to Konvikti",
+  "infoHero.subTitle": "Use and help shape our technology",
+
+  "infoHead1.Title": "Our student residences",
+  "infoHead1.Sub": "Would you like to study in a beautiful historic setting just steps from the university? Explore Konvikti’s available resident places!",
+
+  "infoHead2.Title": "Resident applications",
+  "infoHead2.Sub": "New residents are selected annually through the general application period in June–August. We also hold additional application rounds as needed.",
+
+  "bigConvictusCard.title": "Iso-Konvikti",
+  "bigConvictusCard.details": "11 resident places at Meritullinkatu 22.",
+  "bigConvictusCard.Button1": "Introduction to Iso-Konvikti",
+  "bigConvictusCard.Button2": "Places and applying",
+
+  "gitinfoModal": {
+    "title": "Please note!",
+    "cancel": "Close",
+    "proceed": "Continue"
+  },
+  "driveModal": {
+    "title": "Go to Google Drive",
+    "message": "Message.",
+    "cancel": "Cancel",
+    "proceed": "Continue"
+  },
+
+  "smallConvictusCard.title": "Pikku-Konvikti",
+  "smallConvictusCard.details": "6 resident places on Iso Roobertinkatu.",
+  "smallConvictusCard.Button1": "Introduction to Pikku-Konvikti",
+  "smallConvictusCard.Button2": "Places and applying",
+  "infoButtonRow.Application": "Open the application form!",
+
+  "infoBrief.HeadTitle": "How we select residents",
+  "infoBrief2.Subtitle": "Applicants to Konvikti are scored. Those with the highest scores are selected as residents as places allow. Theology students are prioritized once a minimum score threshold is met.",
+  "infoBrief.Subtitle": "Konvikti in brief",
+  "infoPunch1.Title": "Academic performance",
+  "infoPunch1.Text": "Konvikti’s goal is to be an academically enriching environment. Academic performance is scored based on your application.",
+  "infoPunch2.Title": "Community involvement",
+  "infoPunch2.Text": "As a communal living arrangement, we value a willingness to take part in shared events. Interest in community life is assessed from your motivation letter.",
+  "infoPunch3.Title": "Interest in theology and Christianity",
+  "infoPunch3.Text": "Konvikti is a Christian student residence. Our residents come from many backgrounds, but we are united by an interest in theology and/or Christianity and congregational life. The academic, professional, or spiritual interest you express in theology or Christianity is scored based on your motivation letter.",
+  "infoPunch4.Title": "Am I a good fit to apply?",
+  "infoPunch4.Text": "Are you starting—or about to start—higher education studies, or are you already pursuing a degree? In addition to location, are you interested in Konvikti’s community and your academic or professional growth? Then you’re in our target group—don’t hesitate to apply!",
+  "infoPunch5.Title": "A community strengthened by diverse backgrounds",
+  "infoPunch5.Text": "Many have said the best part of Konvikti has been meeting different future theologians and others interested in the subject. Unlike most Christian student residences in Helsinki, Konvikti has historically been broadly ecumenical—residents are not selected based on any particular church affiliation or ideological background. What unites us is community and a shared interest.",
+
+  "infoHead3.Title": "Resident application announcements",
+
+  "infoLastInfo.title": "Were you selected?",
+  "infoLastInfo.sub": "The warden will notify applicants of selections on the date specified in the application announcement. A place is granted to a theology student for six years and to students in other fields for three years. After that, the place can be renewed year by year.",
+
+  "blogHero.Title": "Blog and news",
+  "blogNewsViewTitle": "Blog and news",
+  "blogNews": {
+    "title": "Blog and news",
+    "subtitle": "Read the latest news and blog posts",
+    "allYears": "All years"
+  },
+  "asukashaku": {
+    "title": "Resident applications",
+    "subtitle": "Open and past resident application rounds for our community",
+    "swipeHint": "Swipe to see more",
+    "applyTitle": "Interested? Apply to join!",
+    "applyDescription": "Applications are open—fill out the application form and join our community.",
+    "applyButton": "Complete the application"
+  },
+  "hakuBanner": {
+    "title": "Applications open!",
+    "cta": "Click to learn more →",
+    "dismiss": "Close"
+  },
+
+  "org": {
+    "hero": {
+      "title": "Claustrum Theologicum",
+      "subtitle": "The Konvikti Student Residence Support Association (registered association) — Supporting theology students since 1917"
+    },
+    "staffSection": {
+      "title": "Staff",
+      "subtitle": "Meet the people who keep Konvikti running."
+    },
+    "boardSection": {
+      "title": "Board",
+      "subtitle": "The association’s board guides our work."
+    },
+    "visionSection": {
+      "title": "Vision and values",
+      "subtitle": "What we believe in and what we strive for",
+      "valuesTitle": "Our values",
+      "goalsTitle": "Our goals for 2036"
+    },
+    "historySection": {
+      "title": "Our history",
+      "subtitle": "Konvikti’s story over the years"
+    },
+    "join": {
+      "subtitle": "Get involved",
+      "title": "Want to be part of Konvikti’s mission?",
+      "description": "We are looking for people who are interested in supporting our work. Board roles, volunteer work, and other opportunities are waiting for you.",
+      "button": "Get in touch!"
+    },
+    "joinFinal": {
+      "subtitle": "Join us",
+      "title": "Write your chapter in Konvikti’s story",
+      "description": "As a supporting member of the association, you can help advance Konvikti’s values and goals with a small annual fee and in the way that suits you best. Whether you’re a Konvikti alumnus or simply interested in our work—our doors are open.",
+      "button": "Get in touch!"
+    },
+    "staff1": {
+      "name": "Samu-Ville Toivonen",
+      "title": "Warden — Konvikti’s host",
+      "description": "Samu-Ville holds a Bachelor’s degree in Theology and has served as Konvikti’s warden since 2026. The warden is responsible for the association’s administration and Konvikti’s day-to-day operations."
+    },
+    "staff2": {
+      "name": "Benjam Bröijer",
+      "title": "Chair of the Board",
+      "description": "Benjam holds a Master’s degree in Theology and has served as Chair of the Board of the Konvikti Student Residence Support Association (registered association) since 2026. As Chair, he is responsible for leading the association and achieving its long-term goals."
+    },
+
+    "board1": {
+      "name": "Benjam Bröijer",
+      "role": "Chair of the Board"
+    },
+    "board2": {
+      "name": "Iida Glumoff",
+      "role": "Board Member"
+    },
+    "board3": {
+      "name": "Markku Vasara",
+      "role": "Board Member"
+    },
+    "board4": {
+      "name": "Tarja Pyy",
+      "role": "Board Member"
+    },
+    "board5": {
+      "name": "Juha Valkama",
+      "role": "Board Member"
+    },
+    "board6": {
+      "name": "Tuomo Törmänen",
+      "role": "Board Member"
+    },
+    "board7": {
+      "name": "Laura Laitinen",
+      "role": "Deputy Board Member"
+    },
+    "board8": {
+      "name": "Viljami Kuusisto",
+      "role": "Resident Board Member"
+    },
+    "value1": {
+      "title": "We will define Konvikti’s values in 2026.",
+      "description": "Coming soon!"
+    },
+    "value2": {
+      "title": "Value 2",
+      "description": "Coming soon!"
+    },
+    "value3": {
+      "title": "Value 3",
+      "description": "Coming soon!"
+    },
+    "value4": {
+      "title": "Value 4",
+      "description": "Coming soon!"
+    },
+    "goal1": {
+      "title": "Increase the number of residents",
+      "description": "We will define Konvikti’s goals during 2026."
+    },
+    "goal2": {
+      "title": "Goal 2",
+      "description": "Coming soon!"
+    },
+    "goal3": {
+      "title": "Goal 3",
+      "description": "Coming soon!"
+    },
+    "goal4": {
+      "title": "Goal 4",
+      "description": "Coming soon!"
+    },
+    "goal5": {
+      "title": "Goal 5",
+      "description": "Coming soon!"
+    },
+    "history1": {
+      "title": "Founding",
+      "description": "The Konvikti Student Residence Support Association was founded in 1917. The founders were bishops of the Evangelical Lutheran Church who wanted theology students to have a home and a safe place in Helsinki."
+    },
+    "history2": {
+      "title": "The first Konvikti",
+      "description": "In 1920, the student residence—Konvikti—was established. The word comes from the Latin convictus, meaning communal life. The residence initially operated at several addresses."
+    },
+    "history3": {
+      "title": "Move to Meritullinkatu",
+      "description": "In the 1930s, the residence moved into what is now Iso-Konvikti. The apartments were named Manala, Kiirastuli, Mirkkula, and Taivas."
+    },
+    "history4": {
+      "title": "Juurinen Student Residence, or Pikku-Konvikti",
+      "description": "Emil and Mimmi Juurinen donated two apartments on Pieni Roobertinkatu through their will—this became the origin of Pikku-Konvikti."
+    },
+    "history5": {
+      "title": "Jukola, 1999–2024",
+      "description": "A former temperance home located in the stairwell at Meritullinkatu 22 was transferred for Konvikti’s use. It was named Jukola after its seven, later eight, resident places."
+    },
+    "history6": {
+      "title": "Letting go of Jukola and Mirkkula",
+      "description": "Due to rising costs, the association had to give up both the rented Jukola apartment and the Mirkkula shares. Financial restructuring has stabilized operations for decades to come."
+    },
+    "history7": {
+      "title": "A new era",
+      "description": "At 109 years old, Konvikti looks to the future—how can we best serve the founders’ purpose, the homeland, and Finland’s Christian church?"
+    }
+  }
+}

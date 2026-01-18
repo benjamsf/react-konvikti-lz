@@ -68,9 +68,6 @@ export function Footer() {
               <p className="text-white-300 font-medium text-base md:text-sm mb-1">
                 {t("footer.apottiTitle", "Apotti (isännöitsijä)")}
               </p>
-              <p className="text-white-500 text-base md:text-sm">
-                {t("footer.apottiName", "Matti Meikäläinen")}
-              </p>
               <a 
                 href="mailto:apotti@konvikti.fi" 
                 className="text-primary-400 hover:text-primary text-base md:text-sm transition-colors"

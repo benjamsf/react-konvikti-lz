@@ -25,6 +25,29 @@
   "sidebarInfo6": "Yhteys: apotti@konvikti.fi",
   "logoutLabel": "Kirjaudu ulos",
 
+  "footer": {
+    "description": "Claustrum Theologicum - Teologian opiskelijoiden tukena vuodesta 1917.",
+    "linksAndContactTitle": "Linkit ja yhteystiedot",
+    "linksTitle": "Linkit",
+    "home": "Etusivu",
+    "apply": "Hae asukkaaksi",
+    "blog": "Blogi ja uutiset",
+    "org": "Organisaatio",
+    "joinOrg": "Hae jäseneksi",
+    "contactTitle": "Yhteystiedot",
+    "followUs": "Seuraa meitä",
+    "rights": "Kaikki oikeudet pidätetään.",
+    "privacy": "Tietosuoja",
+    "accessibility": "Saavutettavuus",
+    "apottiTitle": "Apotti (isäntä)"
+  },
+  "instagram": {
+    "title": "Seuraa meitä Instagramissa",
+    "description": "Kurkista arkeemme ja näe mitä Konviktissa tapahtuu!",
+    "button": "Avaa Instagram",
+    "hint": "Näe uusimmat kuvamme ja tarinamme profiilissamme"
+  },
+
   "HOMEVIEW": "HOMEVIEW",
   "homeViewTitle": "Koti",
   "homeHero.Title": "Konvikti",

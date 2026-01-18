@@ -8,9 +8,10 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons";
 
 interface AsukashakuSectionProps {
   showTitle?: boolean;
+  maxPosts?: number;
 }
 
-export function AsukashakuSection({ showTitle = true }: AsukashakuSectionProps) {
+export function AsukashakuSection({ showTitle = true, maxPosts }: AsukashakuSectionProps) {
   const { t } = useTranslation();
   const { data: posts, isLoading, error } = useAsukashakuPosts();
   const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
@@ -19,14 +20,16 @@ export function AsukashakuSection({ showTitle = true }: AsukashakuSectionProps) 
   // Sort posts: active (open) first, then by date
   const sortedPosts = useMemo(() => {
     if (!posts) return [];
-    return [...posts].sort((a, b) => {
+    const sorted = [...posts].sort((a, b) => {
       // Open status comes first
       if (a.hakuStatus === "open" && b.hakuStatus !== "open") return -1;
       if (a.hakuStatus !== "open" && b.hakuStatus === "open") return 1;
       // Then sort by date (newest first)
       return new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime();
     });
-  }, [posts]);
+    // Apply maxPosts limit if specified
+    return maxPosts ? sorted.slice(0, maxPosts) : sorted;
+  }, [posts, maxPosts]);
   
   // Touch handling for swipe
   const touchStartX = useRef<number | null>(null);

@@ -1,6 +1,5 @@
 import { createClient } from "@sanity/client";
 import imageUrlBuilder from "@sanity/image-url";
-import type { SanityImageSource } from "@sanity/image-url/lib/types/types";
 
 // Replace these values after creating your Sanity project
 const PROJECT_ID = import.meta.env.VITE_SANITY_PROJECT_ID || "YOUR_PROJECT_ID";
@@ -14,6 +13,13 @@ export const sanityClient = createClient({
 });
 
 const builder = imageUrlBuilder(sanityClient);
+
+// Use a generic type that works with Sanity image objects
+type SanityImageSource = {
+  asset?: { _ref?: string; _id?: string };
+  _ref?: string;
+  _id?: string;
+};
 
 export function urlFor(source: SanityImageSource) {
   return builder.image(source);
