@@ -31,27 +31,24 @@
   "homeHero.subTitle": "Teologian opiskelijoiden koti Kruununhaassa ja Ullanlinnassa",
 
   "homeHead1.Title": "Ylioppilaskoti Helsingin ytimessä.",
-  "homeHead1.Text": "Konvikti on tarjonnut teologian ylioppilaille kodin jo vuodesta 1917. Tehtävämme on tarjota miellyttävä, edullinen ja akateemisesti kehittävä asuinpaikka myös seuraavan sadan vuoden teologisukupolville.",
+  "homeHead1.Text": "Konvikti on tarjonnut teologian ylioppilaille kodin jo vuodesta 1917. Tehtävämme on tarjota miellyttävä, edullinen ja akateemisesti kehittävä asuinpaikka myös seuraavan sadan vuoden teologisukupolville sekä teologiasta ja kristinuskosta kiinnostuneille opiskelijoille.",
   "homeHead1.Sub": "Haluaisitko asua historiallisessa ympäristössä yliopiston vieressä?",
 
   "homeBrief.HeadTitle": "Konvikti lyhyesti",
-  "homeBrief2.Subtitle": "Vuonna 1917 Herman Råberg perusti Köyhien ja lahjakkaiden jumaluusopin ylioppilaiden kodin Meritullinkadulle tavoitteena tukea tulevien teologisukupolvien opiskelua. Tehtävämme on yhä sama - suosimme asukasvalinnassa erityisesti akateemista menestystä.",
+  "homeBrief2.Subtitle": "Vuonna 1917 Herman Råbergh perusti tukiyhdistyksen Köyhien ja lahjakkaiden jumaluusopin ylioppilaiden kodille tavoitteenaan tukea tulevien teologisukupolvien opiskelua. Tehtävämme on yhä sama - suosimme asukasvalinnassa teologeja ja akateemista menestystä.",
   "homeBrief.Subtitle": "Konvikti lyhyesti",
   "homePunch1.Title": "Perustettu 1917",
-  "homePunch1.Text": "Vuonna 1917 Herman Råberg perusti Köyhien ja lahjakkaiden jumaluusopin ylioppilaiden kodin Meritullinkadulle tavoitteena tukea tulevien teologisukupolvien opiskelua. Tehtävämme on yhä sama - suosimme asukasvalinnassa erityisesti akateemista menestystä.",
+  "homePunch1.Text": "Vuonna 1917 Herman Råbergh perusti tukiyhdistyksen Köyhien ja lahjakkaiden jumaluusopin ylioppilaiden kodille tavoitteenaan tukea tulevien teologisukupolvien opiskelua. Tehtävämme on yhä sama - suosimme asukasvalinnassa teologeja ja akateemista menestystä.",
   "homePunch2.Title": "Kodinomainen ympäristö...",
   "homePunch2.Text": "Konviktille on helppo tulla ja kotoisa olla. Verrattuna yleisiin opiskelija-asuntoloihin, Konvikti tarjoaa sekä miellyttävät puitteet, että hyvähenkisen yhteisön.",
   "homePunch3.Title": "...teologeille",
-  "homePunch3.Text": "Priorisoimme asukasvalinnoissa teologeja ja kirkollisten alojen opiskelijoita. Konviktilaisilla ei ole tämän lisäksi muuta yhteistä taustaa - meitä on niin eri teologian osa-alueista kiinnostuneita, kuin eri paikkakunnilta ja seurakunnistakin. Moni on sanonut, että eräs Konviktilta opiskelun rikkauksista on tämä erilaisuus.",
+  "homePunch3.Text": "Priorisoimme asukasvalinnoissa teologeja. Konviktilaisilla ei ole tämän lisäksi muuta yhteistä taustaa - meitä on niin eri teologian osa-alueista kiinnostuneita, kuin eri paikkakunnilta ja seurakunnistakin. Moni on sanonut, että eräs Konviktilta opiskelun rikkauksista on tämä erilaisuus.",
   "homePunch4.Title": "Asumisen helppoutta",
   "homePunch4.Text": "Ylioppilaskoti tarjoaa puitteet kuten siivousvälineet ja -aineet, varustellut keittiöt sekä pyykinpesukoneen. Et siis tarvitse kuin oman huoneesi kalusteet - näitäkin on saatavilla. Siisteyttä ylläpidetään viikottaisilla keittiö- ja huoneistosiivousvuoroilla.",
   "homePunch5.Title": "100 vuotta opiskelijaelämää and counting",
-  "homePunch5.Text": "Sadassa vuodessa Konvikti on niin kasvanut Ullanlinnan Pikku-Konviktin huoneistolla, selvinnyt osumista Helsingin pommituksissa, tarjonnut kodin tuleville arkkipiispoille ja arvostetuille akateemikoille sekä fasilitoinut epälukuisia sitsejä sekä iltaisia oppineita keskusteluita. Historia jatkuu jokaisen konviktilaisen kautta",
+  "homePunch5.Text": "Sadassa vuodessa Konvikti on niin kasvanut Ullanlinnan Pikku-Konviktin huoneistolla, selvinnyt osumista Helsingin pommituksissa, tarjonnut kodin tuleville arkkipiispoille ja arvostetuille akateemikoille sekä fasilitoinut epälukuisia sitsejä sekä iltaisia oppineita keskusteluita. Historia jatkuu edelleen jokaisen konviktilaisen kautta.",
 
-  "homeBrief2.HeadTitle": "Miten osallistun?",
-  "homeBrief2.AfterWord": "Tule mukaan esittämään varusmiehille haasteita, joihin tarvitsisit ratkaisun joko yrityksellesi tai sijoitusportfolioosi, sekä mentoroimaan heitä innovaatiohaasteen aikana oman erityisosaamisesi näkökulmasta.",
-  "homeBrief2.Button1": "",
-  "homeBrief2.Button2": "",
+  "hubBrief.button": "Katso esittelyvideo!",
 
   "infoView": "infoView",
   "InfoViewTitle": "Hae asukkaaksi",
@@ -59,7 +56,6 @@
   "infoHero.subTitle": "Käytä & osallistu teknologiamme luontiin",
 
   "infoHead1.Title": "Ylioppilaskotimme",
-  "infoSmallText.Description": "Huomio: myöhemmin info-sivun sisältö muuttuu käyttäjäryhmän mukaan. 'Jäsenille' näkyy kaikki yhteistyöhön tarvittavat tiedot - kuten nyt, ja vielä räätälöidymmin. Julkisesti, tai 'perusjäsenille' jaetaan alta yleistiedot ja esim. rekrylomake.",
   "infoHead1.Sub": "Haluaisitko opiskella kauniissa historiallisessa ympäristössä, kivenheiton päässä yliopistolta? Tutustu Konviktin asukaspaikkoihin!",
 
   "infoHead2.Title": "Asukashaut",
@@ -72,7 +68,6 @@
 
   "gitinfoModal": {
     "title": "Huomio!",
-    "message": "Olet avaamassa Gitinfo-organisaatiomme uuteen välilehteen. Toistaiseksi, johtuen viestintäsyistä, se on kovin obskuuri.Paina 'Jatka' avataksesi Gitinfo-sivun.",
     "cancel": "Sulje",
     "proceed": "Jatka"
   },
@@ -132,16 +127,16 @@
 
 "org": {
     "hero": {
-      "title": "Claustrum Theologicum - Ylioppilaskoti Konviktin kannatusyhdistys r.y.",
-      "subtitle": "Teologian opiskelijoiden koti vuodesta 1917"
+      "title": "Claustrum Theologicum",
+      "subtitle": "Ylioppilaskoti Konviktin kannatusyhdistys r.y. - Teologian opiskelijoiden tukena jo vuodesta 1917"
     },
     "staffSection": {
       "title": "Henkilökunta",
-      "subtitle": "Tutustu henkilöstöömme, joka pitää Konviktin toiminnassa"
+      "subtitle": "Tutustu henkilöstöömme, joka pitää Konviktin toiminnassa."
     },
     "boardSection": {
       "title": "Johtokunta",
-      "subtitle": "Yhdistyksen johtokunta ohjaa toimintaamme"
+      "subtitle": "Yhdistyksen johtokunta ohjaa toimintaamme."
     },
     "visionSection": {
       "title": "Visio ja arvot",
@@ -156,14 +151,14 @@
     "join": {
       "subtitle": "Tule mukaan",
       "title": "Haluatko olla osa Konviktin missiota?",
-      "description": "Etsimme tehtävästämme kiinnostuneita ihmisiä mukaan toimintaamme. Hallituspaikat, vapaaehtoistyö ja muut mahdollisuudet odottavat sinua.",
-      "button": "Täytä rekrytointilomake"
+      "description": "Etsimme tehtävästämme kiinnostuneita ihmisiä tukemaan toimintaamme. Hallituspaikat, vapaaehtoistyö ja muut mahdollisuudet odottavat sinua.",
+      "button": "Ota yhteyttä!"
     },
     "joinFinal": {
       "subtitle": "Liity joukkoon",
       "title": "Kirjoita oma lukusi Konviktin tarinaan",
       "description": "Yhdistyksen tukijäsenenä voit tukea Konviktin arvojen ja tavoitteiden toteutumista pienellä vuosimaksulla ja haluamallasi tavalla. Olit sitten Konviktin alumni tai vain kiinnostunut toiminnastamme – ovet ovat auki.",
-      "button": "Ota yhteyttä"
+      "button": "Ota yhteyttä!"
     },
     "staff1": {
       "name": "Samu-Ville Toivonen",
@@ -186,7 +181,7 @@
     },
     "board3": {
       "name": "Markku Vasara",
-      "role": "Johtokunnan jäsen"
+      "role": "Johtokunnan jäsen Member of the Board"
     },
     "board4": {
       "name": "Tarja Pyy",

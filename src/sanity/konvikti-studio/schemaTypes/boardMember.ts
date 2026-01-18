@@ -12,11 +12,17 @@ export const boardMember = defineType({
       validation: (Rule) => Rule.required(),
     }),
     defineField({
-      name: "role",
-      title: "Rooli / Titteli",
+      name: "role_fi",
+      title: "Rooli (Suomi)",
       type: "string",
       validation: (Rule) => Rule.required(),
       description: "Esim. Puheenjohtaja, Jäsen, Varajäsen",
+    }),
+    defineField({
+      name: "role_en",
+      title: "Rooli (English)",
+      type: "string",
+      description: "E.g. Chairman, Member, Deputy member",
     }),
     defineField({
       name: "order",
@@ -49,7 +55,7 @@ export const boardMember = defineType({
   preview: {
     select: {
       title: "name",
-      subtitle: "role",
+      subtitle: "role_fi",
     },
   },
 });

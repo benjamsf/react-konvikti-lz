@@ -12,14 +12,25 @@ export const staffMember = defineType({
       validation: (Rule) => Rule.required(),
     }),
     defineField({
-      name: "title",
-      title: "Titteli",
+      name: "title_fi",
+      title: "Titteli (Suomi)",
       type: "string",
       validation: (Rule) => Rule.required(),
     }),
     defineField({
-      name: "description",
-      title: "Kuvaus",
+      name: "title_en",
+      title: "Titteli (English)",
+      type: "string",
+    }),
+    defineField({
+      name: "description_fi",
+      title: "Kuvaus (Suomi)",
+      type: "text",
+      rows: 3,
+    }),
+    defineField({
+      name: "description_en",
+      title: "Kuvaus (English)",
       type: "text",
       rows: 3,
     }),
@@ -56,7 +67,7 @@ export const staffMember = defineType({
   preview: {
     select: {
       title: "name",
-      subtitle: "title",
+      subtitle: "title_fi",
       media: "image",
     },
   },

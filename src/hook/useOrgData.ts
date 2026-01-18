@@ -1,12 +1,17 @@
-import { useQuery } from "@tanstack/react-query";
-import { client, urlFor } from "../lib/sanity";
+import { useQuery } from "react-query";
+import { sanityClient, urlFor } from "../lib/sanityClient";
 
-// Types
+// Supported languages
+export type SupportedLanguage = "fi" | "en";
+
+// Types from Sanity
 export interface SanityStaffMember {
   _id: string;
   name: string;
-  title: string;
-  description?: string;
+  title_fi: string;
+  title_en?: string;
+  description_fi?: string;
+  description_en?: string;
   image?: {
     asset: {
       _ref: string;
@@ -19,7 +24,8 @@ export interface SanityStaffMember {
 export interface SanityBoardMember {
   _id: string;
   name: string;
-  role: string;
+  role_fi: string;
+  role_en?: string;
   order: number;
   isActive: boolean;
   year?: string;
@@ -44,8 +50,10 @@ export interface BoardMember {
 const STAFF_QUERY = `*[_type == "staffMember" && isActive == true] | order(order asc) {
   _id,
   name,
-  title,
-  description,
+  title_fi,
+  title_en,
+  description_fi,
+  description_en,
   image,
   order,
   isActive
@@ -54,48 +62,49 @@ const STAFF_QUERY = `*[_type == "staffMember" && isActive == true] | order(order
 const BOARD_QUERY = `*[_type == "boardMember" && isActive == true] | order(order asc) {
   _id,
   name,
-  role,
+  role_fi,
+  role_en,
   order,
   isActive,
   year
 }`;
 
 // Fetch functions
-async function fetchStaffMembers(): Promise<StaffMember[]> {
-  const data = await client.fetch<SanityStaffMember[]>(STAFF_QUERY);
+async function fetchStaffMembers(language: SupportedLanguage): Promise<StaffMember[]> {
+  const data = await sanityClient.fetch<SanityStaffMember[]>(STAFF_QUERY);
   
   return data.map((member) => ({
     _id: member._id,
     name: member.name,
-    title: member.title,
-    description: member.description,
+    title: language === "en" && member.title_en ? member.title_en : member.title_fi,
+    description: language === "en" && member.description_en ? member.description_en : member.description_fi,
     image: member.image ? urlFor(member.image).width(400).height(400).url() : undefined,
   }));
 }
 
-async function fetchBoardMembers(): Promise<BoardMember[]> {
-  const data = await client.fetch<SanityBoardMember[]>(BOARD_QUERY);
+async function fetchBoardMembers(language: SupportedLanguage): Promise<BoardMember[]> {
+  const data = await sanityClient.fetch<SanityBoardMember[]>(BOARD_QUERY);
   
   return data.map((member) => ({
     _id: member._id,
     name: member.name,
-    role: member.role,
+    role: language === "en" && member.role_en ? member.role_en : member.role_fi,
   }));
 }
 
 // Hooks
-export function useStaffMembers() {
-  return useQuery({
-    queryKey: ["staffMembers"],
-    queryFn: fetchStaffMembers,
+export function useStaffMembers(language: SupportedLanguage = "fi") {
+  return useQuery<StaffMember[], Error>({
+    queryKey: ["staffMembers", language],
+    queryFn: () => fetchStaffMembers(language),
     staleTime: 1000 * 60 * 5, // 5 minutes
   });
 }
 
-export function useBoardMembers() {
-  return useQuery({
-    queryKey: ["boardMembers"],
-    queryFn: fetchBoardMembers,
+export function useBoardMembers(language: SupportedLanguage = "fi") {
+  return useQuery<BoardMember[], Error>({
+    queryKey: ["boardMembers", language],
+    queryFn: () => fetchBoardMembers(language),
     staleTime: 1000 * 60 * 5, // 5 minutes
   });
 }

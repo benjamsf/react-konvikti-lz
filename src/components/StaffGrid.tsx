@@ -76,7 +76,15 @@ export function StaffGrid({
           </div>
         )}
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className={`
+          grid gap-8
+          ${members.length === 1 
+            ? "grid-cols-1 max-w-sm mx-auto" 
+            : members.length === 2 
+              ? "grid-cols-1 sm:grid-cols-2 max-w-2xl mx-auto" 
+              : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+          }
+        `}>
           {members.slice(0, 6).map((member, index) => (
             <div
               key={member._id || index}
