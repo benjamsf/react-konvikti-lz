@@ -87,5 +87,7 @@
   "smallConvictusCard.details": "6 asukaspaikkaa Iso-Roobertinkadulla.",
   "smallConvictusCard.Button1": "Pikku-Konviktin esittely",
   "smallConvictusCard.Button2": "Paikat ja haku",
-  "infoButtonRow.Application": "Avaa hakulomake!"
+  "infoButtonRow.Application": "Avaa hakulomake!",
+
+  "blogHero.Title":"Blogi ja uutiset"
 }

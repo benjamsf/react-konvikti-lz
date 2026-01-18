@@ -17,9 +17,14 @@ export interface SanityImage {
 export interface SanityImageWithMeta extends SanityImage {
   caption?: string;
   alt?: string;
+  size?: ImageSize;
 }
 
-export type BlogCategory = "blog" | "news" | "announcement" | "event";
+export type ImageSize = "small" | "medium" | "large";
+
+export type BlogCategory = "blog" | "news" | "announcement" | "event" | "asukashaku";
+
+export type HakuStatus = "open" | "closed";
 
 export interface BlogPost {
   _id: string;
@@ -31,6 +36,7 @@ export interface BlogPost {
   };
   author: string;
   category: BlogCategory;
+  hakuStatus?: HakuStatus;
   coverImage?: SanityImage;
   excerpt?: string;
   content: PortableTextBlock[];

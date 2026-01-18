@@ -1,18 +1,22 @@
 import { Layout } from "../../components/Layout";
 import { BlogFeed } from "../../components/Blog";
 import { useTranslation } from "react-i18next";
+import { HeroSection } from "../../components/HeroSection";
+import heroimage from "../../assets/heroimages/hero4.jpeg";
 
 export function BlogNewsView() {
   const { t } = useTranslation();
 
   return (
     <Layout showFooter={true}>
+      <HeroSection
+          image={heroimage}
+          height="tall"
+          title={t("blogHero.Title")}
+        />
       <div className="py-8 px-4 md:px-8">
         <div className="max-w-6xl mx-auto">
           <header className="mb-8">
-            <h1 className="text-3xl md:text-4xl font-title text-white mb-2">
-              {t("blogNews.title", "Blogi ja Uutiset")}
-            </h1>
             <p className="text-textLight">
               {t(
                 "blogNews.subtitle",

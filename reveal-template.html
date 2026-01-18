@@ -19,7 +19,7 @@
       body,
       .reveal,
       .reveal .slides section {
-        font-family: Tahoma, Arial, sans-serif !important;
+        font-family: Georgia, Inter, sans-serif !important;
       }
     </style>
   </head>
@@ -33,7 +33,7 @@
         right: 15px;
         z-index: 1000;
         padding: 5px 10px;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(5, 5, 5, 0.5);
         color: #fff;
         border: none;
         cursor: pointer;
@@ -75,7 +75,7 @@
           transition: "slide",
           mobileViewDistance: 1,
           plugins: [RevealMarkdown, RevealMermaid],
-          mermaid: { theme: "dark" },
+          mermaid: { theme: "light" },
           center: !isMobile,
           width: isMobile ? window.innerWidth : 1280,
           height: isMobile ? window.innerHeight : 720,

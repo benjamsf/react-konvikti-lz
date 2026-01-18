@@ -2,18 +2,18 @@ import { Layout } from "../../components/Layout";
 import { ButtonRow } from "../../components/ButtonRow";
 import { HeadlineContainer } from "../../components/HeadlineContainer";
 import { CardsContainer } from "../../components/CardsContainer";
-import { HeroSection } from "../../components/HeroSection"
+import { HeroSection } from "../../components/HeroSection";
+import { AsukashakuSection } from "../../components/Blog";
 import { useTranslation } from "react-i18next";
 import { BigConvictusCard } from "./InfoView/BigConvictusCard";
 import { SmallConvictusCard } from "./InfoView/SmallConvictusCard";
-import heroimage from "../../assets/heroimages/hero9.jpeg"
+import heroimage from "../../assets/heroimages/hero9.jpeg";
 
 export function InfoView() {
   const { t } = useTranslation();
 
   const GOOGLE_FORM_URL =
     "https://docs.google.com/forms/d/1BvkiLpCad0wS3lSWYPZ2OOKcCMe_ZiC3fiD59KtYc5Q/viewform";
-
 
   const headlines = [
     {
@@ -33,24 +33,27 @@ export function InfoView() {
 
   return (
     <Layout showFooter={true}>
-      <div className="flex flex-col flex-shrink-0 gap-4">
+      <div className="flex flex-col flex-shrink-0 gap-0">
         <HeroSection
-        image={heroimage}
-        height="medium"
-        title={t("infoHero.Title")}
-       />
+          image={heroimage}
+          height="tall"
+          title={t("infoHero.Title")}
+        />
+        
         <HeadlineContainer items={headlines} backgroundColor="bg-background" />
+        
         <CardsContainer>
           <BigConvictusCard />
           <SmallConvictusCard />
         </CardsContainer>
-        <div className="flex flex-col text-center"></div>
+
         <HeadlineContainer
           items={headlines2}
-          backgroundColor="bg-backgroundBlue"
+          backgroundColor="bg-background"
         />
 
-      
+        <AsukashakuSection maxPosts={6} showTitle={true} />
+
         <ButtonRow
           buttons={[
             {
@@ -62,7 +65,6 @@ export function InfoView() {
           ]}
         />
       </div>
-
     </Layout>
   );
 }
