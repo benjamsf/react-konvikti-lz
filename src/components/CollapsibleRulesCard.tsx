@@ -44,7 +44,7 @@ export function CollapsibleRulesCard({
   };
 
   return (
-    <div className="bg-backgroundDark rounded-2xl border border-brown-800/50 overflow-hidden transition-all duration-300">
+    <div className="bg-backgroundDark rounded-2xl border border-brown-800/50 overflow-hidden">
       {/* Header - clickable */}
       <button
         onClick={() => setIsOpen(!isOpen)}
@@ -81,60 +81,57 @@ export function CollapsibleRulesCard({
         </div>
       </button>
 
-      {/* Content - collapsible */}
-      <div
-        className={`
-          overflow-hidden transition-all duration-300 ease-in-out
-          ${isOpen ? "max-h-[5000px] opacity-100" : "max-h-0 opacity-0"}
-        `}
-      >
-        <div className="px-6 pb-6 border-t border-brown-800/50">
-          <div className="pt-6 prose prose-invert prose-sm max-w-none">
-            <PortableText
-              value={content}
-              components={{
-                block: {
-                  normal: ({ children }) => (
-                    <p className="text-white-400 leading-relaxed mb-4">{children}</p>
-                  ),
-                  h2: ({ children }) => (
-                    <h2 className="text-xl font-title font-semibold text-white-200 mt-8 mb-4">
-                      {children}
-                    </h2>
-                  ),
-                  h3: ({ children }) => (
-                    <h3 className="text-lg font-title font-medium text-white-300 mt-6 mb-3">
-                      {children}
-                    </h3>
-                  ),
-                },
-                list: {
-                  bullet: ({ children }) => (
-                    <ul className="list-disc list-inside text-white-400 space-y-2 mb-4 ml-4">
-                      {children}
-                    </ul>
-                  ),
-                  number: ({ children }) => (
-                    <ol className="list-decimal list-inside text-white-400 space-y-2 mb-4 ml-4">
-                      {children}
-                    </ol>
-                  ),
-                },
-                listItem: {
-                  bullet: ({ children }) => <li className="text-white-400">{children}</li>,
-                  number: ({ children }) => <li className="text-white-400">{children}</li>,
-                },
-                marks: {
-                  strong: ({ children }) => (
-                    <strong className="font-semibold text-white-200">{children}</strong>
-                  ),
-                  em: ({ children }) => <em className="italic">{children}</em>,
-                },
-              }}
-            />
+      {/* Content - collapsible with proper containment */}
+      {isOpen && (
+        <div className="border-t border-brown-800/50">
+          <div className="px-6 py-6 max-h-[60vh] overflow-y-auto">
+            <div className="prose prose-invert prose-sm max-w-none">
+              <PortableText
+                value={content}
+                components={{
+                  block: {
+                    normal: ({ children }) => (
+                      <p className="text-white-400 leading-relaxed mb-4">{children}</p>
+                    ),
+                    h2: ({ children }) => (
+                      <h2 className="text-xl font-title font-semibold text-white-200 mt-8 mb-4">
+                        {children}
+                      </h2>
+                    ),
+                    h3: ({ children }) => (
+                      <h3 className="text-lg font-title font-medium text-white-300 mt-6 mb-3">
+                        {children}
+                      </h3>
+                    ),
+                  },
+                  list: {
+                    bullet: ({ children }) => (
+                      <ul className="list-disc list-inside text-white-400 space-y-2 mb-4 ml-4">
+                        {children}
+                      </ul>
+                    ),
+                    number: ({ children }) => (
+                      <ol className="list-decimal list-inside text-white-400 space-y-2 mb-4 ml-4">
+                        {children}
+                      </ol>
+                    ),
+                  },
+                  listItem: {
+                    bullet: ({ children }) => <li className="text-white-400">{children}</li>,
+                    number: ({ children }) => <li className="text-white-400">{children}</li>,
+                  },
+                  marks: {
+                    strong: ({ children }) => (
+                      <strong className="font-semibold text-white-200">{children}</strong>
+                    ),
+                    em: ({ children }) => <em className="italic">{children}</em>,
+                  },
+                }}
+              />
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }

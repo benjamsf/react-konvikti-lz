@@ -25,6 +25,10 @@ export function LandingZoneSwiper() {
     setSidebarOpen((prev) => !prev);
   };
 
+  const closeSidebar = () => {
+    setSidebarOpen(false);
+  };
+
   const handleSlideChange = (swiper: SwiperCore) => {
     setActiveIndex(swiper.activeIndex);
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -102,7 +106,13 @@ export function LandingZoneSwiper() {
         <AttentionSwipe position="right" text={t("attentionSwipe.rightText")} />
       )}
 
-      {isSidebarOpen && <Sidebar onClose={toggleSidebar} />}
+      {isSidebarOpen && (
+        <Sidebar 
+          onClose={closeSidebar} 
+          onNavigate={handleNavigation}
+          activeIndex={activeIndex}
+        />
+      )}
     </div>
   );
 }
