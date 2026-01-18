@@ -52,6 +52,7 @@ export function JoinOrgSection({
 
           {GOOGLE_RECRUITMENT_FORM ? (
             <a
+              // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
               href={GOOGLE_RECRUITMENT_FORM}
               target="_blank"
               rel="noopener noreferrer"

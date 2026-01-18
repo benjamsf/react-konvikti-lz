@@ -12,7 +12,7 @@ export function useImageSlideModal(): UseImageSlideModalReturn {
   const [isOpen, setIsOpen] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const openModal = useCallback((slideIndex: number = 0) => {
+  const openModal = useCallback((slideIndex = 0) => {
     setCurrentSlide(slideIndex);
     setIsOpen(true);
   }, []);

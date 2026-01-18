@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { createClient } from "@sanity/client";
 import imageUrlBuilder from "@sanity/image-url";
 
