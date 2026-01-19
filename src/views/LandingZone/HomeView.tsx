@@ -69,7 +69,11 @@ export function HomeView() {
   // Use Sanity video or fallback
   const videoId = introVideo?.youtubeUrl || FALLBACK_VIDEO_ID;
   const videoTitle =
-    introVideo?.title || t("homeVideo.title", "Tervetuloa Konviktiin");
+    introVideo?.title ||
+    t(
+      "homeVideo.title",
+      "Tervetuloa Konviktiin! Oheinen video on placeholder, kunnes olemme luoneet uuden esittelyvideomme.",
+    );
 
   return (
     <Layout
