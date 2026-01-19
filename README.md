@@ -1,5 +1,9 @@
 # Konvikti Landing Zone
 
+![Production Build](https://github.com/benjamsf/react-konvikti-lz/actions/workflows/build.yml/badge.svg?branch=main)
+![Pre-commit](https://github.com/benjamsf/react-konvikti-lz/actions/workflows/pre-commit.yml/badge.svg)
+![Version](https://img.shields.io/github/package-json/v/benjamsf/react-konvikti-lz?color=blue)
+
 A web application for Ylioppilaskoti Konvikti (Claustrum Theologicum), a student housing organization for theology students at the University of Helsinki. The application serves as the public-facing website providing information about the organization, housing applications, news, and organizational details.
 
 ## Table of Contents
@@ -42,7 +46,6 @@ The application uses a swipe-based navigation pattern (LandingZoneSwiper) allowi
 | CMS                  | Sanity.io                |
 | Data Fetching        | React Query              |
 | Internationalization | react-i18next            |
-| Authentication       | Auth0                    |
 | UI Components        | Radix UI                 |
 | Icons                | Radix Icons              |
 
@@ -133,7 +136,6 @@ konvikti-lz/
 - Node.js 18 or higher
 - npm or yarn
 - A Sanity.io account (for CMS)
-- An Auth0 account (for authentication, if enabled)
 
 ### Installation
 
@@ -261,12 +263,8 @@ Located in `src/locales/`:
 
 ```
 locales/
-├── fi/
-│   ├── translation.json    # Main Finnish translations
-│   ├── common.json         # Shared UI strings
-│   └── org.json            # Organization page strings
-└── en/
-    └── translation.json    # English translations
+├── fi.json
+└── en.json
 ```
 
 ### Adding Translations
@@ -297,11 +295,6 @@ Create a `.env` file in the project root:
 # Sanity CMS
 VITE_SANITY_PROJECT_ID=your_project_id
 VITE_SANITY_DATASET=production
-
-# Auth0 (if authentication is enabled)
-VITE_AUTH0_DOMAIN=your_domain.auth0.com
-VITE_AUTH0_CLIENT_ID=your_client_id
-VITE_AUTH0_AUDIENCE=your_api_audience
 
 # Google Forms (for applications)
 VITE_GOOGLE_APPLICATION_FORM=https://docs.google.com/forms/d/e/xxx/viewform
@@ -392,17 +385,3 @@ Follow conventional commits:
 - `docs: update README`
 - `style: format code`
 - `refactor: restructure hooks`
-
----
-
-## License
-
-This project is proprietary software for Ylioppilaskoti Konviktin kannatusyhdistys r.y.
-
----
-
-## Support
-
-For technical issues, contact the development team or open an issue in the repository.
-
-For content management questions, refer to the Sanity Studio documentation or contact the organization's communications team.
