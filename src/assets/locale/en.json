@@ -25,6 +25,36 @@
   "sidebarInfo5": "Konvikti LZ",
   "sidebarInfo6": "Contact: apotti@konvikti.fi",
   "logoutLabel": "Sign out",
+
+  "navbar.Home": "Home",
+  "navbar.Info": "Apply",
+  "navbar.Blog": "Blog",
+  "navbar.Org": "Association",
+
+  "blogFeed": {
+    "searchPlaceholder": "Search posts...",
+    "clearSearch": "Clear search",
+    "categories": {
+      "all": "All",
+      "blog": "Blog",
+      "news": "News",
+      "announcement": "Announcements",
+      "event": "Events",
+      "asukashaku": "Resident searches"
+    },
+    "error": {
+      "title": "Error loading posts"
+    },
+    "noResultsFiltered": "No posts found matching your search.",
+    "noPosts": "No published posts yet.",
+    "swipeHint": "← Swipe cards →",
+    "navigation": {
+      "previous": "Previous",
+      "next": "Next",
+      "goToPost": "Post {{number}}"
+    }
+  },
+
   "footer": {
     "description": "Claustrum Theologicum — Supporting theology students since 1917.",
     "linksAndContactTitle": "Links and contact information",

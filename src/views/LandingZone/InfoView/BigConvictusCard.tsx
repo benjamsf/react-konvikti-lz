@@ -17,27 +17,29 @@ import slide5 from "../../../assets/heroimages/hero6.jpeg";
 const GALLERY_SLIDES: GallerySlide[] = [
   {
     image: slide1,
-    title: "Olohuone",
-    description: "Tilava yhteinen olohuone, jossa voi viettää aikaa yhdessä.",
+    title: "We're going to have an introduction of Iso-Konvikti here.",
+    description: "For the moment, we got placeholders in place.",
   },
   {
     image: slide2,
-    title: "Keittiö",
-    description: "Täysin varusteltu yhteiskeittiö.",
+    title: "We're going to have an introduction of Iso-Konvikti here.",
+    description: "For the moment, we got placeholders in place.",
   },
   {
     image: slide3,
-    title: "Makuuhuone",
+    title: "We're going to have an introduction of Iso-Konvikti here.",
+    description: "For the moment, we got placeholders in place.",
   },
   {
     image: slide4,
-    title: "Piha-alue",
-    description: "Vihreä piha grillailua ja ulkoilua varten.",
+    title: "We're going to have an introduction of Iso-Konvikti here.",
+    description: "For the moment, we got placeholders in place.",
   },
   {
     image: slide5,
+    title: "We're going to have an introduction of Iso-Konvikti here.",
+    description: "For the moment, we got placeholders in place.",
   },
-  // Add more slides as needed
 ];
 
 export function BigConvictusCard() {

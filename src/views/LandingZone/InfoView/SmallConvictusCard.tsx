@@ -15,12 +15,13 @@ import slide2 from "../../../assets/heroimages/hero6.jpeg";
 const GALLERY_SLIDES: GallerySlide[] = [
   {
     image: slide1,
-    title: "Ensimmäinen kuva",
-    description: "Kuvaus ensimmäisestä kuvasta.",
+    title: "We're going to have an introduction of Pikku-Konvikti here.",
+    description: "For the moment, we got placeholders in place.",
   },
   {
     image: slide2,
-    title: "Toinen kuva",
+    title: "We're going to have an introduction of Pikku-Konvikti here.",
+    description: "For the moment, we got placeholders in place.",
   },
 ];
 

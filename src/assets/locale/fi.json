@@ -26,6 +26,11 @@
   "sidebarInfo6": "Yhteys: apotti@konvikti.fi",
   "logoutLabel": "Kirjaudu ulos",
 
+  "navbar.Home": "Koti",
+  "navbar.Info": "Hae",
+  "navbar.Blog": "Blogi",
+  "navbar.Org": "Yhdistys",
+
   "footer": {
     "description": "Claustrum Theologicum - Teologian opiskelijoiden tukena vuodesta 1917.",
     "linksAndContactTitle": "Linkit ja yhteystiedot",
@@ -55,6 +60,30 @@
   },
   "rules": {
     "title": "Yhdistyksen säännöt"
+  },
+
+  "blogFeed": {
+    "searchPlaceholder": "Etsi julkaisuja...",
+    "clearSearch": "Tyhjennä haku",
+    "categories": {
+      "all": "Kaikki",
+      "blog": "Blogi",
+      "news": "Uutiset",
+      "announcement": "Tiedotteet",
+      "event": "Tapahtumat",
+      "asukashaku": "Asukashaut"
+    },
+    "error": {
+      "title": "Virhe ladattaessa julkaisuja."
+    },
+    "noResultsFiltered": "Hakuehdoilla ei löytynyt julkaisuja.",
+    "noPosts": "Ei vielä julkaistuja julkaisuja.",
+    "swipeHint": "← Pyyhkäise kortteja →",
+    "navigation": {
+      "previous": "Edellinen",
+      "next": "Seuraava",
+      "goToPost": "Julkaisu {{number}}"
+    }
   },
 
   "HOMEVIEW": "HOMEVIEW",
