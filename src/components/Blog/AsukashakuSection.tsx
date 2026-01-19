@@ -20,23 +20,18 @@ export function AsukashakuSection({
   const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
-  // Sort posts: active (open) first, then by date
   const sortedPosts = useMemo(() => {
     if (!posts) return [];
     const sorted = [...posts].sort((a, b) => {
-      // Open status comes first
       if (a.hakuStatus === "open" && b.hakuStatus !== "open") return -1;
       if (a.hakuStatus !== "open" && b.hakuStatus === "open") return 1;
-      // Then sort by date (newest first)
       return (
         new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
       );
     });
-    // Apply maxPosts limit if specified
     return maxPosts ? sorted.slice(0, maxPosts) : sorted;
   }, [posts, maxPosts]);
 
-  // Touch handling for swipe
   const touchStartX = useRef<number | null>(null);
   const touchEndX = useRef<number | null>(null);
   const minSwipeDistance = 50;
@@ -61,7 +56,6 @@ export function AsukashakuSection({
     }
   };
 
-  // Touch handlers that capture events and prevent parent Swiper from handling them
   const handleTouchStart = (e: React.TouchEvent) => {
     touchEndX.current = null;
     touchStartX.current = e.targetTouches[0].clientX;
@@ -69,7 +63,6 @@ export function AsukashakuSection({
 
   const handleTouchMove = (e: React.TouchEvent) => {
     touchEndX.current = e.targetTouches[0].clientX;
-    // Stop propagation to prevent LandingZoneSwiper from capturing
     e.stopPropagation();
   };
 
@@ -86,7 +79,6 @@ export function AsukashakuSection({
       goToPrev();
     }
 
-    // Stop propagation
     e.stopPropagation();
   };
 
@@ -120,7 +112,10 @@ export function AsukashakuSection({
   const showNavigation = postCount > 1;
 
   return (
-    <section className="py-12 px-4 md:px-8 bg-backgroundBlue">
+    <section
+      className="py-12 px-4 md:px-8 bg-backgroundBlue"
+      style={{ touchAction: "pan-y" }}
+    >
       <div className="max-w-6xl mx-auto">
         {showTitle && (
           <div className="mb-10 text-center">
@@ -130,20 +125,14 @@ export function AsukashakuSection({
           </div>
         )}
 
-        {/* Swipeable Card Stack Container */}
-        <div
-          className="flex items-center justify-center gap-2 md:gap-6"
-          onTouchStart={handleTouchStart}
-          onTouchMove={handleTouchMove}
-          onTouchEnd={handleTouchEnd}
-        >
-          {/* Left Arrow */}
+        {/* Desktop Layout: Arrows on sides */}
+        <div className="hidden md:flex items-center justify-center gap-6">
           {showNavigation && (
             <button
               onClick={goToPrev}
               disabled={activeIndex === 0}
               className={`
-                p-5 md:p-8 rounded-2xl transition-all duration-200 flex-shrink-0
+                p-8 rounded-2xl transition-all duration-200 flex-shrink-0
                 ${
                   activeIndex === 0
                     ? "opacity-20 cursor-not-allowed"
@@ -156,8 +145,7 @@ export function AsukashakuSection({
             </button>
           )}
 
-          {/* Card Stack */}
-          <div className="relative w-full max-w-sm h-[420px] touch-pan-y">
+          <div className="relative w-full max-w-sm h-[420px]">
             {sortedPosts.map((post, index) => {
               const offset = index - activeIndex;
               const isVisible = Math.abs(offset) <= 2;
@@ -185,13 +173,12 @@ export function AsukashakuSection({
             })}
           </div>
 
-          {/* Right Arrow */}
           {showNavigation && (
             <button
               onClick={goToNext}
               disabled={activeIndex === postCount - 1}
               className={`
-                p-5 md:p-8 rounded-2xl transition-all duration-200 flex-shrink-0
+                p-8 rounded-2xl transition-all duration-200 flex-shrink-0
                 ${
                   activeIndex === postCount - 1
                     ? "opacity-20 cursor-not-allowed"
@@ -205,9 +192,89 @@ export function AsukashakuSection({
           )}
         </div>
 
+        {/* Mobile Layout: Card deck with swipe, arrows below */}
+        <div className="md:hidden flex flex-col items-center gap-4">
+          {/* Card Stack - Larger on mobile */}
+          <div
+            className="relative w-full max-w-md h-[480px] touch-none"
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+            style={{ touchAction: "none" }}
+          >
+            {sortedPosts.map((post, index) => {
+              const offset = index - activeIndex;
+              const isVisible = Math.abs(offset) <= 2;
+
+              if (!isVisible) return null;
+
+              return (
+                <div
+                  key={post._id}
+                  className="absolute inset-0 transition-all duration-300 ease-out"
+                  style={{
+                    transform: `
+                      translateX(${offset * 8}px)
+                      translateY(${Math.abs(offset) * 8}px)
+                      scale(${1 - Math.abs(offset) * 0.05})
+                    `,
+                    zIndex: sortedPosts.length - Math.abs(offset),
+                    opacity: offset === 0 ? 1 : 0.6 - Math.abs(offset) * 0.2,
+                    pointerEvents: offset === 0 ? "auto" : "none",
+                  }}
+                >
+                  <BlogPostCard post={post} onReadMore={handleReadMore} />
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Navigation Arrows Below - Small on mobile */}
+          {showNavigation && (
+            <div className="flex items-center justify-center gap-6">
+              <button
+                onClick={goToPrev}
+                disabled={activeIndex === 0}
+                className={`
+                  p-2 rounded-lg transition-all duration-200 flex-shrink-0
+                  ${
+                    activeIndex === 0
+                      ? "opacity-20 cursor-not-allowed"
+                      : "bg-brown-700/70 hover:bg-primary/80 text-white-300 hover:text-white-100 active:scale-95"
+                  }
+                `}
+                aria-label="Edellinen"
+              >
+                <ChevronLeftIcon width={32} height={32} />
+              </button>
+
+              <button
+                onClick={goToNext}
+                disabled={activeIndex === postCount - 1}
+                className={`
+                  p-2 rounded-lg transition-all duration-200 flex-shrink-0
+                  ${
+                    activeIndex === postCount - 1
+                      ? "opacity-20 cursor-not-allowed"
+                      : "bg-brown-700/70 hover:bg-primary/80 text-white-300 hover:text-white-100 active:scale-95"
+                  }
+                `}
+                aria-label="Seuraava"
+              >
+                <ChevronRightIcon width={32} height={32} />
+              </button>
+            </div>
+          )}
+
+          {/* Swipe hint */}
+          <p className="text-center text-white-600 text-sm">
+            ← Pyyhkäise kortteja →
+          </p>
+        </div>
+
         {/* Pagination Dots */}
         {showNavigation && (
-          <div className="flex justify-center gap-2 mt-8">
+          <div className="flex justify-center gap-2 mt-6">
             {sortedPosts.map((_, idx) => (
               <button
                 key={idx}
@@ -225,11 +292,6 @@ export function AsukashakuSection({
             ))}
           </div>
         )}
-
-        {/* Swipe hint */}
-        <p className="text-center text-white-600 text-sm mt-4 md:hidden">
-          ← Pyyhkäise kortteja →
-        </p>
       </div>
     </section>
   );
