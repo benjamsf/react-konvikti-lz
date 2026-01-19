@@ -62,6 +62,30 @@
     "title": "Yhdistyksen säännöt"
   },
 
+  "blogFeed": {
+    "searchPlaceholder": "Etsi julkaisuja...",
+    "clearSearch": "Tyhjennä haku",
+    "categories": {
+      "all": "Kaikki",
+      "blog": "Blogi",
+      "news": "Uutiset",
+      "announcement": "Tiedotteet",
+      "event": "Tapahtumat",
+      "asukashaku": "Asukashaut"
+    },
+    "error": {
+      "title": "Virhe ladattaessa julkaisuja."
+    },
+    "noResultsFiltered": "Hakuehdoilla ei löytynyt julkaisuja.",
+    "noPosts": "Ei vielä julkaistuja julkaisuja.",
+    "swipeHint": "← Pyyhkäise kortteja →",
+    "navigation": {
+      "previous": "Edellinen",
+      "next": "Seuraava",
+      "goToPost": "Julkaisu {{number}}"
+    }
+  },
+
   "HOMEVIEW": "HOMEVIEW",
   "homeViewTitle": "Koti",
   "homeHero.Title": "Konvikti",
