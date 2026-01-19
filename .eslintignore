@@ -1,0 +1,26 @@
+# Sanity Studio (separate project with its own config)
+src/sanity/
+sanity/
+
+# Build outputs
+dist/
+build/
+
+# Dependencies
+node_modules/
+
+# Config files
+vite.config.ts
+tailwind.config.js
+postcss.config.js
+*.config.js
+*.config.ts
+
+# GitHub Actions
+.github/
+
+# i18n config
+src/i18n.ts
+
+# Type declarations
+*.d.ts
