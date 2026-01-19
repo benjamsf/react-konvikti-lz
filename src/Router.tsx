@@ -1,7 +1,5 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { LandingZoneSwiper } from "./views/LandingZone/LandingZoneSwiper";
-import { LoginView } from "./views/LoginView";
-import { PrivateRoute } from "./hook/auth/ProtectedRoute";
 
 const router = createBrowserRouter([
   {
@@ -10,14 +8,8 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: (
-          <PrivateRoute>
             <LandingZoneSwiper />
-          </PrivateRoute>
         ),
-      },
-      {
-        path: "/login",
-        element: <LoginView />,
       },
     ],
   },

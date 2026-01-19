@@ -2,23 +2,28 @@ import { useState } from "react";
 import { BriefContainer } from "../../components/BriefContainer";
 import { HeadlineContainer } from "../../components/HeadlineContainer";
 import { Layout } from "../../components/Layout";
-import { ImageSlideModal, type GallerySlide } from "../../components/ImageSlideModal";
+import { YouTubeModal } from "../../components/YouTubeModal";
+import { useIntroVideo, type SupportedLanguage } from "../../hook/useSiteSettings";
 import trooper from "../../assets/heroimages/hero1.jpeg";
 import Icon1 from "../../assets/littleimgs/img1.png";
 import Icon2 from "../../assets/littleimgs/img2.png";
 import Icon3 from "../../assets/littleimgs/img3.png";
 import Icon4 from "../../assets/littleimgs/img4.png";
-import slide1 from "../../assets/heroimages/hero2.jpeg";
-import slide2 from "../../assets/heroimages/hero3.jpeg";
-import slide3 from "../../assets/heroimages/hero4.jpeg";
-import slide4 from "../../assets/heroimages/hero5.jpeg";
-import slide5 from "../../assets/heroimages/hero6.jpeg";
 import logo from "../../assets/logo_green.png";
 import { useTranslation } from "react-i18next";
 
+// Fallback video ID if Sanity hasn't been configured yet
+const FALLBACK_VIDEO_ID = "dQw4w9WgXcQ";
+
 export function HomeView() {
-  const { t } = useTranslation();
-  const [isGalleryOpen, setIsGalleryOpen] = useState(false);
+  const { t, i18n } = useTranslation();
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
+  
+  // Get current language for Sanity queries
+  const currentLanguage = (i18n.language?.startsWith("en") ? "en" : "fi") as SupportedLanguage;
+  
+  // Fetch intro video from Sanity
+  const { introVideo } = useIntroVideo(currentLanguage);
 
   const headlines = [
     {
@@ -56,30 +61,9 @@ export function HomeView() {
     },
   ];
 
-  const GALLERY_SLIDES: GallerySlide[] = [
-    {
-      image: slide1,
-      title: "Olohuone",
-      description: "Tilava yhteinen olohuone, jossa voi viettää aikaa yhdessä.",
-    },
-    {
-      image: slide2,
-      title: "Keittiö",
-      description: "Täysin varusteltu yhteiskeittiö.",
-    },
-    {
-      image: slide3,
-      title: "Makuuhuone",
-    },
-    {
-      image: slide4,
-      title: "Piha-alue",
-      description: "Vihreä piha grillailua ja ulkoilua varten.",
-    },
-    {
-      image: slide5,
-    },
-  ];
+  // Use Sanity video or fallback
+  const videoId = introVideo?.youtubeUrl || FALLBACK_VIDEO_ID;
+  const videoTitle = introVideo?.title || t("homeVideo.title", "Tervetuloa Konviktiin");
 
   return (
     <Layout
@@ -93,17 +77,18 @@ export function HomeView() {
           items={headlines}
           backgroundColor="bg-background"
           buttonText={t("hubBrief.Button")}
-          onButtonClick={() => setIsGalleryOpen(true)}
+          onButtonClick={() => setIsVideoOpen(true)}
         />
         <BriefContainer
           headTitle={t("homeBrief.HeadTitle")}
           items={punchLines}
           backgroundColor="bg-backgroundBlue"
         />
-        <ImageSlideModal
-          isOpen={isGalleryOpen}
-          onClose={() => setIsGalleryOpen(false)}
-          slides={GALLERY_SLIDES}
+        <YouTubeModal
+          isOpen={isVideoOpen}
+          onClose={() => setIsVideoOpen(false)}
+          videoId={videoId}
+          title={videoTitle}
         />
       </div>
     </Layout>

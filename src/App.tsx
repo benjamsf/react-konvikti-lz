@@ -1,7 +1,9 @@
 import Router from "./Router";
 import { AlertDialogRoot } from "./components/AlertDialogService/AlertDialogRoot";
 import { LoadingProvider } from "./components/Loading/LoadingProvider";
+/*
 import { KindeProvider } from "@kinde-oss/kinde-auth-react";
+*/
 
 function App() {
   return (
@@ -10,6 +12,21 @@ function App() {
     </LoadingProvider>
   );
 }
+
+const Content = () => {
+  return (
+    <div className="relative">
+      <div className="opacity-100">
+          <Router />
+          <AlertDialogRoot />
+      </div>
+    </div>
+  );
+};
+export default App;
+
+/*
+When we want login content
 
 const Content = () => {
   return (
@@ -28,5 +45,4 @@ const Content = () => {
       </div>
     </div>
   );
-};
-export default App;
+*/ 

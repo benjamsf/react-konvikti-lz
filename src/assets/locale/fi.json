@@ -1,5 +1,6 @@
 {
   "COMMON-VERBS": "COMMON-VERBS",
+  "hubBrief.Button": "Katso esittelyvideo!",
   "mobileGuide": "Konvikti",
   "logInto": "Siirry palveluun:",
   "logInto.register": "Pyydä pääsyä...",
@@ -46,6 +47,14 @@
     "description": "Kurkista arkeemme ja näe mitä Konviktissa tapahtuu!",
     "button": "Avaa Instagram",
     "hint": "Näe uusimmat kuvamme ja tarinamme profiilissamme"
+  },
+
+  "rulesSection": {
+    "title": "Viralliset asiakirjat",
+    "subtitle": "Yhdistyksen säännöt ja muut viralliset dokumentit"
+  },
+  "rules": {
+    "title": "Yhdistyksen säännöt"
   },
 
   "HOMEVIEW": "HOMEVIEW",
