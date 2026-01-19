@@ -26,6 +26,11 @@
   "sidebarInfo6": "Yhteys: apotti@konvikti.fi",
   "logoutLabel": "Kirjaudu ulos",
 
+  "navbar.Home": "Koti",
+  "navbar.Info": "Hae",
+  "navbar.Blog": "Blogi",
+  "navbar.Org": "Yhdistys",
+
   "footer": {
     "description": "Claustrum Theologicum - Teologian opiskelijoiden tukena vuodesta 1917.",
     "linksAndContactTitle": "Linkit ja yhteystiedot",

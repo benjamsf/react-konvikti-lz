@@ -25,6 +25,12 @@
   "sidebarInfo5": "Konvikti LZ",
   "sidebarInfo6": "Contact: apotti@konvikti.fi",
   "logoutLabel": "Sign out",
+
+  "navbar.Home": "Home",
+  "navbar.Info": "Apply",
+  "navbar.Blog": "Blog",
+  "navbar.Org": "Association",
+
   "footer": {
     "description": "Claustrum Theologicum — Supporting theology students since 1917.",
     "linksAndContactTitle": "Links and contact information",

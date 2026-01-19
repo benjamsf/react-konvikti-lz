@@ -42,7 +42,7 @@ export function Sidebar({
     },
     {
       index: 3,
-      label: t("orgViewTitle", "Yhdistys"),
+      label: t("navbar.Org"),
       icon: PersonIcon,
     },
   ];
@@ -126,6 +126,7 @@ export function Sidebar({
               {t("sidebarInfo5", "Konvikti")} - v{appVersion}
             </p>
             <p className="italic text-xs mt-1">{t("sidebarInfo6", "")}</p>
+            <p className="text-xs mt-1">MIT (c) Benjam Bröijer</p>
           </div>
         </div>
       </div>

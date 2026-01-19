@@ -54,10 +54,10 @@ export function LandingZoneSwiper() {
   };
 
   const views = [
-    t("homeViewTitle"),
-    t("InfoViewTitle"),
-    t("blogNewsViewTitle", "Blogi ja uutiset"),
-    t("orgViewTitle", "Yhdistys"),
+    t("navbar.Home"),
+    t("navbar.Info"),
+    t("navbar.Blog"),
+    t("navbar.Org"),
   ];
 
   const totalSlides = views.length;
