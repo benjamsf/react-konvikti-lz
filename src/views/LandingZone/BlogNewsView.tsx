@@ -10,17 +10,17 @@ export function BlogNewsView() {
   return (
     <Layout showFooter={true}>
       <HeroSection
-          image={heroimage}
-          height="tall"
-          title={t("blogHero.Title")}
-        />
+        image={heroimage}
+        height="tall"
+        title={t("blogHero.Title")}
+      />
       <div className="py-8 px-4 md:px-8">
         <div className="max-w-6xl mx-auto">
           <header className="mb-8">
             <p className="text-textLight">
               {t(
                 "blogNews.subtitle",
-                "Lue uusimmat uutiset ja blogikirjoitukset"
+                "Lue uusimmat uutiset ja blogikirjoitukset",
               )}
             </p>
           </header>

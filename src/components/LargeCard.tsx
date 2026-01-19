@@ -48,9 +48,7 @@ export function LargeCard({
             </h2>
           )}
           {details && (
-            <span className="prose mb-4 text-sm md:text-lg">
-              {details}
-            </span>
+            <span className="prose mb-4 text-sm md:text-lg">{details}</span>
           )}
           {steps?.map((step, index) => <Step key={index} {...step} />)}
           {content && (

@@ -26,9 +26,7 @@ export function HeadlineContainer({
           <Headline
             key={index}
             title={item.title}
-            titleStyling={
-              item.titleStyling || "text-4xl md:text-5xl mb-4"
-            }
+            titleStyling={item.titleStyling || "text-4xl md:text-5xl mb-4"}
             subtitle={item.subtitle}
             text={item.text}
           />

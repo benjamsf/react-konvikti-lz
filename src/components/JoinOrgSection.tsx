@@ -1,7 +1,8 @@
 import { ExternalLinkIcon } from "@radix-ui/react-icons";
 
 // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-const GOOGLE_RECRUITMENT_FORM = import.meta.env.VITE_GOOGLE_RECRUITMENT_FORM || "";
+const GOOGLE_RECRUITMENT_FORM =
+  import.meta.env.VITE_GOOGLE_RECRUITMENT_FORM || "";
 
 interface JoinOrgSectionProps {
   title: string;
@@ -28,9 +29,10 @@ export function JoinOrgSection({
         <div
           className={`
             rounded-2xl p-8 md:p-12 text-center
-            ${isHighlight
-              ? "bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/30"
-              : "bg-backgroundDark border border-brown-800/50"
+            ${
+              isHighlight
+                ? "bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/30"
+                : "bg-backgroundDark border border-brown-800/50"
             }
           `}
         >
@@ -57,15 +59,16 @@ export function JoinOrgSection({
               target="_blank"
               rel="noopener noreferrer"
               className={`
-                inline-flex items-center gap-3 
-                px-8 py-4 
+                inline-flex items-center gap-3
+                px-8 py-4
                 font-semibold text-lg
-                rounded-xl 
+                rounded-xl
                 transition-all duration-200
                 hover:scale-105 active:scale-95
-                ${isHighlight
-                  ? "bg-primary hover:bg-primary-600 text-white-100"
-                  : "bg-primary hover:bg-primary-600 text-white-100"
+                ${
+                  isHighlight
+                    ? "bg-primary hover:bg-primary-600 text-white-100"
+                    : "bg-primary hover:bg-primary-600 text-white-100"
                 }
               `}
             >

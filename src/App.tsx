@@ -17,8 +17,8 @@ const Content = () => {
   return (
     <div className="relative">
       <div className="opacity-100">
-          <Router />
-          <AlertDialogRoot />
+        <Router />
+        <AlertDialogRoot />
       </div>
     </div>
   );
@@ -45,4 +45,4 @@ const Content = () => {
       </div>
     </div>
   );
-*/ 
+*/

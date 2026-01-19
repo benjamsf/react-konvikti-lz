@@ -21,7 +21,9 @@ const CATEGORY_OPTIONS: { value: BlogCategory | "all"; label: string }[] = [
 
 export function BlogFeed({ showFilters = true, maxPosts }: BlogFeedProps) {
   const { data: posts, isLoading, error } = useBlogPosts();
-  const [selectedCategory, setSelectedCategory] = useState<BlogCategory | "all">("all");
+  const [selectedCategory, setSelectedCategory] = useState<
+    BlogCategory | "all"
+  >("all");
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
 
@@ -40,7 +42,8 @@ export function BlogFeed({ showFilters = true, maxPosts }: BlogFeedProps) {
         (post) =>
           post.title.toLowerCase().includes(query) ||
           (post.excerpt?.toLowerCase().includes(query) ?? false) ||
-          (post.tags?.some((tag) => tag.toLowerCase().includes(query)) ?? false)
+          (post.tags?.some((tag) => tag.toLowerCase().includes(query)) ??
+            false),
       );
     }
 
@@ -104,11 +107,11 @@ export function BlogFeed({ showFilters = true, maxPosts }: BlogFeedProps) {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="
-                w-full bg-backgroundDark text-white-300 
-                pl-12 pr-12 py-3.5 
+                w-full bg-backgroundDark text-white-300
+                pl-12 pr-12 py-3.5
                 rounded-xl
                 border border-brown-700/50
-                outline-none 
+                outline-none
                 focus:border-primary/50 focus:ring-2 focus:ring-primary/20
                 placeholder:text-white-600
                 transition-all duration-200
@@ -131,11 +134,12 @@ export function BlogFeed({ showFilters = true, maxPosts }: BlogFeedProps) {
                 key={option.value}
                 onClick={() => setSelectedCategory(option.value)}
                 className={`
-                  px-4 py-2.5 rounded-xl text-sm font-medium 
+                  px-4 py-2.5 rounded-xl text-sm font-medium
                   transition-all duration-200
-                  ${selectedCategory === option.value
-                    ? "bg-primary text-white-100 shadow-lg shadow-primary/20"
-                    : "bg-backgroundDark text-white-400 hover:bg-brown-800 border border-brown-700/50 hover:border-brown-600"
+                  ${
+                    selectedCategory === option.value
+                      ? "bg-primary text-white-100 shadow-lg shadow-primary/20"
+                      : "bg-backgroundDark text-white-400 hover:bg-brown-800 border border-brown-700/50 hover:border-brown-600"
                   }
                 `}
               >

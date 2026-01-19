@@ -1,7 +1,11 @@
 import { useState } from "react";
 import { urlFor } from "../../lib/sanityClient";
 import type { SanityImage } from "../../types/blog";
-import { ChevronLeftIcon, ChevronRightIcon, Cross1Icon } from "@radix-ui/react-icons";
+import {
+  ChevronLeftIcon,
+  ChevronRightIcon,
+  Cross1Icon,
+} from "@radix-ui/react-icons";
 
 interface GalleryImage extends SanityImage {
   caption?: string;
@@ -28,22 +32,30 @@ export function ImageGallery({ images, layout, caption }: ImageGalleryProps) {
 
   const goToPrev = () => {
     if (lightboxIndex !== null) {
-      setLightboxIndex(lightboxIndex === 0 ? images.length - 1 : lightboxIndex - 1);
+      setLightboxIndex(
+        lightboxIndex === 0 ? images.length - 1 : lightboxIndex - 1,
+      );
     }
   };
 
   const goToNext = () => {
     if (lightboxIndex !== null) {
-      setLightboxIndex(lightboxIndex === images.length - 1 ? 0 : lightboxIndex + 1);
+      setLightboxIndex(
+        lightboxIndex === images.length - 1 ? 0 : lightboxIndex + 1,
+      );
     }
   };
 
   const goToCarouselPrev = () => {
-    setCarouselIndex(carouselIndex === 0 ? images.length - 1 : carouselIndex - 1);
+    setCarouselIndex(
+      carouselIndex === 0 ? images.length - 1 : carouselIndex - 1,
+    );
   };
 
   const goToCarouselNext = () => {
-    setCarouselIndex(carouselIndex === images.length - 1 ? 0 : carouselIndex + 1);
+    setCarouselIndex(
+      carouselIndex === images.length - 1 ? 0 : carouselIndex + 1,
+    );
   };
 
   if (layout === "carousel") {
@@ -94,11 +106,12 @@ export function ImageGallery({ images, layout, caption }: ImageGalleryProps) {
                 key={idx}
                 onClick={() => setCarouselIndex(idx)}
                 className={`
-                  flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden 
+                  flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden
                   transition-all duration-200
-                  ${idx === carouselIndex 
-                    ? "ring-2 ring-primary opacity-100" 
-                    : "opacity-50 hover:opacity-80"
+                  ${
+                    idx === carouselIndex
+                      ? "ring-2 ring-primary opacity-100"
+                      : "opacity-50 hover:opacity-80"
                   }
                 `}
               >
@@ -139,9 +152,11 @@ export function ImageGallery({ images, layout, caption }: ImageGalleryProps) {
   return (
     <figure className="my-8">
       {caption && (
-        <figcaption className="text-white-400 font-medium mb-3">{caption}</figcaption>
+        <figcaption className="text-white-400 font-medium mb-3">
+          {caption}
+        </figcaption>
       )}
-      
+
       <div className={`grid grid-cols-1 ${gridCols} gap-3`}>
         {images.map((img, idx) => (
           <button
@@ -186,11 +201,17 @@ interface LightboxProps {
   onNext: () => void;
 }
 
-function Lightbox({ images, currentIndex, onClose, onPrev, onNext }: LightboxProps) {
+function Lightbox({
+  images,
+  currentIndex,
+  onClose,
+  onPrev,
+  onNext,
+}: LightboxProps) {
   const currentImage = images[currentIndex];
 
   return (
-    <div 
+    <div
       className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center"
       onClick={onClose}
     >
@@ -207,14 +228,20 @@ function Lightbox({ images, currentIndex, onClose, onPrev, onNext }: LightboxPro
       {images.length > 1 && (
         <>
           <button
-            onClick={(e) => { e.stopPropagation(); onPrev(); }}
+            onClick={(e) => {
+              e.stopPropagation();
+              onPrev();
+            }}
             className="absolute left-4 top-1/2 -translate-y-1/2 p-4 bg-white/10 hover:bg-white/20 rounded-full text-white transition-colors"
             aria-label="Edellinen"
           >
             <ChevronLeftIcon width={32} height={32} />
           </button>
           <button
-            onClick={(e) => { e.stopPropagation(); onNext(); }}
+            onClick={(e) => {
+              e.stopPropagation();
+              onNext();
+            }}
             className="absolute right-4 top-1/2 -translate-y-1/2 p-4 bg-white/10 hover:bg-white/20 rounded-full text-white transition-colors"
             aria-label="Seuraava"
           >
@@ -224,7 +251,7 @@ function Lightbox({ images, currentIndex, onClose, onPrev, onNext }: LightboxPro
       )}
 
       {/* Image */}
-      <div 
+      <div
         className="max-w-[90vw] max-h-[85vh] flex flex-col items-center"
         onClick={(e) => e.stopPropagation()}
       >
@@ -233,11 +260,13 @@ function Lightbox({ images, currentIndex, onClose, onPrev, onNext }: LightboxPro
           alt={currentImage.alt || ""}
           className="max-w-full max-h-[80vh] object-contain rounded-lg"
         />
-        
+
         {/* Caption & Counter */}
         <div className="mt-4 text-center">
           {currentImage.caption && (
-            <p className="text-white-300 text-sm mb-2">{currentImage.caption}</p>
+            <p className="text-white-300 text-sm mb-2">
+              {currentImage.caption}
+            </p>
           )}
           <p className="text-white-500 text-sm">
             {currentIndex + 1} / {images.length}

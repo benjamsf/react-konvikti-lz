@@ -33,7 +33,11 @@ const formatDate = (dateString: string): string => {
   });
 };
 
-export function BlogPostCard({ post, onReadMore, compact = false }: BlogPostCardProps) {
+export function BlogPostCard({
+  post,
+  onReadMore,
+  compact = false,
+}: BlogPostCardProps) {
   const imageUrl = post.coverImage
     ? urlFor(post.coverImage).width(600).height(400).url()
     : null;
@@ -46,9 +50,9 @@ export function BlogPostCard({ post, onReadMore, compact = false }: BlogPostCard
       type="button"
       onClick={() => onReadMore?.(post)}
       className={`
-        group relative bg-backgroundDark rounded-2xl overflow-hidden 
-        border border-brown-800/50 
-        transition-all duration-300 
+        group relative bg-backgroundDark rounded-2xl overflow-hidden
+        border border-brown-800/50
+        transition-all duration-300
         hover:border-primary/50 hover:shadow-xl hover:shadow-primary/5
         hover:-translate-y-1
         flex flex-col
@@ -59,7 +63,11 @@ export function BlogPostCard({ post, onReadMore, compact = false }: BlogPostCard
       `}
     >
       {/* Image Section */}
-      <div className={`relative overflow-hidden ${compact ? "h-40" : "h-52"} flex-shrink-0`}>
+      <div
+        className={`relative overflow-hidden ${
+          compact ? "h-40" : "h-52"
+        } flex-shrink-0`}
+      >
         {imageUrl ? (
           <img
             src={imageUrl}
@@ -70,10 +78,10 @@ export function BlogPostCard({ post, onReadMore, compact = false }: BlogPostCard
         ) : (
           <div className="w-full h-full bg-gradient-to-br from-brown-800 to-brown-900" />
         )}
-        
+
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-backgroundDark/90 via-backgroundDark/20 to-transparent" />
-        
+
         {/* Category Badge */}
         <div className="absolute top-4 left-4 flex gap-2">
           <span
@@ -94,13 +102,18 @@ export function BlogPostCard({ post, onReadMore, compact = false }: BlogPostCard
               className={`
                 px-3 py-1.5 text-xs font-bold rounded-full
                 flex items-center gap-1.5
-                ${isHakuOpen 
-                  ? "bg-success/90 text-white-100 animate-pulse" 
-                  : "bg-brown-600/90 text-white-400"
+                ${
+                  isHakuOpen
+                    ? "bg-success/90 text-white-100 animate-pulse"
+                    : "bg-brown-600/90 text-white-400"
                 }
               `}
             >
-              <span className={`w-2 h-2 rounded-full ${isHakuOpen ? "bg-white-100" : "bg-white-500"}`} />
+              <span
+                className={`w-2 h-2 rounded-full ${
+                  isHakuOpen ? "bg-white-100" : "bg-white-500"
+                }`}
+              />
               {isHakuOpen ? "Haku käynnissä!" : "Haku päättynyt"}
             </span>
           </div>

@@ -173,7 +173,8 @@ export const blogPost = defineType({
                   ],
                 },
               ],
-              validation: (Rule) => Rule.min(2).error("Galleriassa täytyy olla vähintään 2 kuvaa"),
+              validation: (Rule) =>
+                Rule.min(2).error("Galleriassa täytyy olla vähintään 2 kuvaa"),
             },
             {
               name: "layout",
@@ -204,7 +205,7 @@ export const blogPost = defineType({
               const layoutLabels: Record<string, string> = {
                 "grid-2": "2 saraketta",
                 "grid-3": "3 saraketta",
-                "carousel": "Karuselli",
+                carousel: "Karuselli",
               };
               return {
                 title: `Galleria (${images?.length || 0} kuvaa)`,
@@ -248,12 +249,15 @@ export const blogPost = defineType({
         event: "Tapahtuma",
         asukashaku: "Asukashaku",
       };
-      const statusLabel = category === "asukashaku" 
-        ? ` (${hakuStatus === "open" ? "Käynnissä" : "Päättynyt"})`
-        : "";
+      const statusLabel =
+        category === "asukashaku"
+          ? ` (${hakuStatus === "open" ? "Käynnissä" : "Päättynyt"})`
+          : "";
       return {
         title,
-        subtitle: `${categoryLabels[category] || category}${statusLabel} — ${author}`,
+        subtitle: `${
+          categoryLabels[category] || category
+        }${statusLabel} — ${author}`,
         media,
       };
     },

@@ -23,11 +23,11 @@ interface RecruitmentCriteriaProps {
 
 // Default icons for recruitment criteria
 const defaultIcons: ReactNode[] = [
-  <RocketIcon key="rocket" className="w-6 h-6" />,           // Opintomenestys
-  <PersonIcon key="person" className="w-6 h-6" />,           // Yhteisöllisyys
-  <ReaderIcon key="reader" className="w-6 h-6" />,           // Kiinnostus teologiaan
+  <RocketIcon key="rocket" className="w-6 h-6" />, // Opintomenestys
+  <PersonIcon key="person" className="w-6 h-6" />, // Yhteisöllisyys
+  <ReaderIcon key="reader" className="w-6 h-6" />, // Kiinnostus teologiaan
   <QuestionMarkCircledIcon key="question" className="w-6 h-6" />, // Olenko sopiva?
-  <HeartIcon key="heart" className="w-6 h-6" />,             // Vahvuutena yhteisö
+  <HeartIcon key="heart" className="w-6 h-6" />, // Vahvuutena yhteisö
 ];
 
 // Default criteria items based on the translation keys
@@ -75,24 +75,24 @@ export function RecruitmentCriteria({
             <div
               key={index}
               className="
-                bg-backgroundDark rounded-2xl p-6 
-                border border-brown-800/50 
-                hover:border-primary/30 
+                bg-backgroundDark rounded-2xl p-6
+                border border-brown-800/50
+                hover:border-primary/30
                 transition-all duration-300
                 group
               "
             >
               <div className="flex gap-5">
                 {/* Icon */}
-                <div 
+                <div
                   className="
-                    flex-shrink-0 
-                    w-12 h-12 
-                    rounded-xl 
-                    bg-primary/20 
-                    text-primary 
+                    flex-shrink-0
+                    w-12 h-12
+                    rounded-xl
+                    bg-primary/20
+                    text-primary
                     flex items-center justify-center
-                    group-hover:bg-primary/30 
+                    group-hover:bg-primary/30
                     transition-colors
                   "
                 >
@@ -119,16 +119,13 @@ export function RecruitmentCriteria({
             {additionalItems.map((item, index) => {
               const actualIndex = index + criteriaItems.length;
               return (
-                <div
-                  key={actualIndex}
-                  className="flex gap-5"
-                >
+                <div key={actualIndex} className="flex gap-5">
                   {/* Icon - softer style */}
-                  <div 
+                  <div
                     className="
-                      flex-shrink-0 
-                      w-10 h-10 
-                      rounded-full 
+                      flex-shrink-0
+                      w-10 h-10
+                      rounded-full
                       bg-brown-800/30
                       text-white-400
                       flex items-center justify-center

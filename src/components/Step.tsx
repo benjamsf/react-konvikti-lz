@@ -51,16 +51,12 @@ export function Step({
   return (
     <>
       {title && (
-        <h2 className="text-left text-xl font-bold pb-1 pt-6 mb-4">
-          {title}
-        </h2>
+        <h2 className="text-left text-xl font-bold pb-1 pt-6 mb-4">{title}</h2>
       )}
 
       {renderImage(imageSrc, imageLink, imageClasses)}
 
-      {description && (
-        <p className="m-2 prose prose-white">{description}</p>
-      )}
+      {description && <p className="m-2 prose prose-white">{description}</p>}
 
       {note && (
         <div className="prose prose-white max-w-none text-red-400 mt-2">

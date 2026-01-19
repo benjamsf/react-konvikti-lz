@@ -98,21 +98,31 @@ const RULES_QUERY = `*[_type == "organizationRules" && isPublished == true][0] {
 }`;
 
 // Fetch functions
-async function fetchStaffMembers(language: SupportedLanguage): Promise<StaffMember[]> {
+async function fetchStaffMembers(
+  language: SupportedLanguage,
+): Promise<StaffMember[]> {
   const data = await sanityClient.fetch<SanityStaffMember[]>(STAFF_QUERY);
-  
+
   return data.map((member) => ({
     _id: member._id,
     name: member.name,
-    title: language === "en" && member.title_en ? member.title_en : member.title_fi,
-    description: language === "en" && member.description_en ? member.description_en : member.description_fi,
-    image: member.image ? urlFor(member.image).width(400).height(400).url() : undefined,
+    title:
+      language === "en" && member.title_en ? member.title_en : member.title_fi,
+    description:
+      language === "en" && member.description_en
+        ? member.description_en
+        : member.description_fi,
+    image: member.image
+      ? urlFor(member.image).width(400).height(400).url()
+      : undefined,
   }));
 }
 
-async function fetchBoardMembers(language: SupportedLanguage): Promise<BoardMember[]> {
+async function fetchBoardMembers(
+  language: SupportedLanguage,
+): Promise<BoardMember[]> {
   const data = await sanityClient.fetch<SanityBoardMember[]>(BOARD_QUERY);
-  
+
   return data.map((member) => ({
     _id: member._id,
     name: member.name,
@@ -120,15 +130,20 @@ async function fetchBoardMembers(language: SupportedLanguage): Promise<BoardMemb
   }));
 }
 
-async function fetchOrganizationRules(language: SupportedLanguage): Promise<OrganizationRules | null> {
-  const data = await sanityClient.fetch<SanityOrganizationRules | null>(RULES_QUERY);
-  
+async function fetchOrganizationRules(
+  language: SupportedLanguage,
+): Promise<OrganizationRules | null> {
+  const data = await sanityClient.fetch<SanityOrganizationRules | null>(
+    RULES_QUERY,
+  );
+
   if (!data) return null;
-  
+
   return {
     _id: data._id,
     title: language === "en" && data.title_en ? data.title_en : data.title_fi,
-    content: language === "en" && data.content_en ? data.content_en : data.content_fi,
+    content:
+      language === "en" && data.content_en ? data.content_en : data.content_fi,
     lastUpdated: data.lastUpdated,
   };
 }

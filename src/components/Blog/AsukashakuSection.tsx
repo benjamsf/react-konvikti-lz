@@ -11,12 +11,15 @@ interface AsukashakuSectionProps {
   maxPosts?: number;
 }
 
-export function AsukashakuSection({ showTitle = true, maxPosts }: AsukashakuSectionProps) {
+export function AsukashakuSection({
+  showTitle = true,
+  maxPosts,
+}: AsukashakuSectionProps) {
   const { t } = useTranslation();
   const { data: posts, isLoading, error } = useAsukashakuPosts();
   const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
-  
+
   // Sort posts: active (open) first, then by date
   const sortedPosts = useMemo(() => {
     if (!posts) return [];
@@ -25,12 +28,14 @@ export function AsukashakuSection({ showTitle = true, maxPosts }: AsukashakuSect
       if (a.hakuStatus === "open" && b.hakuStatus !== "open") return -1;
       if (a.hakuStatus !== "open" && b.hakuStatus === "open") return 1;
       // Then sort by date (newest first)
-      return new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime();
+      return (
+        new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+      );
     });
     // Apply maxPosts limit if specified
     return maxPosts ? sorted.slice(0, maxPosts) : sorted;
   }, [posts, maxPosts]);
-  
+
   // Touch handling for swipe
   const touchStartX = useRef<number | null>(null);
   const touchEndX = useRef<number | null>(null);
@@ -70,7 +75,7 @@ export function AsukashakuSection({ showTitle = true, maxPosts }: AsukashakuSect
 
   const handleTouchEnd = (e: React.TouchEvent) => {
     if (!touchStartX.current || !touchEndX.current) return;
-    
+
     const distance = touchStartX.current - touchEndX.current;
     const isLeftSwipe = distance > minSwipeDistance;
     const isRightSwipe = distance < -minSwipeDistance;
@@ -126,7 +131,7 @@ export function AsukashakuSection({ showTitle = true, maxPosts }: AsukashakuSect
         )}
 
         {/* Swipeable Card Stack Container */}
-        <div 
+        <div
           className="flex items-center justify-center gap-2 md:gap-6"
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
@@ -139,9 +144,10 @@ export function AsukashakuSection({ showTitle = true, maxPosts }: AsukashakuSect
               disabled={activeIndex === 0}
               className={`
                 p-5 md:p-8 rounded-2xl transition-all duration-200 flex-shrink-0
-                ${activeIndex === 0
-                  ? "opacity-20 cursor-not-allowed"
-                  : "bg-brown-700/70 hover:bg-primary/80 text-white-300 hover:text-white-100 active:scale-95"
+                ${
+                  activeIndex === 0
+                    ? "opacity-20 cursor-not-allowed"
+                    : "bg-brown-700/70 hover:bg-primary/80 text-white-300 hover:text-white-100 active:scale-95"
                 }
               `}
               aria-label="Edellinen"
@@ -155,7 +161,7 @@ export function AsukashakuSection({ showTitle = true, maxPosts }: AsukashakuSect
             {sortedPosts.map((post, index) => {
               const offset = index - activeIndex;
               const isVisible = Math.abs(offset) <= 2;
-              
+
               if (!isVisible) return null;
 
               return (
@@ -164,8 +170,8 @@ export function AsukashakuSection({ showTitle = true, maxPosts }: AsukashakuSect
                   className="absolute inset-0 transition-all duration-300 ease-out"
                   style={{
                     transform: `
-                      translateX(${offset * 8}px) 
-                      translateY(${Math.abs(offset) * 8}px) 
+                      translateX(${offset * 8}px)
+                      translateY(${Math.abs(offset) * 8}px)
                       scale(${1 - Math.abs(offset) * 0.05})
                     `,
                     zIndex: sortedPosts.length - Math.abs(offset),
@@ -173,10 +179,7 @@ export function AsukashakuSection({ showTitle = true, maxPosts }: AsukashakuSect
                     pointerEvents: offset === 0 ? "auto" : "none",
                   }}
                 >
-                  <BlogPostCard
-                    post={post}
-                    onReadMore={handleReadMore}
-                  />
+                  <BlogPostCard post={post} onReadMore={handleReadMore} />
                 </div>
               );
             })}
@@ -189,9 +192,10 @@ export function AsukashakuSection({ showTitle = true, maxPosts }: AsukashakuSect
               disabled={activeIndex === postCount - 1}
               className={`
                 p-5 md:p-8 rounded-2xl transition-all duration-200 flex-shrink-0
-                ${activeIndex === postCount - 1
-                  ? "opacity-20 cursor-not-allowed"
-                  : "bg-brown-700/70 hover:bg-primary/80 text-white-300 hover:text-white-100 active:scale-95"
+                ${
+                  activeIndex === postCount - 1
+                    ? "opacity-20 cursor-not-allowed"
+                    : "bg-brown-700/70 hover:bg-primary/80 text-white-300 hover:text-white-100 active:scale-95"
                 }
               `}
               aria-label="Seuraava"
@@ -210,9 +214,10 @@ export function AsukashakuSection({ showTitle = true, maxPosts }: AsukashakuSect
                 onClick={() => setActiveIndex(idx)}
                 className={`
                   h-2 rounded-full transition-all duration-200
-                  ${idx === activeIndex
-                    ? "bg-primary w-6"
-                    : "bg-brown-600 hover:bg-brown-500 w-2"
+                  ${
+                    idx === activeIndex
+                      ? "bg-primary w-6"
+                      : "bg-brown-600 hover:bg-brown-500 w-2"
                   }
                 `}
                 aria-label={`Postaus ${idx + 1}`}

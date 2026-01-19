@@ -22,7 +22,12 @@ export interface SanityImageWithMeta extends SanityImage {
 
 export type ImageSize = "small" | "medium" | "large";
 
-export type BlogCategory = "blog" | "news" | "announcement" | "event" | "asukashaku";
+export type BlogCategory =
+  | "blog"
+  | "news"
+  | "announcement"
+  | "event"
+  | "asukashaku";
 
 export type HakuStatus = "open" | "closed";
 

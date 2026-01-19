@@ -3,7 +3,10 @@ import { BriefContainer } from "../../components/BriefContainer";
 import { HeadlineContainer } from "../../components/HeadlineContainer";
 import { Layout } from "../../components/Layout";
 import { YouTubeModal } from "../../components/YouTubeModal";
-import { useIntroVideo, type SupportedLanguage } from "../../hook/useSiteSettings";
+import {
+  useIntroVideo,
+  type SupportedLanguage,
+} from "../../hook/useSiteSettings";
 import trooper from "../../assets/heroimages/hero1.jpeg";
 import Icon1 from "../../assets/littleimgs/img1.png";
 import Icon2 from "../../assets/littleimgs/img2.png";
@@ -18,10 +21,12 @@ const FALLBACK_VIDEO_ID = "dQw4w9WgXcQ";
 export function HomeView() {
   const { t, i18n } = useTranslation();
   const [isVideoOpen, setIsVideoOpen] = useState(false);
-  
+
   // Get current language for Sanity queries
-  const currentLanguage = (i18n.language?.startsWith("en") ? "en" : "fi") as SupportedLanguage;
-  
+  const currentLanguage = (
+    i18n.language?.startsWith("en") ? "en" : "fi"
+  ) as SupportedLanguage;
+
   // Fetch intro video from Sanity
   const { introVideo } = useIntroVideo(currentLanguage);
 
@@ -63,7 +68,8 @@ export function HomeView() {
 
   // Use Sanity video or fallback
   const videoId = introVideo?.youtubeUrl || FALLBACK_VIDEO_ID;
-  const videoTitle = introVideo?.title || t("homeVideo.title", "Tervetuloa Konviktiin");
+  const videoTitle =
+    introVideo?.title || t("homeVideo.title", "Tervetuloa Konviktiin");
 
   return (
     <Layout

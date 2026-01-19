@@ -12,17 +12,21 @@ interface DropdownMenuProps {
   onSelect: (value: string) => void;
 }
 
-export function DropdownMenu({ triggerLabel, items, onSelect }: DropdownMenuProps) {
+export function DropdownMenu({
+  triggerLabel,
+  items,
+  onSelect,
+}: DropdownMenuProps) {
   return (
     <DropdownMenuPrimitive.Root>
       <DropdownMenuPrimitive.Trigger asChild>
-        <button 
+        <button
           className="
-            inline-flex items-center gap-2 
-            px-4 py-2 
+            inline-flex items-center gap-2
+            px-4 py-2
             bg-brown-800/50 hover:bg-brown-700/50
             border border-brown-700/50 hover:border-primary/50
-            rounded-lg 
+            rounded-lg
             text-white-400 hover:text-white-200
             text-sm font-medium
             transition-all duration-200

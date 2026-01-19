@@ -47,11 +47,15 @@ const SITE_SETTINGS_QUERY = `*[_type == "siteSettings"][0] {
 }`;
 
 // Fetch function
-async function fetchSiteSettings(language: SupportedLanguage): Promise<SiteSettings | null> {
-  const data = await sanityClient.fetch<SanitySiteSettings | null>(SITE_SETTINGS_QUERY);
-  
+async function fetchSiteSettings(
+  language: SupportedLanguage,
+): Promise<SiteSettings | null> {
+  const data = await sanityClient.fetch<SanitySiteSettings | null>(
+    SITE_SETTINGS_QUERY,
+  );
+
   if (!data) return null;
-  
+
   return {
     introVideo: data.introVideo?.youtubeUrl
       ? {
@@ -79,7 +83,7 @@ export function useSiteSettings(language: SupportedLanguage = "fi") {
 // Convenience hook for just the intro video
 export function useIntroVideo(language: SupportedLanguage = "fi") {
   const { data, isLoading, error } = useSiteSettings(language);
-  
+
   return {
     introVideo: data?.introVideo,
     isLoading,

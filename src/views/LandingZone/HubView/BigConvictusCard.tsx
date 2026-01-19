@@ -31,7 +31,6 @@ export function BigConvictusCard() {
           {t("bigConvictusCard.Button2")}
         </Button>
       </LargeCard>
-
     </div>
   );
 }

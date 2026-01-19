@@ -1,7 +1,13 @@
 import { InstagramLogoIcon } from "@radix-ui/react-icons";
 
 // Facebook icon
-function FacebookIcon({ width = 24, height = 24 }: { width?: number; height?: number }) {
+function FacebookIcon({
+  width = 24,
+  height = 24,
+}: {
+  width?: number;
+  height?: number;
+}) {
   return (
     <svg
       width={width}

@@ -14,7 +14,8 @@ export const siteSettings = defineType({
           name: "youtubeUrl",
           title: "YouTube-linkki tai video ID",
           type: "string",
-          description: "Esim. https://www.youtube.com/watch?v=XXXXXXXXXXX tai pelkkä video ID",
+          description:
+            "Esim. https://www.youtube.com/watch?v=XXXXXXXXXXX tai pelkkä video ID",
           validation: (Rule) => Rule.required(),
         },
         {

@@ -35,7 +35,10 @@ export function Footer() {
               </span>
             </div>
             <p className="text-white-500 text-sm md:text-sm leading-relaxed">
-              {t("footer.description", "Claustrum Theologicum - Teologisen tiedekunnan opiskelijoiden koti vuodesta 1950.")}
+              {t(
+                "footer.description",
+                "Claustrum Theologicum - Teologisen tiedekunnan opiskelijoiden koti vuodesta 1950.",
+              )}
             </p>
           </div>
 
@@ -46,9 +49,9 @@ export function Footer() {
             </h3>
             <ul className="space-y-3">
               <li>
-                <a 
+                <a
                   // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-                  href={import.meta.env.VITE_GOOGLE_RECRUITMENT_FORM || "#"} 
+                  href={import.meta.env.VITE_GOOGLE_RECRUITMENT_FORM || "#"}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white-400 hover:text-primary transition-colors text-base md:text-sm"
@@ -57,9 +60,7 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <PrivacyPolicyModal 
-                  triggerClassName="text-white-400 hover:text-primary transition-colors text-base md:text-sm cursor-pointer"
-                />
+                <PrivacyPolicyModal triggerClassName="text-white-400 hover:text-primary transition-colors text-base md:text-sm cursor-pointer" />
               </li>
             </ul>
 
@@ -68,8 +69,8 @@ export function Footer() {
               <p className="text-white-300 font-medium text-base md:text-sm mb-1">
                 {t("footer.apottiTitle", "Apotti (isännöitsijä)")}
               </p>
-              <a 
-                href="mailto:apotti@konvikti.fi" 
+              <a
+                href="mailto:apotti@konvikti.fi"
                 className="text-primary-400 hover:text-primary text-base md:text-sm transition-colors"
               >
                 apotti@konvikti.fi
@@ -106,11 +107,10 @@ export function Footer() {
         <div className="pt-6 border-t border-brown-800/50">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-center">
             <p className="text-white-600 text-xs">
-              &copy; {currentYear} <Trans i18nKey="footer.allRightsReservedMain" />
+              &copy; {currentYear}{" "}
+              <Trans i18nKey="footer.allRightsReservedMain" />
             </p>
-            <p className="text-white-600 text-xs">
-              Konvikti v{appVersion}
-            </p>
+            <p className="text-white-600 text-xs">Konvikti v{appVersion}</p>
           </div>
         </div>
       </div>

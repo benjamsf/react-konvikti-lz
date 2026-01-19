@@ -24,13 +24,13 @@ export function HakuBanner() {
     return createPortal(
       <div className="fixed inset-0 z-50 bg-background overflow-y-auto">
         <div className="min-h-screen py-8 px-4">
-          <BlogPostDetail 
-            post={activeHaku} 
-            onClose={() => setShowPost(false)} 
+          <BlogPostDetail
+            post={activeHaku}
+            onClose={() => setShowPost(false)}
           />
         </div>
       </div>,
-      document.body
+      document.body,
     );
   }
 
@@ -47,14 +47,12 @@ export function HakuBanner() {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
             <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
           </span>
-          
+
           <div className="min-w-0">
             <p className="text-white font-bold text-sm">
               {t("hakuBanner.title", "Haku käynnissä!")}
             </p>
-            <p className="text-white/80 text-xs truncate">
-              {activeHaku.title}
-            </p>
+            <p className="text-white/80 text-xs truncate">{activeHaku.title}</p>
           </div>
         </button>
 
@@ -71,6 +69,6 @@ export function HakuBanner() {
         </button>
       </div>
     </div>,
-    document.body
+    document.body,
   );
 }

@@ -63,10 +63,7 @@ export function Timeline({
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
             {events.map((event, index) => (
-              <div
-                key={index}
-                className="flex-shrink-0 w-72 md:w-80"
-              >
+              <div key={index} className="flex-shrink-0 w-72 md:w-80">
                 {/* Year marker */}
                 <div className="flex flex-col items-center mb-6">
                   <div className="w-4 h-4 rounded-full bg-primary border-4 border-backgroundBlue z-10" />

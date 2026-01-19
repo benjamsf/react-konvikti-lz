@@ -1,4 +1,10 @@
-import { Cross2Icon, HomeIcon, InfoCircledIcon, ReaderIcon, PersonIcon } from "@radix-ui/react-icons";
+import {
+  Cross2Icon,
+  HomeIcon,
+  InfoCircledIcon,
+  ReaderIcon,
+  PersonIcon,
+} from "@radix-ui/react-icons";
 import { useAuth0 } from "@auth0/auth0-react";
 import jellona from "../assets/logo_green.png";
 import { useTranslation } from "react-i18next";
@@ -11,32 +17,36 @@ interface SidebarProps {
   activeIndex?: number;
 }
 
-export function Sidebar({ onClose, onNavigate, activeIndex = 0 }: SidebarProps) {
+export function Sidebar({
+  onClose,
+  onNavigate,
+  activeIndex = 0,
+}: SidebarProps) {
   const { t } = useTranslation();
   const appVersion = packageJson.version;
   const { logout, isAuthenticated } = useAuth0();
 
   // Navigation items matching the swiper slides
   const navItems = [
-    { 
-      index: 0, 
-      label: t("homeViewTitle", "Etusivu"), 
-      icon: HomeIcon 
+    {
+      index: 0,
+      label: t("homeViewTitle", "Etusivu"),
+      icon: HomeIcon,
     },
-    { 
-      index: 1, 
-      label: t("InfoViewTitle", "Hae asukkaaksi"), 
-      icon: InfoCircledIcon 
+    {
+      index: 1,
+      label: t("InfoViewTitle", "Hae asukkaaksi"),
+      icon: InfoCircledIcon,
     },
-    { 
-      index: 2, 
-      label: t("blogNewsViewTitle", "Blogi ja uutiset"), 
-      icon: ReaderIcon 
+    {
+      index: 2,
+      label: t("blogNewsViewTitle", "Blogi ja uutiset"),
+      icon: ReaderIcon,
     },
-    { 
-      index: 3, 
-      label: t("orgViewTitle", "Yhdistys"), 
-      icon: PersonIcon 
+    {
+      index: 3,
+      label: t("orgViewTitle", "Yhdistys"),
+      icon: PersonIcon,
     },
   ];
 
@@ -75,8 +85,12 @@ export function Sidebar({ onClose, onNavigate, activeIndex = 0 }: SidebarProps) 
           <div className="flex items-center gap-3">
             <img src={jellona} alt="Konvikti Logo" className="w-12 h-auto" />
             <div>
-              <h1 className="text-lg font-title font-bold text-white-200">Konvikti</h1>
-              <p className="text-xs text-white-500">{t("mobileGuide", "Navigaatio")}</p>
+              <h1 className="text-lg font-title font-bold text-white-200">
+                Konvikti
+              </h1>
+              <p className="text-xs text-white-500">
+                {t("mobileGuide", "Navigaatio")}
+              </p>
             </div>
           </div>
           <button
@@ -94,7 +108,7 @@ export function Sidebar({ onClose, onNavigate, activeIndex = 0 }: SidebarProps) 
             {navItems.map((item) => {
               const Icon = item.icon;
               const isActive = activeIndex === item.index;
-              
+
               return (
                 <li key={item.index}>
                   <button
@@ -102,9 +116,10 @@ export function Sidebar({ onClose, onNavigate, activeIndex = 0 }: SidebarProps) 
                     className={`
                       w-full flex items-center gap-4 px-4 py-3 rounded-xl
                       transition-all duration-200
-                      ${isActive 
-                        ? "bg-primary/20 text-primary" 
-                        : "text-white-400 hover:bg-brown-700/50 hover:text-white-200"
+                      ${
+                        isActive
+                          ? "bg-primary/20 text-primary"
+                          : "text-white-400 hover:bg-brown-700/50 hover:text-white-200"
                       }
                     `}
                   >
@@ -123,16 +138,21 @@ export function Sidebar({ onClose, onNavigate, activeIndex = 0 }: SidebarProps) 
         {/* Footer Section */}
         <div className="p-4 border-t border-brown-800/50 space-y-3">
           <div className="text-white-500 text-sm px-2">
-            <p>{t("sidebarInfo5", "Konvikti")} - v{appVersion}</p>
+            <p>
+              {t("sidebarInfo5", "Konvikti")} - v{appVersion}
+            </p>
             <p className="italic text-xs mt-1">{t("sidebarInfo6", "")}</p>
           </div>
-          
+
           {isAuthenticated && (
             <button
               className="w-full bg-red-900/80 hover:bg-red-800 text-white py-2.5 px-4 rounded-xl transition-colors flex items-center justify-center gap-2"
               onClick={() => void handleLogout()}
             >
-              <LogoutButton label={t("logoutLabel", "Kirjaudu ulos")} type="submit" />
+              <LogoutButton
+                label={t("logoutLabel", "Kirjaudu ulos")}
+                type="submit"
+              />
             </button>
           )}
         </div>

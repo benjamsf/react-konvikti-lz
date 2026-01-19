@@ -107,8 +107,8 @@ export function LandingZoneSwiper() {
       )}
 
       {isSidebarOpen && (
-        <Sidebar 
-          onClose={closeSidebar} 
+        <Sidebar
+          onClose={closeSidebar}
           onNavigate={handleNavigation}
           activeIndex={activeIndex}
         />

@@ -7,9 +7,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: (
-            <LandingZoneSwiper />
-        ),
+        element: <LandingZoneSwiper />,
       },
     ],
   },

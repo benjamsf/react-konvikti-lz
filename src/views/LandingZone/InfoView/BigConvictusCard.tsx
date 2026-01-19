@@ -1,7 +1,10 @@
 import { useState } from "react";
 import { LargeCard } from "../../../components/LargeCard";
 import { Button } from "../../../components/Button";
-import { ImageSlideModal, type GallerySlide } from "../../../components/ImageSlideModal";
+import {
+  ImageSlideModal,
+  type GallerySlide,
+} from "../../../components/ImageSlideModal";
 import heroImage from "../../../assets/heroimages/hero9.jpeg";
 import { useTranslation, Trans } from "react-i18next";
 

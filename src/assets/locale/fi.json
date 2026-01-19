@@ -135,8 +135,7 @@
   "infoLastInfo.title": "Tulitko valituksi?",
   "infoLastInfo.sub": "Isäntä ilmoittaa valinnoista hakuilmoitukseen merkittynä päivänä. Paikka myönnetään teologian opiskelijalle kuudeksi vuodeksi ja muiden aineiden opiskelijalle kolmeksi vuodeksi. Tämän jälkeen paikasta voidaan sopia vuodeksi kerrallaan.",
 
-
-  "blogHero.Title":"Blogi ja uutiset",
+  "blogHero.Title": "Blogi ja uutiset",
   "blogNewsViewTitle": "Blogi ja uutiset",
   "blogNews": {
     "title": "Blogi ja uutiset",
@@ -155,9 +154,9 @@
     "title": "Haku käynnissä!",
     "cta": "Klikkaa lukeaksesi lisää →",
     "dismiss": "Sulje"
-},
+  },
 
-"org": {
+  "org": {
     "hero": {
       "title": "Claustrum Theologicum",
       "subtitle": "Ylioppilaskoti Konviktin kannatusyhdistys r.y. - Teologian opiskelijoiden tukena jo vuodesta 1917"

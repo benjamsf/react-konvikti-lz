@@ -36,7 +36,6 @@ export function InfoView() {
     },
   ];
 
-
   return (
     <Layout showFooter={true}>
       <div className="flex flex-col flex-shrink-0 gap-0">
@@ -45,31 +44,27 @@ export function InfoView() {
           height="tall"
           title={t("infoHero.Title")}
         />
-        
+
         <HeadlineContainer items={headlines} backgroundColor="bg-background" />
-        
+
         <CardsContainer>
           <BigConvictusCard />
           <SmallConvictusCard />
         </CardsContainer>
 
-        <HeadlineContainer
-          items={headlines2}
-          backgroundColor="bg-background"
-        />
+        <HeadlineContainer items={headlines2} backgroundColor="bg-background" />
 
         <AsukashakuSection maxPosts={6} showTitle={true} />
 
-      <RecruitmentCriteria
-        title={t("infoRecruitment.title", "Mitä hakijalta odotetaan?")}
-        subtitle={t("infoRecruitment.subtitle", "Nämä asiat vaikuttavat hakemuksesi arviointiin")}
-        backgroundColor="bg-backgroundBlue"
-      />
-        <HeadlineContainer
-          items={headlines3}
-          backgroundColor="bg-background"
+        <RecruitmentCriteria
+          title={t("infoRecruitment.title", "Mitä hakijalta odotetaan?")}
+          subtitle={t(
+            "infoRecruitment.subtitle",
+            "Nämä asiat vaikuttavat hakemuksesi arviointiin",
+          )}
+          backgroundColor="bg-backgroundBlue"
         />
-
+        <HeadlineContainer items={headlines3} backgroundColor="bg-background" />
       </div>
     </Layout>
   );

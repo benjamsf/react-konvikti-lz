@@ -16,7 +16,7 @@ repos:
         exclude: "package-lock.json"
       - id: check-case-conflict
       - id: check-json
-        exclude: ./github/workflows/actions/tsconfig.json
+        exclude: ^\.github/workflows/actions/tsconfig\.json$
       - id: check-merge-conflict
       - id: check-symlinks
   - repo: https://github.com/Lucas-C/pre-commit-hooks

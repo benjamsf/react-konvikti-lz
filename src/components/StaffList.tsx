@@ -41,7 +41,9 @@ export function StaffList({
             {[1, 2, 3, 4, 5].map((i) => (
               <div
                 key={i}
-                className={`px-6 py-4 animate-pulse ${i !== 5 ? "border-b border-brown-800/50" : ""}`}
+                className={`px-6 py-4 animate-pulse ${
+                  i !== 5 ? "border-b border-brown-800/50" : ""
+                }`}
               >
                 <div className="h-5 bg-brown-800/50 rounded w-1/3 mb-2" />
                 <div className="h-4 bg-brown-800/30 rounded w-1/4" />
@@ -71,14 +73,22 @@ export function StaffList({
           </div>
         )}
 
-        <div className={`bg-backgroundDark rounded-2xl border border-brown-800/50 overflow-hidden ${members.length <= 2 ? "max-w-xl mx-auto" : ""}`}>
+        <div
+          className={`bg-backgroundDark rounded-2xl border border-brown-800/50 overflow-hidden ${
+            members.length <= 2 ? "max-w-xl mx-auto" : ""
+          }`}
+        >
           {members.map((member, index) => (
             <div
               key={member._id || index}
               className={`
-                flex flex-col sm:flex-row sm:items-center justify-between 
+                flex flex-col sm:flex-row sm:items-center justify-between
                 px-6 py-4
-                ${index !== members.length - 1 ? "border-b border-brown-800/50" : ""}
+                ${
+                  index !== members.length - 1
+                    ? "border-b border-brown-800/50"
+                    : ""
+                }
                 hover:bg-brown-800/20 transition-colors
                 ${members.length <= 2 ? "text-center sm:text-left" : ""}
               `}

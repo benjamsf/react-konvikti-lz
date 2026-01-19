@@ -1,5 +1,9 @@
 import { useState } from "react";
-import { ChevronDownIcon, ChevronUpIcon, FileTextIcon } from "@radix-ui/react-icons";
+import {
+  ChevronDownIcon,
+  ChevronUpIcon,
+  FileTextIcon,
+} from "@radix-ui/react-icons";
 import { PortableText } from "@portabletext/react";
 import type { PortableTextBlock } from "@portabletext/types";
 
@@ -49,10 +53,10 @@ export function CollapsibleRulesCard({
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="
-          w-full px-6 py-5 
+          w-full px-6 py-5
           flex items-center justify-between gap-4
           text-left
-          hover:bg-brown-800/20 
+          hover:bg-brown-800/20
           transition-colors
           group
         "
@@ -91,7 +95,9 @@ export function CollapsibleRulesCard({
                 components={{
                   block: {
                     normal: ({ children }) => (
-                      <p className="text-white-400 leading-relaxed mb-4">{children}</p>
+                      <p className="text-white-400 leading-relaxed mb-4">
+                        {children}
+                      </p>
                     ),
                     h2: ({ children }) => (
                       <h2 className="text-xl font-title font-semibold text-white-200 mt-8 mb-4">
@@ -117,14 +123,22 @@ export function CollapsibleRulesCard({
                     ),
                   },
                   listItem: {
-                    bullet: ({ children }) => <li className="text-white-400">{children}</li>,
-                    number: ({ children }) => <li className="text-white-400">{children}</li>,
+                    bullet: ({ children }) => (
+                      <li className="text-white-400">{children}</li>
+                    ),
+                    number: ({ children }) => (
+                      <li className="text-white-400">{children}</li>
+                    ),
                   },
                   marks: {
                     strong: ({ children }) => (
-                      <strong className="font-semibold text-white-200">{children}</strong>
+                      <strong className="font-semibold text-white-200">
+                        {children}
+                      </strong>
                     ),
-                    em: ({ children }) => <em className="italic">{children}</em>,
+                    em: ({ children }) => (
+                      <em className="italic">{children}</em>
+                    ),
                   },
                 }}
               />

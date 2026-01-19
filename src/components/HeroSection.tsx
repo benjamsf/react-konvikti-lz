@@ -62,14 +62,10 @@ export function HeroSection({
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
         {title && (
-          <h1 className={`${titleSizeClass} font-title mb-4`}>
-            {title}
-          </h1>
+          <h1 className={`${titleSizeClass} font-title mb-4`}>{title}</h1>
         )}
         {text && (
-          <p className={`${textSizeClass} font-subtitle max-w-3xl`}>
-            {text}
-          </p>
+          <p className={`${textSizeClass} font-subtitle max-w-3xl`}>{text}</p>
         )}
       </div>
     </div>

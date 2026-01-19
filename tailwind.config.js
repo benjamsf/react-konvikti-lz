@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}",  "!./src/sanity/**",],
+  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}", "!./src/sanity/**"],
   theme: {
     extend: {
       fontFamily: {
@@ -172,16 +172,16 @@ module.exports = {
     require("@tailwindcss/typography"),
     function ({ addBase, theme }) {
       addBase({
-        'html': {
-          color: theme('colors.white.400'),
-          backgroundColor: theme('colors.background'),
-          fontFamily: theme('fontFamily.sans'),
+        html: {
+          color: theme("colors.white.400"),
+          backgroundColor: theme("colors.background"),
+          fontFamily: theme("fontFamily.sans"),
         },
-        'body': {
-          color: theme('colors.white.400'),
+        body: {
+          color: theme("colors.white.400"),
         },
-        'h1, h2, h3': {
-          fontFamily: theme('fontFamily.title'),
+        "h1, h2, h3": {
+          fontFamily: theme("fontFamily.title"),
         },
       });
     },

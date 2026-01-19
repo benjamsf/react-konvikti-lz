@@ -4,4 +4,10 @@ import { boardMember } from "./boardMember";
 import { organizationRules } from "./organizationRules";
 import { siteSettings } from "./siteSettings";
 
-export const schemaTypes = [blogPost, staffMember, boardMember, organizationRules, siteSettings];
+export const schemaTypes = [
+  blogPost,
+  staffMember,
+  boardMember,
+  organizationRules,
+  siteSettings,
+];

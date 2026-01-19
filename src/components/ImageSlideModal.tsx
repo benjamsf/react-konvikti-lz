@@ -1,6 +1,10 @@
 import { useState, useEffect, useCallback } from "react";
 import * as Dialog from "@radix-ui/react-dialog";
-import { Cross2Icon, ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons";
+import {
+  Cross2Icon,
+  ChevronLeftIcon,
+  ChevronRightIcon,
+} from "@radix-ui/react-icons";
 
 export interface GallerySlide {
   image: string;
@@ -109,7 +113,7 @@ export function ImageSlideModal({
             </div>
 
             {/* Image container - takes remaining space */}
-            <div 
+            <div
               className="flex-1 relative flex items-center justify-center overflow-hidden min-h-0 px-4"
               onTouchStart={onTouchStart}
               onTouchMove={onTouchMove}
@@ -125,9 +129,10 @@ export function ImageSlideModal({
                       absolute left-4 top-1/2 -translate-y-1/2 z-10
                       p-3 rounded-full
                       transition-all duration-200
-                      ${currentIndex === 0
-                        ? "opacity-20 cursor-not-allowed"
-                        : "bg-black/50 hover:bg-black/70 text-white active:scale-95"
+                      ${
+                        currentIndex === 0
+                          ? "opacity-20 cursor-not-allowed"
+                          : "bg-black/50 hover:bg-black/70 text-white active:scale-95"
                       }
                     `}
                     aria-label="Edellinen"
@@ -142,9 +147,10 @@ export function ImageSlideModal({
                       absolute right-4 top-1/2 -translate-y-1/2 z-10
                       p-3 rounded-full
                       transition-all duration-200
-                      ${currentIndex === slides.length - 1
-                        ? "opacity-20 cursor-not-allowed"
-                        : "bg-black/50 hover:bg-black/70 text-white active:scale-95"
+                      ${
+                        currentIndex === slides.length - 1
+                          ? "opacity-20 cursor-not-allowed"
+                          : "bg-black/50 hover:bg-black/70 text-white active:scale-95"
                       }
                     `}
                     aria-label="Seuraava"
@@ -179,9 +185,10 @@ export function ImageSlideModal({
                       onClick={() => setCurrentIndex(idx)}
                       className={`
                         h-2 rounded-full transition-all duration-200
-                        ${idx === currentIndex
-                          ? "bg-primary w-6"
-                          : "bg-white/30 hover:bg-white/50 w-2"
+                        ${
+                          idx === currentIndex
+                            ? "bg-primary w-6"
+                            : "bg-white/30 hover:bg-white/50 w-2"
                         }
                       `}
                       aria-label={`Kuva ${idx + 1}`}

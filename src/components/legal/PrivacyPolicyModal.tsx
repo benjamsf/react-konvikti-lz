@@ -52,7 +52,8 @@ export function PrivacyPolicyModal({ triggerClassName }: InfoModalProps) {
                 puhelinnumeroja.
               </li>
               <br />
-              Tietoja käsittelee Ylioppilaskoti Konviktin kannatusyhdistys r.y. ja sen valtuuttamat henkilöt Suomessa.
+              Tietoja käsittelee Ylioppilaskoti Konviktin kannatusyhdistys r.y.
+              ja sen valtuuttamat henkilöt Suomessa.
             </Dialog.Description>
             <div className="flex justify-end">
               <Button onClick={closeModal}>OK</Button>

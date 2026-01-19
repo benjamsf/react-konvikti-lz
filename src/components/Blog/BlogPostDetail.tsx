@@ -1,7 +1,12 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { useState } from "react";
 import { PortableText, PortableTextComponents } from "@portabletext/react";
-import type { BlogPost, SanityImageWithMeta, SanityImage, ImageSize } from "../../types/blog";
+import type {
+  BlogPost,
+  SanityImageWithMeta,
+  SanityImage,
+  ImageSize,
+} from "../../types/blog";
 import { urlFor } from "../../lib/sanityClient";
 import {
   ArrowLeftIcon,
@@ -14,7 +19,8 @@ import { useTranslation } from "react-i18next";
 import { ImageGallery } from "./ImageGallery";
 
 // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-const GOOGLE_APPLICATION_FORM = import.meta.env.VITE_GOOGLE_APPLICATION_FORM || "";
+const GOOGLE_APPLICATION_FORM =
+  import.meta.env.VITE_GOOGLE_APPLICATION_FORM || "";
 
 interface BlogPostDetailProps {
   post: BlogPost;
@@ -85,7 +91,7 @@ const portableTextComponents: PortableTextComponents = {
       const size: ImageSize = value.size || "large";
       const sizeClass = IMAGE_SIZE_CLASSES[size];
       const width = IMAGE_WIDTHS[size];
-      
+
       return (
         <figure className={`my-8 ${sizeClass}`}>
           <img
@@ -210,10 +216,10 @@ export function BlogPostDetail({ post, onClose }: BlogPostDetailProps) {
         onClick={onClose}
         className="inline-flex items-center gap-2 text-white-400 hover:text-white-200 mb-8 transition-colors group"
       >
-        <ArrowLeftIcon 
-          width={20} 
-          height={20} 
-          className="transition-transform group-hover:-translate-x-1" 
+        <ArrowLeftIcon
+          width={20}
+          height={20}
+          className="transition-transform group-hover:-translate-x-1"
         />
         <span>Takaisin</span>
       </button>
@@ -242,19 +248,24 @@ export function BlogPostDetail({ post, onClose }: BlogPostDetailProps) {
           >
             {CATEGORY_LABELS[post.category] ?? post.category}
           </span>
-          
+
           {isAsukashaku && (
             <span
               className={`
                 px-4 py-1.5 text-sm font-bold rounded-full
                 inline-flex items-center gap-2
-                ${isHakuOpen 
-                  ? "bg-success text-white-100" 
-                  : "bg-brown-600 text-white-400"
+                ${
+                  isHakuOpen
+                    ? "bg-success text-white-100"
+                    : "bg-brown-600 text-white-400"
                 }
               `}
             >
-              <span className={`w-2 h-2 rounded-full ${isHakuOpen ? "bg-white-100 animate-pulse" : "bg-white-500"}`} />
+              <span
+                className={`w-2 h-2 rounded-full ${
+                  isHakuOpen ? "bg-white-100 animate-pulse" : "bg-white-500"
+                }`}
+              />
               {isHakuOpen ? "Haku käynnissä!" : "Haku päättynyt"}
             </span>
           )}
@@ -296,7 +307,10 @@ export function BlogPostDetail({ post, onClose }: BlogPostDetailProps) {
                 {t("asukashaku.applyTitle", "Kiinnostuitko? Hae mukaan!")}
               </h3>
               <p className="text-white-500 text-sm">
-                {t("asukashaku.applyDescription", "Haku on auki – täytä hakulomake ja liity yhteisöömme.")}
+                {t(
+                  "asukashaku.applyDescription",
+                  "Haku on auki – täytä hakulomake ja liity yhteisöömme.",
+                )}
               </p>
             </div>
             <a
@@ -304,11 +318,11 @@ export function BlogPostDetail({ post, onClose }: BlogPostDetailProps) {
               target="_blank"
               rel="noopener noreferrer"
               className="
-                inline-flex items-center gap-2 
-                px-6 py-3 
-                bg-success hover:bg-success-700 
-                text-white-100 font-semibold 
-                rounded-xl 
+                inline-flex items-center gap-2
+                px-6 py-3
+                bg-success hover:bg-success-700
+                text-white-100 font-semibold
+                rounded-xl
                 transition-all duration-200
                 hover:scale-105
                 flex-shrink-0
@@ -323,7 +337,10 @@ export function BlogPostDetail({ post, onClose }: BlogPostDetailProps) {
 
       {/* Content */}
       <div className="prose prose-lg max-w-none mb-10">
-        <PortableText value={post.content} components={portableTextComponents} />
+        <PortableText
+          value={post.content}
+          components={portableTextComponents}
+        />
       </div>
 
       {/* Tags */}

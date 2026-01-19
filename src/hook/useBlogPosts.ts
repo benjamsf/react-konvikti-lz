@@ -90,7 +90,9 @@ async function fetchPostBySlug(slug: string): Promise<BlogPost | null> {
   return sanityClient.fetch(POST_BY_SLUG_QUERY, { slug });
 }
 
-async function fetchPostsByCategory(category: BlogCategory): Promise<BlogPost[]> {
+async function fetchPostsByCategory(
+  category: BlogCategory,
+): Promise<BlogPost[]> {
   return sanityClient.fetch(POSTS_BY_CATEGORY_QUERY, { category });
 }
 
