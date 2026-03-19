@@ -358,6 +358,43 @@ export function BlogPostDetail({ post, onClose }: BlogPostDetailProps) {
           </div>
         </footer>
       )}
+      
+      {/* Asukashaku Application CTA */}
+      {isAsukashaku && isHakuOpen && GOOGLE_APPLICATION_FORM && (
+        <div className="mb-10 p-6 bg-success/10 border border-success/30 rounded-2xl">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+              <h3 className="text-white-200 font-semibold text-lg mb-1">
+                {t("asukashaku.applyTitle", "Kiinnostuitko? Hae mukaan!")}
+              </h3>
+              <p className="text-white-500 text-sm">
+                {t(
+                  "asukashaku.applyDescription",
+                  "Haku on auki – täytä hakulomake ja liity yhteisöömme.",
+                )}
+              </p>
+            </div>
+            <a
+              href={GOOGLE_APPLICATION_FORM}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                inline-flex items-center gap-2
+                px-6 py-3
+                bg-success hover:bg-success-700
+                text-white-100 font-semibold
+                rounded-xl
+                transition-all duration-200
+                hover:scale-105
+                flex-shrink-0
+              "
+            >
+              {t("asukashaku.applyButton", "Täytä hakemus")}
+              <ExternalLinkIcon width={18} height={18} />
+            </a>
+          </div>
+        </div>
+      )}
     </article>
   );
 }
