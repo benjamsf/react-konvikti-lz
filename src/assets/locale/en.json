@@ -145,19 +145,22 @@
   "smallConvictusCard.Button2": "Places and applying",
   "infoButtonRow.Application": "Open the application form!",
 
-  "infoBrief.HeadTitle": "How we select residents",
-  "infoBrief2.Subtitle": "Applicants to Konvikti are scored. Those with the highest scores are selected as residents as places allow. Theology students are prioritized once a minimum score threshold is met.",
-  "infoBrief.Subtitle": "Konvikti in brief",
-  "infoPunch1.Title": "Academic performance",
-  "infoPunch1.Text": "Konvikti’s goal is to be an academically enriching environment. Academic performance is scored based on your application.",
-  "infoPunch2.Title": "Community involvement",
-  "infoPunch2.Text": "As a communal living arrangement, we value a willingness to take part in shared events. Interest in community life is assessed from your motivation letter.",
-  "infoPunch3.Title": "Interest in theology and Christianity",
-  "infoPunch3.Text": "Konvikti is a Christian student residence. Our residents come from many backgrounds, but we are united by an interest in theology and/or Christianity and congregational life. The academic, professional, or spiritual interest you express in theology or Christianity is scored based on your motivation letter.",
-  "infoPunch4.Title": "Am I a good fit to apply?",
-  "infoPunch4.Text": "Are you starting—or about to start—higher education studies, or are you already pursuing a degree? In addition to location, are you interested in Konvikti’s community and your academic or professional growth? Then you’re in our target group—don’t hesitate to apply!",
-  "infoPunch5.Title": "A community strengthened by diverse backgrounds",
-  "infoPunch5.Text": "Many have said the best part of Konvikti has been meeting different future theologians and others interested in the subject. Unlike most Christian student residences in Helsinki, Konvikti has historically been broadly ecumenical—residents are not selected based on any particular church affiliation or ideological background. What unites us is community and a shared interest.",
+  "infoBrief.HeadTitle": "How We Select Residents",
+  "infoBrief2.Subtitle": "Applicants to Konvikti are evaluated using a points system. Those who receive the highest scores are selected as residents, as long as places are available. Students of theology are given priority.",
+  "infoBrief.Subtitle": "Konvikti in Brief",
+  "infoPunch1.Title": "Community",
+  "infoPunch1.Text": "As a communal form of living, we value the willingness to take part in shared life — something that could simply be described as caring for others. You are interested in getting to know people and in taking care of small shared responsibilities. Your interest in community life is evaluated based on your motivation letter.",
+  "infoPunch2.Title": "Interest in Theology and Christianity",
+  "infoPunch2.Text": "Konvikti is a Christian student residence. Our residents come from many different backgrounds, but what unites us is an interest in theology and/or Christianity and church life. The academic, professional, or spiritual interest in theology or Christianity that you express will be evaluated based on your motivation letter. We do not assess the quality of that interest — only that it exists. Our hope is that Konvikti provides a formative environment, and it does so when students interested in the topic can meet others with diverse backgrounds.",
+  "infoPunch3.Title": "Academic Achievement",
+  "infoPunch3.Text": "Historically, Konvikti was founded as a 'student residence for talented but financially disadvantaged theology students.' For this reason, academic achievement is valued in the selection process. At the same time, our goal is to provide an academically enriching environment. Academic achievement is evaluated based on your matriculation certificate and school transcripts.",
+  "infoPunch4.Title": "Am I a Suitable Applicant?",
+  "infoPunch4.Text": "Are you about to begin your university studies, or already pursuing your first degree? Are you interested in Konvikti not only because of its location, but also because of the community and opportunities for academic or professional growth? Then you are part of our target group — do not hesitate to apply! We are not looking for a specific type of person, but for diverse students who are interested in theology and willing to contribute to the shared life of the community.",
+  "infoPunch5.Title": "Community and Diverse Backgrounds as Strengths",
+  "infoPunch5.Text": "Many have said that the best part of living at Konvikti has been meeting future theologians and others interested in the field from different backgrounds. Unlike most Christian student residences in Helsinki, Konvikti historically has no bonds to various factions inside the Church of Finland. Residents are not selected based on belonging to a particular church tradition or ideological background. What unites us is the community and a shared interest.",
+    "infoPunch6.Title": "Optional Criteria – Income Level and Letters of Recommendation",
+  "infoPunch6.Text": "Throughout our more than one hundred years of history, we have also given consideration in the selection process to applicants from modest financial backgrounds, as well as to letters of recommendation written by former Konvikti residents, church employees, or theologians. Declaring your income level is voluntary and confidential, and may grant you an additional point in the application process. Likewise, submitting a letter of recommendation is optional; if you have one to provide, it may also grant you an additional point in the selection process.",
+
 
   "infoHead3.Title": "Resident application announcements",
 
@@ -299,33 +302,41 @@
       "title": "Goal 5",
       "description": "Coming soon!"
     },
-    "history1": {
-      "title": "Founding",
-      "description": "The Konvikti Student Residence Support Association was founded in 1917. The founders were bishops of the Evangelical Lutheran Church who wanted theology students to have a home and a safe place in Helsinki."
-    },
-    "history2": {
-      "title": "The first Konvikti",
-      "description": "In 1920, the student residence—Konvikti—was established. The word comes from the Latin convictus, meaning communal life. The residence initially operated at several addresses."
-    },
-    "history3": {
-      "title": "Move to Meritullinkatu",
-      "description": "In the 1930s, the residence moved into what is now Iso-Konvikti. The apartments were named Manala, Kiirastuli, Mirkkula, and Taivas."
-    },
-    "history4": {
-      "title": "Juurinen Student Residence, or Pikku-Konvikti",
-      "description": "Emil and Mimmi Juurinen donated two apartments on Pieni Roobertinkatu through their will—this became the origin of Pikku-Konvikti."
-    },
-    "history5": {
-      "title": "Jukola, 1999–2024",
-      "description": "A former temperance home located in the stairwell at Meritullinkatu 22 was transferred for Konvikti’s use. It was named Jukola after its seven, later eight, resident places."
-    },
-    "history6": {
-      "title": "Letting go of Jukola and Mirkkula",
-      "description": "Due to rising costs, the association had to give up both the rented Jukola apartment and the Mirkkula shares. Financial restructuring has stabilized operations for decades to come."
-    },
-    "history7": {
-      "title": "A new era",
-      "description": "At 109 years old, Konvikti looks to the future—how can we best serve the founders’ purpose, the homeland, and Finland’s Christian church?"
-    }
+  "history1": {
+    "title": "Foundation",
+    "description": "The supporting association of the Konvikti Student Residence (Ylioppilaskoti Konvikti ry) was founded in 1917. Behind the founding were bishops of the Evangelical Lutheran Church of Finland, who wished to ensure that theology students would have a home and support in Helsinki."
+  },
+  "history2": {
+    "title": "The First Konvikti",
+    "description": "In 1920 the student residence, Konvikti, was established. The word derives from the Latin term convictus, meaning communal life or living together in fellowship. The residence initially operated at several addresses: from 1920 to 1922 in Sörnäinen and Kalliola, and from 1922 to 1938 on Vuorikatu. Early wardens of the residence included Aarni Voipio and Aarre Lauha."
+  },
+  "history3": {
+    "title": "Move to Meritullinkatu",
+    "description": "The residence moved to the current 'Great Konvikti' on Meritullinkatu in 1938. The original apartments were named Purgatory (Kiirastuli), Mirkkula, and Heaven (Taivas). Kiirastuli and Taivas remain part of the student residence today."
+  },
+  "history4": {
+    "title": "The War Years",
+    "description": "As throughout the country, life at Konvikti during the war years was marked by scarcity, and most students were serving at the front. Three residents of Konvikti fell in the Winter War and five in the Continuation War. Their Pro Patria memorial plaques are still displayed in the library hall of Taivas. The top-floor apartment Taivas was destroyed in February 1944 during the major bombing of Helsinki. Even from this the community recovered — 'the place was just filled with brick mortar and debris for a while.'"
+  },
+  "history5": {
+    "title": "The Fourth Apartment – Manala",
+    "description": "In 1951 the supporting association purchased a fourth apartment for Konvikti in the same building. As the lowest apartment in the residence, located on the second floor, it received the name Manala ('hell')."
+  },
+  "history6": {
+    "title": "The Juurinen Student Residence – Little Konvikti",
+    "description": "Emil and Mimmi Juurinen bequeathed two apartments on Pieni Roobertinkatu to the residence. This donation became known as Pikku-Konvikti, the 'Little Konvikti'."
+  },
+  "history7": {
+    "title": "Jukola (1999–2024)",
+    "description": "A former temperance residence located in the same stairwell at Meritullinkatu 22 was transferred to Konvikti's use. It was named Jukola after its seven—and later eight—resident places - a reference to the Finnish great writer Aleksis Kivi's novel 'The Seven Brothers.'"
+  },
+  "history8": {
+    "title": "Letting Go of Jukola and Mirkkula",
+    "description": "Due to rising costs, the association eventually had to give up both the rented apartment Jukola and the Mirkkula shares. This financial restructuring has secured the stability of the residence for decades to come."
+  },
+  "history9": {
+    "title": "A New Era",
+    "description": "Now over a century old, Konvikti looks toward the future: how can it best serve the purpose of its founders, the homeland, and the Christian church of Finland?"
   }
+}
 }

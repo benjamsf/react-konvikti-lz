@@ -37,6 +37,7 @@ const defaultCriteriaItems: CriteriaItem[] = [
   { titleKey: "infoPunch3.Title", textKey: "infoPunch3.Text" },
   { titleKey: "infoPunch4.Title", textKey: "infoPunch4.Text" },
   { titleKey: "infoPunch5.Title", textKey: "infoPunch5.Text" },
+  { titleKey: "infoPunch6.Title", textKey: "infoPunch6.Text" },
 ];
 
 export function RecruitmentCriteria({
