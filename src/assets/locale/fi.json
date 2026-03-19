@@ -96,10 +96,10 @@
   "homeHead1.Sub": "Haluaisitko asua historiallisessa ympäristössä yliopiston vieressä?",
 
   "homeBrief.HeadTitle": "Konvikti lyhyesti",
-  "homeBrief2.Subtitle": "Vuonna 1917 Herman Råbergh perusti tukiyhdistyksen Köyhien ja lahjakkaiden jumaluusopin ylioppilaiden kodille tavoitteenaan tukea tulevien teologisukupolvien opiskelua. Tehtävämme on yhä sama - suosimme asukasvalinnassa teologeja ja akateemista menestystä.",
+  "homeBrief2.Subtitle": "Vuonna 1917 Herman Råbergh perusti tukiyhdistyksen Köyhien ja lahjakkaiden jumaluusopin ylioppilaiden kodille tavoitteenaan tukea tulevien teologisukupolvien opiskelua. Tehtävämme on yhä sama - suosimme asukasvalinnassa teologeja, akateemista menestystä ja kiinnostusta yhteisölliseen asumiseen.",
   "homeBrief.Subtitle": "Konvikti lyhyesti",
   "homePunch1.Title": "Perustettu 1917",
-  "homePunch1.Text": "Vuonna 1917 Herman Råbergh perusti tukiyhdistyksen Köyhien ja lahjakkaiden jumaluusopin ylioppilaiden kodille tavoitteenaan tukea tulevien teologisukupolvien opiskelua. Tehtävämme on yhä sama - suosimme asukasvalinnassa teologeja ja akateemista menestystä.",
+  "homePunch1.Text": "Vuonna 1917 Herman Råbergh perusti tukiyhdistyksen Köyhien ja lahjakkaiden jumaluusopin ylioppilaiden kodille tavoitteenaan tukea tulevien teologisukupolvien opiskelua. Tehtävämme on yhä sama - suosimme asukasvalinnassa teologeja, akateemista menestystä ja kiinnostusta yhteisölliseen asumiseen..",
   "homePunch2.Title": "Kodinomainen ympäristö...",
   "homePunch2.Text": "Konviktille on helppo tulla ja kotoisa olla. Verrattuna yleisiin opiskelija-asuntoloihin, Konvikti tarjoaa sekä miellyttävät puitteet, että hyvähenkisen yhteisön.",
   "homePunch3.Title": "...teologeille",
@@ -146,18 +146,21 @@
   "infoButtonRow.Application": "Avaa hakulomake!",
 
   "infoBrief.HeadTitle": "Näin valitsemme asukkaat",
-  "infoBrief2.Subtitle": "Hakijat Konviktille pisteytetään. Eniten pisteitä saaneet valitaan asukkaiksi siten, kuin asukaspaikkoja riittää. Teologian opiskelijat ovat haussa etusijalla tietyn minimipistemäärän jälkeen.",
+  "infoBrief2.Subtitle": "Hakijat Konviktille pisteytetään. Eniten pisteitä saaneet valitaan asukkaiksi siten, kuin asukaspaikkoja riittää. Teologian opiskelijat ovat haussa etusijalla.",
   "infoBrief.Subtitle": "Konvikti lyhyesti",
-  "infoPunch1.Title": "Opintomenestys",
-  "infoPunch1.Text": "Konviktin tavoite on olla akateemisesti kehittävä ympäristö. Opintomenestys pisteytetään hakemuksestasi.",
-  "infoPunch2.Title": "Yhteisöllisyys",
-  "infoPunch2.Text": "Yhteisöllisenä asumismuotona arvostamme tahtoa osallistua yhteisiin tapahtumiin. Kiinnostus yhteisöllisyyteen arvioidaan motivaatiokirjeestä.",
-  "infoPunch3.Title": "Kiinnostus teologiaan ja kristinuskoon",
-  "infoPunch3.Text": "Konvikti on kristillinen ylioppilaskoti. Asukkaamme tulevat monista taustoista, mutta meitä yhdistää kiinnostus teologiaan ja/tai kristinuskoon ja seurakuntiin. Ilmaisemasi akateeminen, ammatillinen tai hengellinen kiinnostus teologiaan tai kristinuskoon pisteytetään motivaatiokirjeen perusteella.",
+  "infoPunch1.Title": "Yhteisöllisyys",
+  "infoPunch1.Text": "Yhteisöllisenä asumismuotona arvostamme tahtoa toimia yhdessä, minkä voisi summata välittämiseksi. Sinua kiinnostaa tutustua toisiin ja huolehtia pienistä yhteisistä asioista. Kiinnostus yhteisöllisyyteen arvioidaan hakemuksestasi.",
+  "infoPunch2.Title": "Kiinnostus teologiaan ja kristinuskoon",
+  "infoPunch2.Text": "Konvikti on kristillinen ylioppilaskoti. Asukkaamme tulevat monista taustoista, mutta meitä yhdistää kiinnostus teologiaan ja/tai kristinuskoon ja seurakuntiin. Ilmaisemasi akateeminen, ammatillinen tai hengellinen kiinnostus teologiaan tai kristinuskoon arvioidaan hakemuksestasi. Emme arvioi kiinnostuksen laatua, vaan kiinnostusta - toivomme, että Konvikti on kehittävä ympäristö, ja sitä se on, jos meillä voi esimerkiksi tutustua eritaustaisiin, aiheesta kiinnostuneisiin opiskelijoihin.",
+  "infoPunch3.Title": "Opintomenestys",
+  "infoPunch3.Text": "Konvikti on historiallisesti perustettu 'Lahjakkaiden ja vähävaraisten teologien ylioppilaskodiksi.' Suosimme siksi haussa opintomenestystä. Samalla tavoitteemme on olla myös akateemisesti kehittävä ympäristö. Opintomenestys pisteytetään hakemuksestasi ylioppilas- ja päättötodistuksestasi.",
   "infoPunch4.Title": "Olenko minä sopiva hakija?",
-  "infoPunch4.Text": "Oletko aloittamassa tai pian aloittamassa korkeakouluopintojasi, tai oletko jo perustutkinto-opiskelija? Kiinnostaako sinua Konviktissa sijainnin lisäksi yhteisö ja akateeminen tai ammatillinen kehitys? Olet kohderyhmää - älä pelkää jättää hakemusta!",
+  "infoPunch4.Text": "Oletko aloittamassa tai pian aloittamassa korkeakouluopintojasi, tai oletko jo perustutkinto-opiskelija? Kiinnostaako sinua Konviktissa sijainnin lisäksi yhteisö ja akateeminen tai ammatillinen kehitys? Olet kohderyhmää - älä pelkää jättää hakemusta! Emme hae Konviktille ketään tiettyä ihmistä, vaan erilaisia opiskelijoita, joita kiinnostaa teologia ja jotka haluavat pitää myös yhteisistä asioista huolta.",
   "infoPunch5.Title": "Vahvuutena yhteisö ja moninaiset taustat",
-  "infoPunch5.Text": "Moni on sanonut, että parasta Konviktissa on ollut erilaisten tulevien teologien ja muiden aiheesta kiinnostuneiden tapaaminen. Toisin kuin useimmat kristilliset ylioppilaskodit Helsingissä, Konvikti on historiallisestikin yleiskirkollinen - Konviktille ei valita ihmisiä erityisesti jostakin kirkollisesta tai aatteellisesta taustasta. Meitä yhdistää yhteisö ja jaettu kiinnostus.",
+  "infoPunch5.Text": "Moni on sanonut, että parasta Konviktissa on ollut erilaisten tulevien teologien ja muiden aiheesta kiinnostuneiden tapaaminen. Toisin kuin useimmat kristilliset ylioppilaskodit Helsingissä, Konvikti on ollut historiallisestikin yleiskirkollinen. Konviktille ei valita ihmisiä erityisesti jostakin kirkollisesta tai aatteellisesta taustasta. Meitä yhdistää yhteisö ja jaettu kiinnostus.",
+  "infoPunch6.Title": "Valinnaiset kriteerit - tulotaso ja suosituskirjeet",
+  "infoPunch6.Text": "Olemme satavuosisen historiamme aikana suosineet asukashaussamme myös vähävaraista taustaa, sekä entisten konviktilaisten, kirkon työntekijöiden tai teologien kirjoittamia suosituskirjeitä. Tulotason ilmoittaminen on vapaaehtoista ja luottamuksellista. Voit saada tästä hakuun lisäpisteen. Vastaavasti suosituskirje on vapaaehtoinen, mikäli sinulla on sellainen jättää, voit saada siitä hakuun lisäpisteen.",
+  
 
   "infoHead3.Title": "Asukashakuilmoitukset",
 
@@ -200,8 +203,8 @@
     },
     "visionSection": {
       "title": "Visio ja arvot",
-      "subtitle": "Mihin uskomme ja mihin pyrimme",
-      "valuesTitle": "Arvomme",
+      "subtitle": "Erittelemme vuoden 2026 aikana tarkemmin, mitä Konvikti on, miksi Konvikti aikoo tulla ja mitä pidämme tärkeintä. Tälle sivulle tulemme tekemään tämän kuvauksen.",
+      "valuesTitle": "Konviktin arvot",
       "goalsTitle": "Tavoitteemme 2036"
     },
     "historySection": {
@@ -305,25 +308,33 @@
     },
     "history2": {
       "title": "Ensimmäinen Konvikti",
-      "description": "Vuonna 1920 perustettiin ylioppilaskoti, konvikti. Sana juontuu latinan sanasta convictus, seurallinen yhdyselämä. Koti toimi aluksi useassa osoitteessa."
+      "description": "Vuonna 1920 perustettiin ylioppilaskoti, konvikti. Sana juontuu latinan sanasta convictus, seurallinen yhdyselämä. Koti toimi aluksi useassa osoitteessa: vuosina 1920-1922 Sörnäisissä ja Kalliolassa sekä vuosina 1922-1938 Vuorikadulla. Ensimmäisiä kodin isäntiä olivat muun muuassa Aarni Voipio ja Aarre Lauha."
     },
     "history3": {
       "title": "Muutto Meritullinkadulle",
-      "description": "Nykyiseen Isoon-Konviktiin koti siirtyi 30-luvulla. Huoneistot olivat Manala, Kiirastuli, Mirkkula ja Taivas."
+      "description": "Nykyiseen Isoon-Konviktiin koti siirtyi vuonna 1938. Alkuperäiset huoneistot olivat Kiirastuli, Mirkkula ja Taivas, joista Kiirastuli ja Taivas ovat yhä osa ylioppilaskotia."
     },
     "history4": {
+      "title": "Sota-aika",
+      "description": "Kuten koko maassa, Konviktilla elettiin niukasti - ja pääosin opiskelijat olivat rintamalla. Kolme konviktilaista kaatui talvisodassa ja viisi jatkosodassa. Heidän Pro Patria-taulunsa ovat vieläkin Taivaan kirjastosalissa. Konviktin ylimmässä kerroksessa sijaitseva Taivas tuhoutui helmikuussa 1944 Helsingin suurpommituksissa. Siitäkin selvittiin - 'mitä oli paikat muurilaastia ja muuta moskaa täynnä.'"
+    },
+    "history5": {
+      "title": "Neljäs huoneisto Meritullinkadulta - Manala",
+      "description": "Vuonna 1951 ylioppilaskodin kannatusyhdistys osti Konviktille neljännen huoneiston samasta rapusta - silloin Konviktin alimpana asuntona eli toisessa kerroksessa sijaitsevana se sai nimen Manala."
+    },
+    "history6": {
       "title": "Juurisen ylioppilaskoti eli Pikku-Konvikti",
       "description": "Emil ja Mimmi Juurinen testamenttilahjoitti kaksi huoneistoa Pieneltä Roobertinkadulta - näin sai alkunsa Pikku-Konvikti."
     },
-    "history5": {
+    "history7": {
       "title": "Jukola 1999-2024",
       "description": "Meritullinkatu 22:n rapussa sijainnut Raittiuskoti siirtyi Konviktin käyttöön. Se sai nimen Jukola seitsemän, myöhemmin kahdeksan asukaspaikkansa mukaan."
     },
-    "history6": {
+    "history8": {
       "title": "Jukolasta ja Mirkkulasta luopuminen",
       "description": "Kasvaneista kustannuksista johtuen yhdistys joutui luopumaan sekä Jukolan vuokrahuoneistosta, että Mirkkulan osakkeista. Taloudellinen uudelleenjärjestely on vakiinnuttanut toiminnan vuosikymmeniksi eteenpäin."
     },
-    "history7": {
+    "history9": {
       "title": "Uusi aika",
       "description": "109-vuotias Konvikti tähyää tulevaisuuteen - miten palvella perustajien tarkoitusta, kotimaata ja Suomen kristillistä kirkkoa parhaiten?"
     }

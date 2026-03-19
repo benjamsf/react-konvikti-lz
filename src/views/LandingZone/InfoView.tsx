@@ -57,10 +57,9 @@ export function InfoView() {
         <AsukashakuSection maxPosts={6} showTitle={true} />
 
         <RecruitmentCriteria
-          title={t("infoRecruitment.title", "Mitä hakijalta odotetaan?")}
+          title={t("infoBrief.HeadTitle")}
           subtitle={t(
-            "infoRecruitment.subtitle",
-            "Nämä asiat vaikuttavat hakemuksesi arviointiin",
+            "infoBrief2.Subtitle",
           )}
           backgroundColor="bg-backgroundBlue"
         />

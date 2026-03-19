@@ -134,34 +134,50 @@ export function OrgView() {
       ),
     },
     {
-      year: "1960-l.",
-      title: t("org.history4.title", "Pikku-Konvikti"),
+      year: "1940-l.",
+      title: t("org.history4.title", "Muutto Meritullinkadulle"),
       description: t(
         "org.history4.description",
+        "Nykyiseen Isoon-Konviktiin koti siirtyi 30-luvulla.",
+      ),
+    },
+    {
+      year: "1950-l.",
+      title: t("org.history5.title", "Muutto Meritullinkadulle"),
+      description: t(
+        "org.history5.description",
+        "Nykyiseen Isoon-Konviktiin koti siirtyi 30-luvulla.",
+      ),
+    },
+    {
+      year: "1960-l.",
+      title: t("org.history6.title", "Pikku-Konvikti"),
+      description: t(
+        "org.history6.description",
         "Emil ja Mimmi Juurinen testamenttilahjoitti kaksi huoneistoa.",
       ),
     },
     {
       year: "1999",
-      title: t("org.history5.title", "Jukola"),
+      title: t("org.history7.title", "Jukola"),
       description: t(
-        "org.history5.description",
+        "org.history7.description",
         "Meritullinkatu 22:n rapussa sijainnut Raittiuskoti siirtyi Konviktin käyttöön.",
       ),
     },
     {
       year: "2024",
-      title: t("org.history6.title", "Uudelleenjärjestely"),
+      title: t("org.history8.title", "Uudelleenjärjestely"),
       description: t(
-        "org.history6.description",
+        "org.history8.description",
         "Kasvaneista kustannuksista johtuen yhdistys joutui luopumaan Jukolasta ja Mirkkulasta.",
       ),
     },
     {
       year: "2026",
-      title: t("org.history7.title", "Uusi aika"),
+      title: t("org.history9.title", "Uusi aika"),
       description: t(
-        "org.history7.description",
+        "org.history9.description",
         "109-vuotias Konvikti tähyää tulevaisuuteen.",
       ),
     },
