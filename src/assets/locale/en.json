@@ -158,9 +158,8 @@
   "infoPunch4.Text": "Are you about to begin your university studies, or already pursuing your first degree? Are you interested in Konvikti not only because of its location, but also because of the community and opportunities for academic or professional growth? Then you are part of our target group — do not hesitate to apply! We are not looking for a specific type of person, but for diverse students who are interested in theology and willing to contribute to the shared life of the community.",
   "infoPunch5.Title": "Community and Diverse Backgrounds as Strengths",
   "infoPunch5.Text": "Many have said that the best part of living at Konvikti has been meeting future theologians and others interested in the field from different backgrounds. Unlike most Christian student residences in Helsinki, Konvikti historically has no bonds to various factions inside the Church of Finland. Residents are not selected based on belonging to a particular church tradition or ideological background. What unites us is the community and a shared interest.",
-    "infoPunch6.Title": "Optional Criteria – Income Level and Letters of Recommendation",
+  "infoPunch6.Title": "Optional Criteria – Income Level and Letters of Recommendation",
   "infoPunch6.Text": "Throughout our more than one hundred years of history, we have also given consideration in the selection process to applicants from modest financial backgrounds, as well as to letters of recommendation written by former Konvikti residents, church employees, or theologians. Declaring your income level is voluntary and confidential, and may grant you an additional point in the application process. Likewise, submitting a letter of recommendation is optional; if you have one to provide, it may also grant you an additional point in the selection process.",
-
 
   "infoHead3.Title": "Resident application announcements",
 
@@ -302,41 +301,41 @@
       "title": "Goal 5",
       "description": "Coming soon!"
     },
-  "history1": {
-    "title": "Foundation",
-    "description": "The supporting association of the Konvikti Student Residence (Ylioppilaskoti Konvikti ry) was founded in 1917. Behind the founding were bishops of the Evangelical Lutheran Church of Finland, who wished to ensure that theology students would have a home and support in Helsinki."
-  },
-  "history2": {
-    "title": "The First Konvikti",
-    "description": "In 1920 the student residence, Konvikti, was established. The word derives from the Latin term convictus, meaning communal life or living together in fellowship. The residence initially operated at several addresses: from 1920 to 1922 in Sörnäinen and Kalliola, and from 1922 to 1938 on Vuorikatu. Early wardens of the residence included Aarni Voipio and Aarre Lauha."
-  },
-  "history3": {
-    "title": "Move to Meritullinkatu",
-    "description": "The residence moved to the current 'Great Konvikti' on Meritullinkatu in 1938. The original apartments were named Purgatory (Kiirastuli), Mirkkula, and Heaven (Taivas). Kiirastuli and Taivas remain part of the student residence today."
-  },
-  "history4": {
-    "title": "The War Years",
-    "description": "As throughout the country, life at Konvikti during the war years was marked by scarcity, and most students were serving at the front. Three residents of Konvikti fell in the Winter War and five in the Continuation War. Their Pro Patria memorial plaques are still displayed in the library hall of Taivas. The top-floor apartment Taivas was destroyed in February 1944 during the major bombing of Helsinki. Even from this the community recovered — 'the place was just filled with brick mortar and debris for a while.'"
-  },
-  "history5": {
-    "title": "The Fourth Apartment – Manala",
-    "description": "In 1951 the supporting association purchased a fourth apartment for Konvikti in the same building. As the lowest apartment in the residence, located on the second floor, it received the name Manala ('hell')."
-  },
-  "history6": {
-    "title": "The Juurinen Student Residence – Little Konvikti",
-    "description": "Emil and Mimmi Juurinen bequeathed two apartments on Pieni Roobertinkatu to the residence. This donation became known as Pikku-Konvikti, the 'Little Konvikti'."
-  },
-  "history7": {
-    "title": "Jukola (1999–2024)",
-    "description": "A former temperance residence located in the same stairwell at Meritullinkatu 22 was transferred to Konvikti's use. It was named Jukola after its seven—and later eight—resident places - a reference to the Finnish great writer Aleksis Kivi's novel 'The Seven Brothers.'"
-  },
-  "history8": {
-    "title": "Letting Go of Jukola and Mirkkula",
-    "description": "Due to rising costs, the association eventually had to give up both the rented apartment Jukola and the Mirkkula shares. This financial restructuring has secured the stability of the residence for decades to come."
-  },
-  "history9": {
-    "title": "A New Era",
-    "description": "Now over a century old, Konvikti looks toward the future: how can it best serve the purpose of its founders, the homeland, and the Christian church of Finland?"
+    "history1": {
+      "title": "Foundation",
+      "description": "The supporting association of the Konvikti Student Residence (Ylioppilaskoti Konvikti ry) was founded in 1917. Behind the founding were bishops of the Evangelical Lutheran Church of Finland, who wished to ensure that theology students would have a home and support in Helsinki."
+    },
+    "history2": {
+      "title": "The First Konvikti",
+      "description": "In 1920 the student residence, Konvikti, was established. The word derives from the Latin term convictus, meaning communal life or living together in fellowship. The residence initially operated at several addresses: from 1920 to 1922 in Sörnäinen and Kalliola, and from 1922 to 1938 on Vuorikatu. Early wardens of the residence included Aarni Voipio and Aarre Lauha."
+    },
+    "history3": {
+      "title": "Move to Meritullinkatu",
+      "description": "The residence moved to the current 'Great Konvikti' on Meritullinkatu in 1938. The original apartments were named Purgatory (Kiirastuli), Mirkkula, and Heaven (Taivas). Kiirastuli and Taivas remain part of the student residence today."
+    },
+    "history4": {
+      "title": "The War Years",
+      "description": "As throughout the country, life at Konvikti during the war years was marked by scarcity, and most students were serving at the front. Three residents of Konvikti fell in the Winter War and five in the Continuation War. Their Pro Patria memorial plaques are still displayed in the library hall of Taivas. The top-floor apartment Taivas was destroyed in February 1944 during the major bombing of Helsinki. Even from this the community recovered — 'the place was just filled with brick mortar and debris for a while.'"
+    },
+    "history5": {
+      "title": "The Fourth Apartment – Manala",
+      "description": "In 1951 the supporting association purchased a fourth apartment for Konvikti in the same building. As the lowest apartment in the residence, located on the second floor, it received the name Manala ('hell')."
+    },
+    "history6": {
+      "title": "The Juurinen Student Residence – Little Konvikti",
+      "description": "Emil and Mimmi Juurinen bequeathed two apartments on Pieni Roobertinkatu to the residence. This donation became known as Pikku-Konvikti, the 'Little Konvikti'."
+    },
+    "history7": {
+      "title": "Jukola (1999–2024)",
+      "description": "A former temperance residence located in the same stairwell at Meritullinkatu 22 was transferred to Konvikti's use. It was named Jukola after its seven—and later eight—resident places - a reference to the Finnish great writer Aleksis Kivi's novel 'The Seven Brothers.'"
+    },
+    "history8": {
+      "title": "Letting Go of Jukola and Mirkkula",
+      "description": "Due to rising costs, the association eventually had to give up both the rented apartment Jukola and the Mirkkula shares. This financial restructuring has secured the stability of the residence for decades to come."
+    },
+    "history9": {
+      "title": "A New Era",
+      "description": "Now over a century old, Konvikti looks toward the future: how can it best serve the purpose of its founders, the homeland, and the Christian church of Finland?"
+    }
   }
-}
 }

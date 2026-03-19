@@ -58,9 +58,7 @@ export function InfoView() {
 
         <RecruitmentCriteria
           title={t("infoBrief.HeadTitle")}
-          subtitle={t(
-            "infoBrief2.Subtitle",
-          )}
+          subtitle={t("infoBrief2.Subtitle")}
           backgroundColor="bg-backgroundBlue"
         />
         <HeadlineContainer items={headlines3} backgroundColor="bg-background" />
