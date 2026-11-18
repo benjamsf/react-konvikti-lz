@@ -45,22 +45,18 @@ export function HeroSection({
 
   return (
     <div className={`relative w-full ${heightClass} ${className}`}>
-      {/* Background Image */}
+      {/* Tint is a layer of the same background as the photo, so a browser can't drop one without the other */}
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${image})` }}
+        style={{
+          backgroundImage: `linear-gradient(rgba(0,0,0,${overlayOpacity}), rgba(0,0,0,${overlayOpacity})), url(${image})`,
+        }}
         role="img"
         aria-label={title || "Hero image"}
       />
 
-      {/* Overlay */}
-      <div
-        className="absolute inset-0 bg-black"
-        style={{ opacity: overlayOpacity }}
-      />
-
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4 [text-shadow:0_2px_8px_rgba(0,0,0,0.6)]">
         {title && (
           <h1 className={`${titleSizeClass} font-title mb-4`}>{title}</h1>
         )}
