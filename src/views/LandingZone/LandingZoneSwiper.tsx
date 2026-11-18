@@ -12,7 +12,6 @@ import { OrgView } from "./OrgView";
 import { BlogNewsView } from "./BlogNewsView";
 import { Navbar } from "../../components/Navbar";
 import { Sidebar } from "../../components/Sidebar";
-import { AttentionSwipe } from "../../components/AttentionSwipe";
 import { useTranslation } from "react-i18next";
 
 export function LandingZoneSwiper() {
@@ -60,11 +59,6 @@ export function LandingZoneSwiper() {
     t("navbar.Org"),
   ];
 
-  const totalSlides = views.length;
-
-  const showLeftSwipe = activeIndex > 0;
-  const showRightSwipe = activeIndex < totalSlides - 1;
-
   return (
     <div className="relative min-h-screen overflow-hidden">
       <Navbar
@@ -98,13 +92,6 @@ export function LandingZoneSwiper() {
           </SwiperSlide>
         </SwiperInstance>
       </div>
-
-      {showLeftSwipe && (
-        <AttentionSwipe position="left" text={t("attentionSwipe.leftText")} />
-      )}
-      {showRightSwipe && (
-        <AttentionSwipe position="right" text={t("attentionSwipe.rightText")} />
-      )}
 
       {isSidebarOpen && (
         <Sidebar
