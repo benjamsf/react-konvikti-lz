@@ -232,7 +232,7 @@ function Lightbox({
               e.stopPropagation();
               onPrev();
             }}
-            className="absolute left-4 top-1/2 -translate-y-1/2 p-4 bg-white/10 hover:bg-white/20 rounded-full text-white transition-colors"
+            className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 p-2 md:p-4 bg-white/10 hover:bg-white/20 rounded-full text-white transition-colors"
             aria-label="Edellinen"
           >
             <ChevronLeftIcon width={32} height={32} />
@@ -242,7 +242,7 @@ function Lightbox({
               e.stopPropagation();
               onNext();
             }}
-            className="absolute right-4 top-1/2 -translate-y-1/2 p-4 bg-white/10 hover:bg-white/20 rounded-full text-white transition-colors"
+            className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 p-2 md:p-4 bg-white/10 hover:bg-white/20 rounded-full text-white transition-colors"
             aria-label="Seuraava"
           >
             <ChevronRightIcon width={32} height={32} />
