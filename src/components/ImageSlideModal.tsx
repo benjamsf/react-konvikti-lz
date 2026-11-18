@@ -86,17 +86,17 @@ export function ImageSlideModal({
       <Dialog.Portal>
         <Dialog.Overlay className="fixed inset-0 bg-black opacity-70 z-40" />
         <Dialog.Content className="fixed inset-0 z-50 flex items-center justify-center p-4">
-          <div className="bg-background rounded-lg relative w-full max-w-[95vw] md:max-w-[90%] h-[90vh] max-h-[90vh] flex flex-col overflow-hidden">
+          <div className="bg-background rounded-lg relative w-full max-w-[95vw] md:max-w-[90%] h-full max-h-[90vh] flex flex-col overflow-hidden">
             {/* Header with title and close */}
-            <div className="flex-shrink-0 flex items-center justify-between p-4">
-              <div className="flex items-center gap-4">
+            <div className="flex-shrink-0 flex items-center justify-between gap-2 p-3 md:p-4">
+              <div className="flex items-center gap-3 md:gap-4 min-w-0">
                 {hasMultipleSlides && (
-                  <span className="bg-black/50 text-white px-3 py-1 rounded-full text-sm">
+                  <span className="bg-black/50 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap flex-shrink-0">
                     {currentIndex + 1} / {slides.length}
                   </span>
                 )}
                 {currentSlide.title && (
-                  <h2 className="text-white text-xl font-bold">
+                  <h2 className="text-white text-base md:text-xl font-bold">
                     {currentSlide.title}
                   </h2>
                 )}
@@ -106,7 +106,7 @@ export function ImageSlideModal({
                   e.stopPropagation();
                   onClose();
                 }}
-                className="p-2 text-white hover:bg-white/10 rounded-lg transition-colors"
+                className="p-2 text-white hover:bg-white/10 rounded-lg transition-colors flex-shrink-0"
               >
                 <Cross2Icon width={24} height={24} />
               </button>
@@ -126,8 +126,8 @@ export function ImageSlideModal({
                     onClick={goToPrev}
                     disabled={currentIndex === 0}
                     className={`
-                      absolute left-4 top-1/2 -translate-y-1/2 z-10
-                      p-3 rounded-full
+                      absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-10
+                      p-2 md:p-3 rounded-full
                       transition-all duration-200
                       ${
                         currentIndex === 0
@@ -144,8 +144,8 @@ export function ImageSlideModal({
                     onClick={goToNext}
                     disabled={currentIndex === slides.length - 1}
                     className={`
-                      absolute right-4 top-1/2 -translate-y-1/2 z-10
-                      p-3 rounded-full
+                      absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-10
+                      p-2 md:p-3 rounded-full
                       transition-all duration-200
                       ${
                         currentIndex === slides.length - 1
