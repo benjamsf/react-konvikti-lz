@@ -22,7 +22,7 @@ export function PrivacyPolicyModal({ triggerClassName }: InfoModalProps) {
       <Dialog.Portal>
         <Dialog.Overlay className="fixed inset-0 bg-black opacity-50 z-[60]" />
         <Dialog.Content className="fixed inset-0 flex items-center justify-center p-4 z-[60]">
-          <div className="bg-background rounded-md max-w-md mx-auto p-8">
+          <div className="bg-background rounded-md max-w-md mx-auto max-h-full overflow-y-auto p-6 md:p-8">
             <Dialog.Title className="text-lg text-white font-bold mb-4">
               Tietosuojaseloste
             </Dialog.Title>

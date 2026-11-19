@@ -46,7 +46,7 @@ export function YouTubeModal({
         <Dialog.Overlay className="fixed inset-0 bg-black/80 backdrop-blur-sm z-[60] animate-in fade-in-0" />
         <Dialog.Content
           className="
-            fixed inset-4 md:inset-8 lg:inset-16
+            fixed inset-4 m-auto h-fit max-w-5xl
             z-[60]
             flex flex-col
             bg-backgroundDark
@@ -73,8 +73,8 @@ export function YouTubeModal({
           </div>
 
           {/* Video Container */}
-          <div className="flex-1 min-h-0 p-2 md:p-4">
-            <div className="relative w-full h-full">
+          <div className="p-2 md:p-4">
+            <div className="relative w-full aspect-video max-h-[calc(100vh-8rem)]">
               <iframe
                 src={isOpen ? embedUrl : ""}
                 title={title}

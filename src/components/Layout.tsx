@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Footer } from "./Footer";
 import { PublicFooter } from "./PublicFooter";
 import { HakuBanner } from "./HakuBanner";
+import { HeroSection } from "./HeroSection";
 
 interface LayoutProps {
   showFooter?: boolean;
@@ -26,30 +27,13 @@ export function Layout({
 
   return (
     <div className="layout flex flex-col min-h-screen">
-      {/* Hero Section */}
       {heroImage && (
-        <div className="relative w-full h-screen">
-          {/* Hero Image */}
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${heroImage})` }}
-          ></div>
-
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-
-          {/* Hero Content */}
-          <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
-            {heroTitle && (
-              <h1 className="text-4xl md:text-6xl font-title mb-4">
-                {heroTitle}
-              </h1>
-            )}
-            {heroText && (
-              <p className="text-lg md:text-2xl font-subtitle">{heroText}</p>
-            )}
-          </div>
-        </div>
+        <HeroSection
+          image={heroImage}
+          title={heroTitle}
+          text={heroText}
+          overlayOpacity={0.5}
+        />
       )}
 
       {/* Main Content */}
